@@ -5,10 +5,13 @@ const OTHER = { name: "其他 / 獨立", color: "#9a9a9a" };
 const SOURCES = {
   osm: "OpenStreetMap",
   pageviews: "維基瀏覽量",
-  gdelt: "GDELT 新聞",
+  news: "新聞",
   stocks: "股價",
+  financials: "財報",
+  gdelt: "GDELT 語調",
   sec: "SEC 財報",
 };
+const LANG_NAMES = { en: "英文", zh: "中文" };
 
 // ECharts 主題：紫灰配色，與頁面一致
 const FONT = getComputedStyle(document.body).fontFamily;
@@ -31,11 +34,7 @@ echarts.registerTheme("nyu", {
     splitLine: { lineStyle: { color: "#e6e6e6" } },
   },
   legend: { textStyle: { color: "#404040" } },
-  tooltip: {
-    backgroundColor: VIOLET_DARK,
-    borderWidth: 0,
-    textStyle: { color: "#fff" },
-  },
+  tooltip: { backgroundColor: VIOLET_DARK, borderWidth: 0, textStyle: { color: "#fff" } },
 });
 
 async function load(name) {
@@ -57,6 +56,8 @@ const fmtTime = (iso) =>
   iso ? new Date(iso).toLocaleString("zh-HK", { timeZone: "Asia/Macau", hour12: false }) : "";
 
 const toYi = (v) => +(v / 1e8).toFixed(2); // 美元 -> 億美元
+const yi = (v) => (v == null ? "—" : `${v} 億美元`);
+const lineLegend = { type: "scroll", icon: "rect", itemWidth: 14, itemHeight: 4 };
 
 function chart(id, option) {
   const c = echarts.init(document.getElementById(id), "nyu");
@@ -65,13 +66,34 @@ function chart(id, option) {
   return c;
 }
 
-function empty(id, msg = "暫無數據") {
+// 沒有數據的卡片整張隱藏；整個區段都沒有內容時，連同導覽連結一起隱藏
+function hideSection(id) {
+  const s = document.getElementById(id);
+  if (!s) return;
+  s.hidden = true;
+  document.querySelectorAll(`.site-nav a[href="#${id}"]`).forEach((a) => (a.hidden = true));
+}
+
+function hideCard(id) {
   const el = document.getElementById(id);
-  el.replaceChildren();
-  const p = document.createElement("p");
-  p.className = "empty";
-  p.textContent = msg;
-  el.appendChild(p);
+  if (!el) return;
+  const card = el.closest(".card");
+  if (!card) return;
+  card.hidden = true;
+  const section = card.closest("section.band");
+  if (section && [...section.querySelectorAll(".card")].every((c) => c.hidden)) {
+    hideSection(section.id);
+  }
+}
+
+// 某個區段出錯時只影響它自己
+function run(fn, onError) {
+  try {
+    fn();
+  } catch (e) {
+    console.error(e);
+    onError?.();
+  }
 }
 
 function movingAvg(points, n, digits = 0) {
@@ -83,66 +105,69 @@ function movingAvg(points, n, digits = 0) {
 
 const sortedPoints = (m) => [...m.entries()].sort((a, b) => (a[0] < b[0] ? -1 : 1));
 
-const lineLegend = { type: "scroll", icon: "rect", itemWidth: 14, itemHeight: 4 };
-
 (async function main() {
-  const [meta, osm, views, stocks, news, sec] = await Promise.all(
-    ["meta", "osm_hotels", "pageviews", "stocks", "gdelt", "sec"].map(load));
+  const names = ["meta", "osm_hotels", "pageviews", "stocks", "financials", "news", "gdelt", "sec"];
+  const [meta, osm, views, stocks, fin, news, gdelt, sec] = await Promise.all(names.map(load));
 
   const groups = meta?.groups ?? {};
   const gInfo = (k) => groups[k] ?? OTHER;
   const groupKeys = [...Object.keys(groups), null];
 
-  renderStatus(meta);
-  renderKpis(osm, stocks, news);
+  run(() => renderStatus(meta));
+  run(() => renderKpis(osm, stocks, news), () => hideSection("overview"));
 
   if (osm?.hotels?.length) {
-    renderMap(osm.hotels, groupKeys, gInfo);
-    renderCount(osm.hotels, groupKeys, gInfo);
-    renderBrands(osm.hotels);
-    renderTable(osm.hotels, gInfo);
+    run(() => renderMap(osm.hotels, groupKeys, gInfo), () => hideSection("map-section"));
+    run(() => renderCount(osm.hotels, groupKeys, gInfo), () => hideCard("chart-count"));
+    run(() => renderBrands(osm.hotels), () => hideCard("chart-brands"));
+    run(() => renderTable(osm.hotels, gInfo), () => hideSection("hotels"));
   } else {
-    ["map", "chart-count", "chart-brands"].forEach((id) => empty(id));
+    hideSection("map-section");
+    hideSection("hotels");
+    hideCard("chart-count");
+    hideCard("chart-brands");
   }
 
   if (views?.articles) {
-    renderViews(views, gInfo);
-    renderLangs(views, gInfo);
+    run(() => renderViews(views, gInfo), () => hideCard("chart-views"));
+    run(() => renderLangs(views, gInfo), () => ["chart-langs", "chart-langmix"].forEach(hideCard));
   } else {
-    ["chart-views", "chart-langs", "chart-langmix"].forEach((id) => empty(id));
+    ["chart-views", "chart-langs", "chart-langmix"].forEach(hideCard);
   }
 
-  if (news?.groups && Object.keys(news.groups).length) {
-    renderNews(news, gInfo);
+  const hasNews = news?.groups && Object.values(news.groups).some((g) => g.total > 0);
+  if (hasNews) {
+    run(() => renderNewsVolume(news, gInfo), () => hideCard("chart-news"));
+    run(() => renderSov(news, gInfo), () => hideCard("chart-sov"));
+    run(() => renderNewsList(news, gInfo), () => hideCard("news-list"));
   } else {
-    ["chart-news", "chart-sov", "chart-tone"].forEach((id) => empty(id));
-    renderNewsList({ groups: {} }, gInfo);
+    ["chart-news", "chart-sov", "news-list"].forEach(hideCard);
   }
+  run(() => renderToneOrPublishers(gdelt, hasNews ? news : null, gInfo), () => hideCard("chart-tone"));
 
   if (stocks?.tickers) {
-    renderStocks(stocks.tickers, gInfo);
-    renderChange(stocks.tickers, gInfo);
+    run(() => renderStocks(stocks.tickers, gInfo), () => hideCard("chart-stocks"));
+    run(() => renderChange(stocks.tickers, gInfo), () => hideCard("chart-change"));
   } else {
-    empty("chart-stocks");
-    empty("chart-change");
+    hideCard("chart-stocks");
+    hideCard("chart-change");
   }
 
-  if (sec?.companies && Object.keys(sec.companies).length) {
-    renderSec(sec, gInfo);
-  } else {
-    empty("chart-sec-rev");
-    empty("chart-sec-ni");
-  }
+  run(() => renderFin(fin, "revenue", "chart-fin-rev", gInfo), () => hideCard("chart-fin-rev"));
+  run(() => renderFin(fin, "net_income", "chart-fin-ni", gInfo), () => hideCard("chart-fin-ni"));
+  run(() => renderFinNote(fin, gInfo));
+  run(() => renderSec(sec, gInfo), () => hideCard("chart-sec-rev"));
 })();
 
 function renderStatus(meta) {
   const el = document.getElementById("status");
   if (!meta) {
-    el.textContent = "尚未有數據：請到 GitHub 的 Actions 頁面手動執行 Update data。";
+    el.textContent = "數據準備中，首次更新完成後會自動顯示。";
     return;
   }
   for (const [key, label] of Object.entries(SOURCES)) {
-    const m = meta[key] ?? {};
+    const m = meta[key];
+    if (!m || m.disabled) continue;
     const span = document.createElement("span");
     span.className = "badge " + (m.ok ? "ok" : "bad");
     span.textContent = m.ok
@@ -155,21 +180,22 @@ function renderStatus(meta) {
 
 function renderKpis(osm, stocks, news) {
   const items = [];
-  if (osm?.hotels) {
+  if (osm?.hotels?.length) {
     const n = osm.hotels.length;
     const inGroups = osm.hotels.filter((h) => h.group).length;
     items.push(["OSM 收錄酒店", n.toLocaleString(), "間"]);
-    items.push(["六大集團旗下", inGroups.toLocaleString(), `間，佔 ${n ? Math.round((inGroups / n) * 100) : 0}%`]);
+    items.push(["六大集團旗下", inGroups.toLocaleString(), `間，佔 ${Math.round((inGroups / n) * 100)}%`]);
   }
   if (news?.groups) {
     const total = Object.values(news.groups).reduce((s, g) => s + (g.total || 0), 0);
-    items.push(["近 3 個月相關新聞", total.toLocaleString(), "篇，GDELT 收錄"]);
+    if (total) items.push([`近 ${news.days} 日收集報導`, total.toLocaleString(), "篇，中英文"]);
   }
   if (stocks?.tickers) {
     const list = Object.values(stocks.tickers);
     const up = list.filter((s) => s.change_1y_pct >= 0).length;
     items.push(["一年上漲的上市集團", `${up} / ${list.length}`, "家"]);
   }
+  if (!items.length) return hideSection("overview");
 
   const box = document.getElementById("kpis");
   for (const [label, value, unit] of items) {
@@ -229,10 +255,10 @@ function renderMap(hotels, keys, gInfo) {
   }
 }
 
-function barChart(id, labels, values, colors) {
+function barChart(id, labels, values, colors, valueFmt) {
   chart(id, {
-    tooltip: {},
-    grid: { left: 110, right: 50, top: 10, bottom: 30 },
+    tooltip: valueFmt ? { valueFormatter: valueFmt } : {},
+    grid: { left: 130, right: 50, top: 10, bottom: 30 },
     xAxis: { type: "value" },
     yAxis: { type: "category", data: labels, inverse: true },
     series: [{
@@ -253,7 +279,7 @@ function renderBrands(hotels) {
   const m = new Map();
   for (const h of hotels) if (h.brand) m.set(h.brand, (m.get(h.brand) || 0) + 1);
   const top = [...m.entries()].sort((a, b) => b[1] - a[1]).slice(0, 15);
-  if (!top.length) return empty("chart-brands", "OSM 中暫無 brand 標籤");
+  if (!top.length) return hideCard("chart-brands");
   barChart("chart-brands", top.map((x) => x[0]), top.map((x) => x[1]), top.map(() => VIOLET));
 }
 
@@ -267,10 +293,10 @@ function renderViews(pv, gInfo) {
   }
   const series = Object.entries(byGroup).map(([g, m]) => ({
     name: gInfo(g).name, type: "line", showSymbol: false, smooth: true,
-    lineStyle: { width: 2.5 },
-    color: gInfo(g).color, data: movingAvg(sortedPoints(m), 7),
+    lineStyle: { width: 2.5 }, color: gInfo(g).color,
+    data: movingAvg(sortedPoints(m), 7),
   }));
-  if (!series.length) return empty("chart-views");
+  if (!series.length) return hideCard("chart-views");
   chart("chart-views", {
     tooltip: { trigger: "axis" },
     legend: lineLegend,
@@ -294,8 +320,8 @@ function renderLangs(pv, gInfo) {
     for (const pts of Object.values(a.views || {}))
       for (const [d] of pts) if (d > latest) latest = d;
   if (!latest || !langs.length) {
-    empty("chart-langs");
-    empty("chart-langmix");
+    hideCard("chart-langs");
+    hideCard("chart-langmix");
     return;
   }
   const cutDate = new Date(`${latest}T00:00:00Z`);
@@ -309,12 +335,11 @@ function renderLangs(pv, gInfo) {
       for (const [d, v] of pts) if (d >= cut) t[lang] = (t[lang] || 0) + v;
   }
   const gKeys = Object.keys(totals);
-  const labels = gKeys.map((k) => gInfo(k).name);
   const base = {
     tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
     legend: { top: 0, type: "scroll" },
     grid: { left: 110, right: 30, top: 40, bottom: 30 },
-    yAxis: { type: "category", data: labels, inverse: true },
+    yAxis: { type: "category", data: gKeys.map((k) => gInfo(k).name), inverse: true },
   };
 
   chart("chart-langs", {
@@ -346,9 +371,9 @@ function renderLangs(pv, gInfo) {
     `統計期間：${cut} 至 ${latest}。有對應語言條目的度假村數量：${coverage}。`;
 }
 
-function renderNews(news, gInfo) {
-  const entries = Object.entries(news.groups);
-
+function renderNewsVolume(news, gInfo) {
+  const entries = Object.entries(news.groups).filter(([, d]) => d.volume?.length);
+  if (!entries.length) return hideCard("chart-news");
   chart("chart-news", {
     tooltip: { trigger: "axis" },
     legend: lineLegend,
@@ -358,10 +383,20 @@ function renderNews(news, gInfo) {
     series: entries.map(([g, d]) => ({
       name: gInfo(g).name, type: "line", showSymbol: false, smooth: true,
       lineStyle: { width: 2.5 }, color: gInfo(g).color,
-      data: movingAvg(d.volume || [], 7, 1),
+      data: movingAvg(d.volume, 7, 1),
     })),
   });
 
+  let note = `統計期間：${news.since} 至 ${news.until}，共 ${news.days} 日，自開始收集起累積。`;
+  if (news.days < 14) note += "收集時間尚短，走勢會隨每次更新逐步完整。";
+  const failed = Object.keys(news.errors || {});
+  if (failed.length) note += ` 本次部分查詢失敗：${failed.join("、")}。`;
+  document.getElementById("news-note").textContent = note;
+}
+
+function renderSov(news, gInfo) {
+  const entries = Object.entries(news.groups).filter(([, d]) => d.total > 0);
+  if (!entries.length) return hideCard("chart-sov");
   chart("chart-sov", {
     tooltip: { trigger: "item", formatter: "{b}<br>{c} 篇（{d}%）" },
     legend: { bottom: 0, type: "scroll" },
@@ -372,15 +407,24 @@ function renderNews(news, gInfo) {
       itemStyle: { borderColor: "#fff", borderWidth: 2 },
       label: { formatter: "{d}%", fontWeight: 600 },
       data: entries.map(([g, d]) => ({
-        name: gInfo(g).name, value: d.total || 0, itemStyle: { color: gInfo(g).color },
+        name: gInfo(g).name, value: d.total, itemStyle: { color: gInfo(g).color },
       })),
     }],
   });
+}
 
-  const toneRows = entries
+// 有 GDELT 語調就顯示語調；沒有就改為顯示主要報導媒體
+function renderToneOrPublishers(gdelt, news, gInfo) {
+  const title = document.getElementById("tone-title");
+  const note = document.getElementById("tone-note");
+
+  const toneRows = Object.entries(gdelt?.groups || {})
     .filter(([, d]) => d.avg_tone != null)
     .sort((a, b) => b[1].avg_tone - a[1].avg_tone);
   if (toneRows.length) {
+    title.textContent = "平均新聞語調";
+    note.textContent =
+      "來源：GDELT，過去 3 個月每日語調的平均值。0 為中性，正數偏正面，負數偏負面。由機器自動評分，適合看趨勢。";
     chart("chart-tone", {
       tooltip: { formatter: (p) => `${p.name}<br>平均語調 ${p.value}` },
       grid: { left: 110, right: 60, top: 10, bottom: 30 },
@@ -396,17 +440,18 @@ function renderNews(news, gInfo) {
         label: { show: true, position: "right", color: "#222", fontWeight: 600 },
       }],
     });
-  } else {
-    empty("chart-tone");
+    return;
   }
 
-  const stale = entries.filter(([, d]) => d.stale).map(([g]) => gInfo(g).name);
-  if (stale.length) {
-    document.getElementById("news-note").textContent +=
-      ` 以下集團本次抓取失敗，顯示上次成功的數據：${stale.join("、")}。`;
-  }
+  const pubs = new Map();
+  for (const d of Object.values(news?.groups || {}))
+    for (const [name, n] of d.publishers || []) pubs.set(name, (pubs.get(name) || 0) + n);
+  const top = [...pubs.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10);
+  if (!top.length) return hideCard("chart-tone");
 
-  renderNewsList(news, gInfo);
+  title.textContent = "主要報導媒體";
+  note.textContent = "統計期間內報導六大集團最多的媒體，按報導篇數排列。來源：Google News RSS。";
+  barChart("chart-tone", top.map((x) => x[0]), top.map((x) => x[1]), top.map(() => VIOLET));
 }
 
 function renderNewsList(news, gInfo) {
@@ -415,19 +460,11 @@ function renderNewsList(news, gInfo) {
     .flatMap(([g, d]) => (d.articles || []).map((a) => ({ ...a, group: g })))
     .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 
-  // 同一篇報導可能同時命中多個集團，按網址去重
   const seen = new Set();
   const list = items
     .filter((a) => /^https?:\/\//i.test(a.url) && !seen.has(a.url) && seen.add(a.url))
     .slice(0, 24);
-
-  if (!list.length) {
-    const li = document.createElement("li");
-    li.className = "news-empty";
-    li.textContent = "暫無報導";
-    ul.replaceChildren(li);
-    return;
-  }
+  if (!list.length) return hideCard("news-list");
 
   ul.replaceChildren(...list.map((a) => {
     const g = gInfo(a.group);
@@ -443,7 +480,7 @@ function renderNewsList(news, gInfo) {
     link.textContent = a.title || a.url;
     const info = document.createElement("span");
     info.className = "news-meta";
-    info.textContent = [a.domain, a.country, fmtTime(a.date)].filter(Boolean).join(" · ");
+    info.textContent = [a.source, LANG_NAMES[a.lang], fmtTime(a.date)].filter(Boolean).join(" · ");
     li.append(tag, link, info);
     return li;
   }));
@@ -454,11 +491,11 @@ function renderStocks(tickers, gInfo) {
     const base = s.data[0][1];
     return {
       name: `${gInfo(s.group).name} ${t}`, type: "line", showSymbol: false,
-      lineStyle: { width: 2.5 },
-      color: gInfo(s.group).color,
+      lineStyle: { width: 2.5 }, color: gInfo(s.group).color,
       data: s.data.map(([d, p]) => [d, +((p / base) * 100).toFixed(2)]),
     };
   });
+  if (!series.length) return hideCard("chart-stocks");
   chart("chart-stocks", {
     tooltip: { trigger: "axis" },
     legend: lineLegend,
@@ -471,6 +508,7 @@ function renderStocks(tickers, gInfo) {
 
 function renderChange(tickers, gInfo) {
   const rows = Object.entries(tickers).sort((a, b) => b[1].change_1y_pct - a[1].change_1y_pct);
+  if (!rows.length) return hideCard("chart-change");
   chart("chart-change", {
     tooltip: { formatter: (p) => `${p.name}<br>${p.value}%` },
     grid: { left: 140, right: 60, top: 10, bottom: 30 },
@@ -491,54 +529,52 @@ function renderChange(tickers, gInfo) {
   });
 }
 
+function renderFin(fin, field, id, gInfo) {
+  const cos = Object.entries(fin?.companies || {}).filter(([, c]) => c[field]?.length);
+  if (!cos.length) return hideCard(id);
+  const years = [...new Set(cos.flatMap(([, c]) => c[field].map(([d]) => d.slice(0, 4))))].sort();
+  chart(id, {
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: yi },
+    legend: { type: "scroll", top: 0 },
+    grid: { left: 50, right: 20, top: 50, bottom: 30 },
+    xAxis: { type: "category", data: years },
+    yAxis: { type: "value" },
+    series: cos.map(([t, c]) => {
+      const m = new Map(c[field].map(([d, v]) => [d.slice(0, 4), toYi(v)]));
+      return {
+        name: `${gInfo(c.group).name} ${t}`, type: "bar", barMaxWidth: 14,
+        color: gInfo(c.group).color,
+        data: years.map((y) => m.get(y) ?? null),
+      };
+    }),
+  });
+}
+
+function renderFinNote(fin, gInfo) {
+  const cos = Object.entries(fin?.companies || {});
+  if (!cos.length) return;
+  const cur = cos.map(([t, c]) => `${gInfo(c.group).name} ${c.currency}`).join("、");
+  const stale = cos.filter(([, c]) => c.stale).map(([t]) => t);
+  let text = `單位：億美元。申報貨幣：${cur}。來源：Yahoo Finance。`;
+  if (stale.length) text += ` ${stale.join("、")} 本次更新失敗，顯示上次的數據。`;
+  document.getElementById("fin-note").textContent = text;
+}
+
 function renderSec(sec, gInfo) {
-  const cos = Object.entries(sec.companies);
-  const label = (t, c) => `${c.name}（${t}）`;
-  const yi = (v) => (v == null ? "—" : `${v} 億美元`);
-
-  const withQ = cos.filter(([, c]) => c.revenue?.quarterly?.length);
-  if (withQ.length) {
-    chart("chart-sec-rev", {
-      tooltip: { trigger: "axis", valueFormatter: yi },
-      legend: lineLegend,
-      grid: { left: 50, right: 30, top: 50, bottom: 40 },
-      xAxis: { type: "time" },
-      yAxis: { type: "value" },
-      series: withQ.map(([t, c]) => ({
-        name: label(t, c), type: "line", symbolSize: 5,
-        lineStyle: { width: 2.5 }, color: gInfo(c.group).color,
-        data: c.revenue.quarterly.map(([e, v]) => [e, toYi(v)]),
-      })),
-    });
-  } else {
-    empty("chart-sec-rev", "暫無季度收入數據");
-  }
-
-  const withNi = cos.filter(([, c]) => c.net_income?.annual?.length);
-  if (withNi.length) {
-    const years = [...new Set(withNi.flatMap(([, c]) => c.net_income.annual.map(([e]) => e.slice(0, 4))))].sort();
-    chart("chart-sec-ni", {
-      tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: yi },
-      legend: { type: "scroll" },
-      grid: { left: 50, right: 30, top: 50, bottom: 40 },
-      xAxis: { type: "category", data: years },
-      yAxis: { type: "value" },
-      series: withNi.map(([t, c]) => {
-        const m = new Map(c.net_income.annual.map(([e, v]) => [e.slice(0, 4), toYi(v)]));
-        return {
-          name: label(t, c), type: "bar", barMaxWidth: 16, color: gInfo(c.group).color,
-          data: years.map((y) => m.get(y) ?? null),
-        };
-      }),
-    });
-  } else {
-    empty("chart-sec-ni", "暫無淨利潤數據");
-  }
-
-  if (sec.missing?.length) {
-    document.getElementById("sec-note").textContent +=
-      ` 以下公司沒有取得數據：${sec.missing.join("、")}。`;
-  }
+  const withQ = Object.entries(sec?.companies || {}).filter(([, c]) => c.revenue?.quarterly?.length);
+  if (!withQ.length) return hideCard("chart-sec-rev");
+  chart("chart-sec-rev", {
+    tooltip: { trigger: "axis", valueFormatter: yi },
+    legend: lineLegend,
+    grid: { left: 50, right: 30, top: 50, bottom: 40 },
+    xAxis: { type: "time" },
+    yAxis: { type: "value" },
+    series: withQ.map(([t, c]) => ({
+      name: `${c.name}（${t}）`, type: "line", symbolSize: 5,
+      lineStyle: { width: 2.5 }, color: gInfo(c.group).color,
+      data: c.revenue.quarterly.map(([e, v]) => [e, toYi(v)]),
+    })),
+  });
 }
 
 function renderTable(hotels, gInfo) {
