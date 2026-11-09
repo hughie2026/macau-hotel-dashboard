@@ -114,6 +114,7 @@ a:hover { color: var(--violet-bright); }
 .chart.tall { height: 420px; }
 .note { font-size: 13px; color: var(--muted); margin: 12px 0 0; }
 .empty { color: var(--muted); text-align: center; padding-top: 130px; margin: 0; }
+.spaced { margin-top: 28px; }
 
 /* 地圖 */
 #map { height: 520px; border: 1px solid var(--border); }
@@ -127,6 +128,24 @@ a:hover { color: var(--violet-bright); }
   font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
   color: var(--muted); border-left: 3px solid; padding-left: 6px; margin-bottom: 6px;
 }
+
+/* 媒體聲量 */
+.news-list {
+  list-style: none; margin: 0; padding: 0;
+  columns: 2 420px; column-gap: 40px;
+}
+.news-list li {
+  break-inside: avoid;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
+  padding: 14px 0; border-bottom: 1px solid var(--border);
+}
+.news-list a { color: var(--black); font-weight: 700; text-decoration: none; line-height: 1.4; }
+.news-list a:hover { color: var(--violet); text-decoration: underline; }
+.news-list .group-tag {
+  font-size: 12px; font-weight: 700; letter-spacing: .06em; color: var(--muted);
+}
+.news-meta { font-size: 13px; color: var(--muted); }
+.news-empty { color: var(--muted); }
 
 /* 表格 */
 .search-label { display: block; font-size: 14px; font-weight: 700; margin: 16px 0 6px; }
@@ -174,23 +193,5 @@ td a { font-weight: 600; text-decoration: none; }
   .card { padding: 16px; }
   .kpi-value { font-size: 36px; }
   #map { height: 400px; }
+  .grid { grid-template-columns: 1fr; }
 }
-
-/* 媒體聲量與財務區段 */
-.spaced { margin-top: 28px; }
-.news-list {
-  list-style: none; margin: 0; padding: 0;
-  columns: 2 420px; column-gap: 40px;
-}
-.news-list li {
-  break-inside: avoid;
-  display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
-  padding: 14px 0; border-bottom: 1px solid var(--border);
-}
-.news-list a { color: var(--black); font-weight: 700; text-decoration: none; line-height: 1.4; }
-.news-list a:hover { color: var(--violet); text-decoration: underline; }
-.news-list .group-tag {
-  font-size: 12px; font-weight: 700; letter-spacing: .06em; color: var(--muted);
-}
-.news-meta { font-size: 13px; color: var(--muted); }
-.news-empty { color: var(--muted); }
