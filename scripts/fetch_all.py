@@ -114,67 +114,6 @@ def fetch_osm():
     return {"hotels": len(hotels)}
 
 
-# ---------- Wikidata ----------
-SPARQL = """
-SELECT ?hotel ?hotelLabel ?enLabel ?operatorLabel ?ownerLabel ?rooms ?opening ?coord WHERE {
-  ?hotel wdt:P131* wd:Q14773 .
-  ?hotel wdt:P31/wdt:P279* wd:Q27686 .
-  OPTIONAL { ?hotel rdfs:label ?enLabel . FILTER(LANG(?enLabel) = "en") }
-  OPTIONAL { ?hotel wdt:P137 ?operator . }
-  OPTIONAL { ?hotel wdt:P127 ?owner . }
-  OPTIONAL { ?hotel wdt:P8733 ?rooms . }
-  OPTIONAL { ?hotel wdt:P1619 ?opening . }
-  OPTIONAL { ?hotel wdt:P625 ?coord . }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "zh-hant,zh,en". }
-}
-"""
-
-
-def fetch_wikidata():
-    r = SESSION.get(
-        "https://query.wikidata.org/sparql",
-        params={"query": SPARQL, "format": "json"},
-        timeout=90,
-    )
-    r.raise_for_status()
-    rows = r.json()["results"]["bindings"]
-
-    hotels = {}
-    for row in rows:
-        def v(key, row=row):
-            return row.get(key, {}).get("value")
-
-        qid = v("hotel").rsplit("/", 1)[-1]
-        h = hotels.setdefault(qid, {
-            "qid": qid, "name": v("hotelLabel"), "name_en": v("enLabel") or "",
-            "operators": set(), "rooms": None, "opened": None, "lat": None, "lon": None,
-        })
-        for k in ("operatorLabel", "ownerLabel"):
-            if v(k):
-                h["operators"].add(v(k))
-        if v("rooms") and h["rooms"] is None:
-            try:
-                h["rooms"] = int(float(v("rooms")))
-            except ValueError:
-                pass
-        if v("opening") and h["opened"] is None:
-            h["opened"] = v("opening")[:4]
-        if v("coord") and h["lat"] is None:
-            lon, lat = v("coord").removeprefix("Point(").removesuffix(")").split()
-            h["lat"], h["lon"] = float(lat), float(lon)
-
-    out = []
-    for h in hotels.values():
-        h["operators"] = sorted(h["operators"])
-        h["group"] = match_group(" ".join([h["name"] or "", h["name_en"], *h["operators"]]))
-        out.append(h)
-
-    if not out:
-        raise RuntimeError("Wikidata 返回 0 間酒店，不覆蓋舊數據")
-    save("wikidata_hotels", {"updated": now_iso(), "source": "Wikidata (CC0)", "hotels": out})
-    return {"hotels": len(out), "with_rooms": sum(1 for h in out if h["rooms"])}
-
-
 # ---------- 多語言維基百科瀏覽量 ----------
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 PAGEVIEWS_API = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article"
@@ -483,10 +422,10 @@ def fetch_sec():
 
 def main():
     meta = load_previous("meta")
+    meta.pop("wikidata", None)  # 清除已移除數據源的舊記錄
 
     jobs = {
         "osm": fetch_osm,
-        "wikidata": fetch_wikidata,
         "pageviews": fetch_pageviews,
         "gdelt": fetch_gdelt,
         "stocks": fetch_stocks,
