@@ -1,16 +1,14 @@
 {
  "osm": {
-  "ok": false,
-  "updated": "2026-11-09T02:47:44+00:00",
+  "ok": true,
+  "updated": "2026-11-09T03:34:30+00:00",
   "info": {
    "hotels": 115
-  },
-  "last_error": "RuntimeError: 所有 Overpass 鏡像失敗: 504 Server Error: Gateway Timeout for url: https://overpass.kumi.systems/api/interpreter",
-  "last_attempt": "2026-11-09T03:09:49+00:00"
+  }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-09T03:09:57+00:00",
+  "updated": "2026-11-09T03:34:36+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -22,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-09T03:09:58+00:00",
+  "updated": "2026-11-09T03:34:38+00:00",
   "info": {
    "tickers": 6
   }
@@ -55,37 +53,42 @@
  },
  "sec": {
   "ok": false,
-  "last_error": "RuntimeError: SEC_CONTACT 未設定或不是電郵。請到 Settings → Secrets and variables → Actions 新增名為 SEC_CONTACT 的 Repository secret，值填你的電郵",
-  "last_attempt": "2026-11-09T03:09:58+00:00"
+  "disabled": true,
+  "last_error": "未設定 SEC_CONTACT，已跳過（可選）"
  },
  "gdelt": {
   "ok": true,
-  "updated": "2026-11-09T03:14:11+00:00",
+  "updated": "2026-11-09T03:37:29+00:00",
   "info": {
    "refreshed": [
-    "galaxy",
-    "mgm",
-    "sjm"
+    "sands"
    ],
    "skipped": [
-    "melco:articles",
-    "mgm:articles",
-    "wynn:articles",
-    "sjm:articles",
-    "galaxy:tone",
-    "sands:tone",
-    "melco:tone",
-    "mgm:tone",
-    "wynn:tone",
-    "sjm:tone"
+    "mgm",
+    "wynn",
+    "sjm"
    ],
    "errors": [
-    "sands:volume",
-    "melco:volume",
-    "wynn:volume",
-    "galaxy:articles",
-    "sands:articles"
+    "galaxy",
+    "melco"
    ]
+  }
+ },
+ "financials": {
+  "ok": true,
+  "updated": "2026-11-09T03:34:46+00:00",
+  "info": {
+   "companies": 6,
+   "errors": []
+  }
+ },
+ "news": {
+  "ok": true,
+  "updated": "2026-11-09T03:35:07+00:00",
+  "info": {
+   "requests_ok": 12,
+   "new_articles": 235,
+   "errors": []
   }
  }
 }
