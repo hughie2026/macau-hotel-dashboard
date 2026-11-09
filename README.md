@@ -6,24 +6,27 @@
 ## 數據來源
 - OpenStreetMap（Overpass API）：酒店位置、名稱、品牌、星級
 - Wikimedia Pageviews：英、中、粵、日、韓、葡文維基百科條目瀏覽量
-- GDELT DOC 2.0 API：近 3 個月全球新聞報導量、語調和最新標題
-- Yahoo Finance（yfinance）：六大承批公司股價
-- SEC EDGAR XBRL API：Las Vegas Sands、Wynn Resorts、MGM Resorts、Melco 的收入和淨利潤
+- Google News RSS：中英文新聞報導，逐次累積，最長保留 90 日
+- Yahoo Finance（yfinance）：六大承批公司上市主體的股價和年度損益表
+- GDELT（可選）：新聞語調
+- SEC EDGAR（可選）：美國母公司季度收入，需要設定 SEC_CONTACT
+
+沒有數據的圖表會自動隱藏，抓取狀態顯示在頁面頂部。
 
 ## 部署
-1. 上傳全部檔案到新倉庫的 main 分支
+1. 上傳全部檔案到 main 分支
 2. Settings → Pages → Source 選 **GitHub Actions**
-3. Settings → Secrets and variables → Actions → New repository secret，
-   名稱 `SEC_CONTACT`，值填你的電郵（SEC 要求請求附上聯絡方式）
-4. Actions → Update data → Run workflow
-5. 打開 https://<你的帳號>.github.io/<倉庫名>/
+3. Settings → Actions → General → Workflow permissions 選 **Read and write**
+4. （可選）Settings → Secrets and variables → Actions → New repository secret，
+   名稱 `SEC_CONTACT`，值填你的電郵
+5. Actions → Update data → Run workflow
 
 ## 本地執行
 pip install -r requirements.txt
-SEC_CONTACT=you@example.com python scripts/fetch_all.py
+python scripts/fetch_all.py
 python -m http.server -d docs 8000
 
 ## 自訂
-- 集團關鍵字、維基條目、語言、新聞查詢詞、股票代號、SEC 公司：scripts/config.py
-- 配色：docs/style.css 開頭的 :root 變數，以及 docs/app.js 的 ECharts 主題
-- 修改 app.js 或 style.css 後，把 index.html 裡的 ?v= 數字加 1，避免瀏覽器使用緩存的舊版本
+- 集團、維基條目、新聞查詢詞、股票代號、匯率：scripts/config.py
+- 配色：docs/style.css 的 :root 變數，以及 docs/app.js 的 ECharts 主題
+- 修改 app.js 或 style.css 後，把 index.html 裡的 ?v= 數字加 1
