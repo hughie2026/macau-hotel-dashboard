@@ -5,7 +5,6 @@
 
 ## 數據來源
 - OpenStreetMap（Overpass API）：酒店位置、名稱、品牌、星級
-- Wikidata：營運商、客房數、開業年份
 - Wikimedia Pageviews：英、中、粵、日、韓、葡文維基百科條目瀏覽量
 - GDELT DOC 2.0 API：近 3 個月全球新聞報導量、語調和最新標題
 - Yahoo Finance（yfinance）：六大承批公司股價
@@ -27,3 +26,4 @@ python -m http.server -d docs 8000
 ## 自訂
 - 集團關鍵字、維基條目、語言、新聞查詢詞、股票代號、SEC 公司：scripts/config.py
 - 配色：docs/style.css 開頭的 :root 變數，以及 docs/app.js 的 ECharts 主題
+- 修改 app.js 或 style.css 後，把 index.html 裡的 ?v= 數字加 1，避免瀏覽器使用緩存的舊版本
