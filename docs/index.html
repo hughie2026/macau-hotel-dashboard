@@ -6,7 +6,7 @@
   <title>澳門酒店業品牌分析 | Macau Hotel Brand Analytics</title>
   <meta name="theme-color" content="#57068c">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <a class="skip-link" href="#overview">跳到主要內容</a>
@@ -46,7 +46,7 @@
       <p class="eyebrow eyebrow-light">Data Dashboard</p>
       <h1>澳門酒店業品牌分析</h1>
       <p class="lead">
-        整合 OpenStreetMap、多語言維基百科瀏覽量、GDELT 全球新聞、股價與 SEC 財報，
+        整合 OpenStreetMap、多語言維基百科瀏覽量、中英文新聞報導、股價與上市公司財報，
         追蹤六大綜合度假村集團在澳門的酒店佈局、品牌關注度與市場表現。
       </p>
       <div id="status" class="status" aria-live="polite"></div>
@@ -129,23 +129,23 @@
         <p class="eyebrow">Media Coverage</p>
         <h2>媒體聲量</h2>
         <p class="section-intro">
-          GDELT 持續監測全球新聞網站。以下是過去 3 個月提及各集團旗下品牌的報導數量、語調和最新標題。
+          每 6 小時從 Google News 收集提及各集團旗下品牌的中英文報導，逐次累積，最長保留 90 日。
         </p>
         <article class="card">
           <h3>每日報導量（7 日平均）</h3>
           <div id="chart-news" class="chart tall"></div>
-          <p class="note" id="news-note">來源：The GDELT Project。查詢詞見 scripts/config.py。</p>
+          <p class="note" id="news-note">來源：Google News RSS。查詢詞見 scripts/config.py 的 NEWS_QUERIES。</p>
         </article>
         <div class="grid">
           <article class="card">
             <h3>媒體聲量佔比</h3>
             <div id="chart-sov" class="chart"></div>
-            <p class="note">各集團在過去 3 個月報導總數中的比例。同一篇報導提及多個集團時會分別計算。</p>
+            <p class="note">各集團在統計期間內的報導數比例。同一篇報導提及多個集團時會分別計算。</p>
           </article>
           <article class="card">
-            <h3>平均新聞語調</h3>
+            <h3 id="tone-title">平均新聞語調</h3>
             <div id="chart-tone" class="chart"></div>
-            <p class="note">GDELT 語調分數：0 為中性，正數偏正面，負數偏負面。按每日報導量加權平均。</p>
+            <p class="note" id="tone-note"></p>
           </article>
         </div>
         <article class="card spaced">
@@ -170,21 +170,25 @@
     <section class="band" id="finance">
       <div class="container">
         <p class="eyebrow">Financials</p>
-        <h2>母公司財務數據</h2>
+        <h2>上市公司財務數據</h2>
         <p class="section-intro">
-          來自美國 SEC 財報的結構化數據。這些是母公司的全球合併數字，包括拉斯維加斯、新加坡等澳門以外的業務，
-          不能直接當作澳門業績。銀河娛樂和澳博只在香港上市，不在此列。
+          六大承批公司上市主體的年度損益表。各公司按申報貨幣換算為美元，港元按 1 美元 = 7.8 港元換算。
         </p>
         <div class="grid">
           <article class="card">
-            <h3>季度收入</h3>
-            <div id="chart-sec-rev" class="chart"></div>
-            <p class="note">單位：億美元。第四季由全年數字減去前三季推算。新濠只提交年報，沒有季度數據。</p>
+            <h3>年度收入</h3>
+            <div id="chart-fin-rev" class="chart"></div>
+            <p class="note" id="fin-note">單位：億美元。來源：Yahoo Finance。</p>
           </article>
           <article class="card">
-            <h3>年度淨利潤（歸屬母公司）</h3>
-            <div id="chart-sec-ni" class="chart"></div>
-            <p class="note" id="sec-note">單位：億美元。來源：SEC EDGAR XBRL。</p>
+            <h3>年度淨利潤</h3>
+            <div id="chart-fin-ni" class="chart"></div>
+            <p class="note">單位：億美元。來源：Yahoo Finance。</p>
+          </article>
+          <article class="card">
+            <h3>美國母公司季度收入</h3>
+            <div id="chart-sec-rev" class="chart"></div>
+            <p class="note" id="sec-note">單位：億美元。來源：SEC EDGAR。母公司全球合併數字，包括澳門以外的業務。</p>
           </article>
         </div>
       </div>
@@ -222,16 +226,20 @@
             <p>各綜合度假村在英、中、粵、日、韓、葡文維基百科的每日瀏覽量。不含中國內地讀者。</p>
           </div>
           <div>
-            <h3>GDELT</h3>
-            <p>全球新聞報導量和語調，回溯 3 個月。語調由機器自動評分，適合看趨勢，不適合判斷單篇報導。</p>
+            <h3>Google News RSS</h3>
+            <p>中英文新聞報導，每次抓取最近 7 日並累積保存。每個查詢每次最多返回 100 篇，熱門集團的報導量可能被低估。</p>
           </div>
           <div>
             <h3>Yahoo Finance</h3>
-            <p>六大承批公司的日收市價。非官方介面，僅供研究參考。</p>
+            <p>六大承批公司上市主體的日收市價和年度損益表。非官方介面，僅供研究參考。</p>
           </div>
           <div>
-            <h3>SEC EDGAR</h3>
-            <p>Las Vegas Sands、Wynn Resorts、MGM Resorts、Melco 的財報數據。母公司全球合併數字。</p>
+            <h3>GDELT（可選）</h3>
+            <p>新聞語調分數，由機器自動評分，適合看趨勢。抓取失敗時改為顯示主要報導媒體。</p>
+          </div>
+          <div>
+            <h3>SEC EDGAR（可選）</h3>
+            <p>美國上市母公司的季度收入。需要在倉庫 Secrets 設定 SEC_CONTACT 才會抓取。</p>
           </div>
         </div>
       </div>
@@ -242,7 +250,7 @@
     <div class="container footer-inner">
       <div>
         <strong>Macau Hotel Brand Analytics</strong>
-        <p>地圖與酒店數據 © OpenStreetMap contributors (ODbL)；Wikimedia Pageviews；The GDELT Project；股價來自 Yahoo Finance；財務數據來自 SEC EDGAR。</p>
+        <p>地圖與酒店數據 © OpenStreetMap contributors (ODbL)；Wikimedia Pageviews；Google News；Yahoo Finance；The GDELT Project；SEC EDGAR。新聞標題連結至原出處。</p>
       </div>
       <p class="disclaimer">本站為獨立研究項目，與任何酒店集團均無關聯。數據僅供研究參考，不構成投資建議。</p>
     </div>
@@ -250,6 +258,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>
