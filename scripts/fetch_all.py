@@ -230,6 +230,9 @@ SEC_REVENUE_TAGS = [
 ]
 SEC_NET_INCOME_TAGS = ["NetIncomeLoss", "ProfitLoss"]
 
+# 代號表下載失敗時使用。抓取時會核對公司名稱，對不上就跳過
+SEC_FALLBACK_CIK = {"LVS": 1300514, "WYNN": 1174922, "MGM": 789570, "MLCO": 1381640}
+
 
 def _days(a: str, b: str) -> int:
     return (dt.date.fromisoformat(b) - dt.date.fromisoformat(a)).days
@@ -271,15 +274,42 @@ def sec_periods(facts: dict, tags: list, since: str = "2018-01-01") -> dict:
     }
 
 
+def sec_get(url: str, headers: dict) -> requests.Response:
+    r = None
+    for attempt in range(3):
+        r = requests.get(url, headers=headers, timeout=60)
+        if r.status_code == 403:
+            raise RuntimeError(
+                "SEC 拒絕請求 (403)。請確認 Secret SEC_CONTACT 是有效電郵，例如 name@example.com")
+        if r.status_code in (429, 500, 502, 503, 504):
+            time.sleep(5 * (attempt + 1))
+            continue
+        return r
+    r.raise_for_status()
+    return r
+
+
 def fetch_sec():
     contact = os.environ.get("SEC_CONTACT", "").strip()
-    if not contact:
-        raise RuntimeError("未設定 SEC_CONTACT。SEC 要求 User-Agent 附上聯絡電郵，請在倉庫 Secrets 中加入")
-    headers = {"User-Agent": f"MacauHotelDashboard/1.0 {contact}"}
+    if "@" not in contact:
+        raise RuntimeError(
+            "SEC_CONTACT 未設定或不是電郵。請到 Settings → Secrets and variables → Actions "
+            "新增名為 SEC_CONTACT 的 Repository secret，值填你的電郵")
+    headers = {
+        "User-Agent": f"MacauHotelDashboard {contact}",
+        "Accept-Encoding": "gzip, deflate",
+    }
 
-    r = requests.get("https://www.sec.gov/files/company_tickers.json", headers=headers, timeout=30)
-    r.raise_for_status()
-    ciks = {str(v["ticker"]).upper(): int(v["cik_str"]) for v in r.json().values()}
+    ciks = dict(SEC_FALLBACK_CIK)
+    try:
+        r = sec_get("https://www.sec.gov/files/company_tickers.json", headers)
+        r.raise_for_status()
+        for v in r.json().values():
+            t = str(v.get("ticker", "")).upper()
+            if t in SEC_COMPANIES:
+                ciks[t] = int(v["cik_str"])
+    except Exception as e:
+        print(f"  [sec] 代號表下載失敗，改用內置 CIK: {e}", flush=True)
 
     companies, missing = {}, []
     for ticker, info in SEC_COMPANIES.items():
@@ -288,28 +318,36 @@ def fetch_sec():
             missing.append(ticker)
             continue
         time.sleep(0.5)  # SEC 限制每秒最多 10 次請求
-        r = requests.get(
-            f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json",
-            headers=headers, timeout=60,
-        )
+        r = sec_get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json", headers)
         if r.status_code == 404:
             missing.append(ticker)
+            print(f"  [sec] {ticker} 沒有 XBRL 數據", flush=True)
             continue
         r.raise_for_status()
         body = r.json()
+
+        entity = body.get("entityName", "")
+        expected = info["name"].split()[0].lower()
+        if expected not in entity.lower():
+            missing.append(f"{ticker}（CIK 對應到 {entity}）")
+            print(f"  [sec] {ticker} 的 CIK 對應到 {entity}，跳過", flush=True)
+            continue
+
         gaap = body.get("facts", {}).get("us-gaap", {})
         revenue = sec_periods(gaap, SEC_REVENUE_TAGS)
         if not revenue["quarterly"] and not revenue["annual"]:
             missing.append(ticker)
+            print(f"  [sec] {ticker} 找不到收入數據", flush=True)
             continue
         companies[ticker] = {
             "group": info["group"],
             "name": info["name"],
-            "entity": body.get("entityName", ""),
+            "entity": entity,
             "cik": cik,
             "revenue": revenue,
             "net_income": sec_periods(gaap, SEC_NET_INCOME_TAGS),
         }
+        print(f"  [sec] {ticker} 完成：{len(revenue['quarterly'])} 季、{len(revenue['annual'])} 年", flush=True)
 
     if not companies:
         raise RuntimeError(f"SEC 沒有任何公司的數據，缺少: {missing}")
@@ -334,10 +372,16 @@ class GdeltOutOfTime(Exception):
     """剩餘時間不夠再發一次請求"""
 
 
+class GdeltUnreachable(Exception):
+    """一開始就連續連線失敗，判斷為 GDELT 暫時不接受請求"""
+
+
 class GdeltClient:
     def __init__(self, budget: int):
         self.deadline = time.monotonic() + budget
         self.next_allowed = 0.0
+        self.ok_count = 0
+        self.net_fail = 0
 
     def left(self) -> float:
         return self.deadline - time.monotonic()
@@ -348,14 +392,19 @@ class GdeltClient:
         last_err = "未知錯誤"
         for _ in range(2):  # 最多重試 1 次
             wait = max(0.0, self.next_allowed - time.monotonic())
-            if self.left() < wait + GDELT_TIMEOUT[0] + GDELT_TIMEOUT[1]:
+            if self.left() < wait + sum(GDELT_TIMEOUT):
                 raise GdeltOutOfTime()
             time.sleep(wait)
             try:
                 r = SESSION.get(GDELT_URL, params=params, timeout=GDELT_TIMEOUT)
             except (requests.Timeout, requests.ConnectionError) as e:
-                last_err = f"{type(e).__name__}"
                 self.next_allowed = time.monotonic() + GDELT_GAP
+                self.net_fail += 1
+                last_err = type(e).__name__
+                if self.ok_count == 0 and self.net_fail >= 3:
+                    raise GdeltUnreachable(
+                        f"連續 {self.net_fail} 次連線失敗（{last_err}），"
+                        "GDELT 可能暫時不接受 GitHub Actions 的請求，請稍後再執行")
                 continue
             self.next_allowed = time.monotonic() + GDELT_GAP
 
@@ -364,15 +413,17 @@ class GdeltClient:
                 last_err = "被限流"
                 self.next_allowed = time.monotonic() + 15
                 continue
-            r.raise_for_status()
+            if r.status_code >= 400:
+                raise RuntimeError(f"HTTP {r.status_code}：{text[:120]}")
+            self.ok_count += 1
             if not text.strip():
                 return {}
             try:
-                return r.json()
+                # strict=False：新聞標題裡的控制字元會令標準解析失敗
+                return json.loads(text, strict=False)
             except ValueError:
-                # 查詢語法錯誤或服務異常時 GDELT 會返回純文字或 HTML
-                raise RuntimeError(f"GDELT 回應不是 JSON：{text[:150]}")
-        raise RuntimeError(f"GDELT 請求失敗：{last_err}")
+                raise RuntimeError(f"回應不是 JSON：{text[:150]}")
+        raise RuntimeError(f"請求失敗：{last_err}")
 
 
 def timeline_points(data: dict, how: str) -> list:
@@ -410,57 +461,69 @@ def clean_article(a: dict) -> dict:
 def fetch_gdelt():
     prev = load_previous("gdelt").get("groups", {})
     client = GdeltClient(GDELT_BUDGET)
-
+    groups = {k: dict(prev.get(k, {})) for k in GDELT_QUERIES}
     # 上次更新最舊的集團排前面。時間不夠時，被跳過的集團下次會優先處理
     order = sorted(GDELT_QUERIES, key=lambda k: prev.get(k, {}).get("updated", ""))
-    groups, errors, refreshed, skipped = {}, {}, [], []
+    errors, skipped, refreshed = {}, [], []
+    state = {"out_of_time": False}
 
-    for key in order:
-        query = GDELT_QUERIES[key]
-        print(f"  [gdelt] {key}（剩餘 {int(client.left())} 秒）", flush=True)
-        try:
-            volume = timeline_points(client.get(query, "timelinevolraw"), "sum")
-            tone = timeline_points(client.get(query, "timelinetone"), "mean")
-            arts = client.get(query, "artlist", maxrecords=10, sort="DateDesc").get("articles", [])
-        except GdeltOutOfTime:
-            skipped.append(key)
-            if key in prev:  # 沿用上次的數據，不算失敗
-                groups[key] = prev[key]
-            print(f"  [gdelt] {key} 時間不夠，留待下次", flush=True)
-            continue
-        except Exception as e:
-            errors[key] = f"{type(e).__name__}: {e}"
-            if key in prev:
-                groups[key] = {**prev[key], "stale": True}
-            print(f"  [gdelt] {key} 失敗: {e}", flush=True)
-            continue
-
-        counts = dict(volume)
-        weight = sum(counts.get(d, 0) for d, _ in tone)
-        avg_tone = sum(t * counts.get(d, 0) for d, t in tone) / weight if weight else None
-        groups[key] = {
-            "query": query,
-            "volume": volume,
-            "tone": tone,
-            "total": sum(counts.values()),
-            "avg_tone": round(avg_tone, 3) if avg_tone is not None else None,
-            "articles": [
-                clean_article(a) for a in arts
-                if str(a.get("url", "")).startswith(("http://", "https://"))
-            ],
-            "updated": now_iso(),
-        }
+    def volume(key, g):
+        q = GDELT_QUERIES[key]
+        pts = timeline_points(client.get(q, "timelinevolraw"), "sum")
+        g.update(query=q, volume=pts, total=sum(v for _, v in pts), updated=now_iso())
+        g.pop("stale", None)
         refreshed.append(key)
-        print(f"  [gdelt] {key} 完成，{groups[key]['total']} 篇", flush=True)
+
+    def articles(key, g):
+        arts = client.get(GDELT_QUERIES[key], "artlist", maxrecords=10, sort="DateDesc")
+        g["articles"] = [
+            clean_article(a) for a in arts.get("articles", [])
+            if str(a.get("url", "")).startswith(("http://", "https://"))
+        ]
+
+    def tone(key, g):
+        pts = timeline_points(client.get(GDELT_QUERIES[key], "timelinetone"), "mean")
+        counts = dict(g.get("volume", []))
+        weight = sum(counts.get(d, 0) for d, _ in pts)
+        g["tone"] = pts
+        g["avg_tone"] = (
+            round(sum(t * counts.get(d, 0) for d, t in pts) / weight, 3) if weight else None
+        )
+
+    def run(part, fn, key):
+        if state["out_of_time"]:
+            skipped.append(f"{key}:{part}")
+            return
+        try:
+            fn(key, groups[key])
+            print(f"  [gdelt] {key} {part} 完成（剩餘 {int(client.left())} 秒）", flush=True)
+        except GdeltOutOfTime:
+            state["out_of_time"] = True
+            skipped.append(f"{key}:{part}")
+            print(f"  [gdelt] 時間用完，{key} {part} 及之後的請求留待下次", flush=True)
+        except GdeltUnreachable:
+            raise
+        except Exception as e:
+            errors[f"{key}:{part}"] = f"{type(e).__name__}: {e}"
+            print(f"  [gdelt] {key} {part} 失敗: {e}", flush=True)
+
+    # 先抓所有集團的報導量（聲量圖表最需要），再抓新聞標題，最後抓語調
+    for part, fn in (("volume", volume), ("articles", articles), ("tone", tone)):
+        for key in order:
+            run(part, fn, key)
+
+    for key, g in groups.items():
+        if f"{key}:volume" in errors and g.get("volume"):
+            g["stale"] = True  # 本次失敗，顯示上次的數據
 
     if not refreshed:
-        raise RuntimeError(f"GDELT 本次沒有成功更新任何集團。錯誤: {errors}；跳過: {skipped}")
+        raise RuntimeError(f"本次沒有更新任何集團的報導量。錯誤: {errors}；跳過: {skipped}")
 
     save("gdelt", {
         "updated": now_iso(),
         "source": "The GDELT Project, DOC 2.0 API",
         "timespan": GDELT_TIMESPAN,
-        "groups": {k: groups[k] for k in GDELT_QUERIES if k in groups},  # 固定顯示順序
+        "groups": {k: groups[k] for k in GDELT_QUERIES if groups[k].get("volume")},
         "errors": errors,
         "skipped": skipped,
     })
