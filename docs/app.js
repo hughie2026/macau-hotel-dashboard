@@ -4,7 +4,6 @@ const RED = "#b5121b";
 const OTHER = { name: "其他 / 獨立", color: "#9a9a9a" };
 const SOURCES = {
   osm: "OpenStreetMap",
-  wikidata: "Wikidata",
   pageviews: "維基瀏覽量",
   gdelt: "GDELT 新聞",
   stocks: "股價",
@@ -87,15 +86,15 @@ const sortedPoints = (m) => [...m.entries()].sort((a, b) => (a[0] < b[0] ? -1 : 
 const lineLegend = { type: "scroll", icon: "rect", itemWidth: 14, itemHeight: 4 };
 
 (async function main() {
-  const [meta, osm, wd, views, stocks, news, sec] = await Promise.all(
-    ["meta", "osm_hotels", "wikidata_hotels", "pageviews", "stocks", "gdelt", "sec"].map(load));
+  const [meta, osm, views, stocks, news, sec] = await Promise.all(
+    ["meta", "osm_hotels", "pageviews", "stocks", "gdelt", "sec"].map(load));
 
   const groups = meta?.groups ?? {};
   const gInfo = (k) => groups[k] ?? OTHER;
   const groupKeys = [...Object.keys(groups), null];
 
   renderStatus(meta);
-  renderKpis(osm, wd, stocks, news);
+  renderKpis(osm, stocks, news);
 
   if (osm?.hotels?.length) {
     renderMap(osm.hotels, groupKeys, gInfo);
@@ -105,8 +104,6 @@ const lineLegend = { type: "scroll", icon: "rect", itemWidth: 14, itemHeight: 4 
   } else {
     ["map", "chart-count", "chart-brands"].forEach((id) => empty(id));
   }
-
-  wd?.hotels?.length ? renderRooms(wd.hotels, groupKeys, gInfo) : empty("chart-rooms");
 
   if (views?.articles) {
     renderViews(views, gInfo);
@@ -156,18 +153,13 @@ function renderStatus(meta) {
   }
 }
 
-function renderKpis(osm, wd, stocks, news) {
+function renderKpis(osm, stocks, news) {
   const items = [];
   if (osm?.hotels) {
     const n = osm.hotels.length;
     const inGroups = osm.hotels.filter((h) => h.group).length;
     items.push(["OSM 收錄酒店", n.toLocaleString(), "間"]);
     items.push(["六大集團旗下", inGroups.toLocaleString(), `間，佔 ${n ? Math.round((inGroups / n) * 100) : 0}%`]);
-  }
-  if (wd?.hotels) {
-    const withRooms = wd.hotels.filter((h) => h.rooms);
-    const total = withRooms.reduce((s, h) => s + h.rooms, 0);
-    items.push(["已知客房總數", total.toLocaleString(), `間房，來自 ${withRooms.length} 間酒店`]);
   }
   if (news?.groups) {
     const total = Object.values(news.groups).reduce((s, g) => s + (g.total || 0), 0);
@@ -255,16 +247,6 @@ function barChart(id, labels, values, colors) {
 function renderCount(hotels, keys, gInfo) {
   const counts = keys.map((k) => hotels.filter((h) => (h.group ?? null) === k).length);
   barChart("chart-count", keys.map((k) => gInfo(k).name), counts, keys.map((k) => gInfo(k).color));
-}
-
-function renderRooms(hotels, keys, gInfo) {
-  const withRooms = hotels.filter((h) => h.rooms);
-  if (!withRooms.length) return empty("chart-rooms", "Wikidata 暫無客房數據");
-  const sums = keys.map((k) =>
-    withRooms.filter((h) => (h.group ?? null) === k).reduce((s, h) => s + h.rooms, 0));
-  barChart("chart-rooms", keys.map((k) => gInfo(k).name), sums, keys.map((k) => gInfo(k).color));
-  document.getElementById("rooms-note").textContent =
-    `來源：Wikidata。${hotels.length} 間酒店中只有 ${withRooms.length} 間有客房數，數字偏低屬正常。`;
 }
 
 function renderBrands(hotels) {
