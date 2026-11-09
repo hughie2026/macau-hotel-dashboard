@@ -1,0 +1,57 @@
+{
+ "osm": {
+  "ok": true,
+  "updated": "2026-11-09T01:41:53+00:00",
+  "info": {
+   "hotels": 115
+  }
+ },
+ "wikidata": {
+  "ok": false,
+  "last_error": "HTTPError: 504 Server Error: Gateway Timeout for url: https://query.wikidata.org/sparql?query=%0ASELECT+%3Fhotel+%3FhotelLabel+%3FenLabel+%3FoperatorLabel+%3FownerLabel+%3Frooms+%3Fopening+%3Fcoord+WHERE+%7B%0A++%3Fhotel+wdt%3AP131%2A+wd%3AQ14773+.%0A++%3Fhotel+wdt%3AP31%2Fwdt%3AP279%2A+wd%3AQ27686+.%0A++OPTIONAL+%7B+%3Fhotel+rdfs%3Alabel+%3FenLabel+.+FILTER%28LANG%28%3FenLabel%29+%3D+%22en%22%29+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP137+%3Foperator+.+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP127+%3Fowner+.+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP8733+%3Frooms+.+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP1619+%3Fopening+.+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP625+%3Fcoord+.+%7D%0A++SERVICE+wikibase%3Alabel+%7B+bd%3AserviceParam+wikibase%3Alanguage+%22zh-hant%2Czh%2Cen%22.+%7D%0A%7D%0A&format=json",
+  "last_attempt": "2026-11-09T01:42:58+00:00"
+ },
+ "pageviews": {
+  "ok": true,
+  "updated": "2026-11-09T01:43:03+00:00",
+  "info": {
+   "articles": 13,
+   "missing": [
+    "Grand_Lisboa_Palace"
+   ]
+  }
+ },
+ "stocks": {
+  "ok": true,
+  "updated": "2026-11-09T01:43:04+00:00",
+  "info": {
+   "tickers": 6
+  }
+ },
+ "groups": {
+  "galaxy": {
+   "name": "銀河娛樂",
+   "color": "#c99700"
+  },
+  "sands": {
+   "name": "金沙中國",
+   "color": "#1f5aa6"
+  },
+  "melco": {
+   "name": "新濠博亞",
+   "color": "#57068c"
+  },
+  "mgm": {
+   "name": "美高梅中國",
+   "color": "#b5121b"
+  },
+  "wynn": {
+   "name": "永利澳門",
+   "color": "#d36b00"
+  },
+  "sjm": {
+   "name": "澳門博彩控股",
+   "color": "#00857c"
+  }
+ }
+}
