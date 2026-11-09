@@ -188,104 +188,6 @@ def fetch_pageviews(days: int = 180):
     return {"articles": len(articles), "missing": missing, "errors": len(errors)}
 
 
-# ---------- GDELT 新聞聲量 ----------
-GDELT_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
-
-
-def gdelt_request(query: str, mode: str, **extra) -> dict:
-    params = {"query": query, "mode": mode, "format": "json", "timespan": "3months", **extra}
-    for _ in range(3):
-        time.sleep(6)  # GDELT 要求每 5 秒最多一次請求
-        r = SESSION.get(GDELT_URL, params=params, timeout=90)
-        if r.status_code == 429 or "limit requests" in r.text[:300].lower():
-            time.sleep(30)
-            continue
-        r.raise_for_status()
-        if not r.text.strip():
-            return {}
-        try:
-            return r.json()
-        except ValueError:
-            # 查詢語法錯誤時 GDELT 會返回純文字說明
-            raise RuntimeError(f"GDELT 回應不是 JSON：{r.text[:150]}")
-    raise RuntimeError("GDELT 持續限流")
-
-
-def timeline_points(data: dict, how: str) -> list:
-    """把 GDELT 時間線整理成每日數據。how='sum' 加總，'mean' 取平均。"""
-    series = (data.get("timeline") or [{}])[0].get("data", [])
-    buckets = {}
-    for p in series:
-        d, v = str(p.get("date", "")), p.get("value")
-        if len(d) < 8 or v is None:
-            continue
-        buckets.setdefault(f"{d[:4]}-{d[4:6]}-{d[6:8]}", []).append(float(v))
-    out = []
-    for day in sorted(buckets):
-        vals = buckets[day]
-        if how == "sum":
-            out.append([day, int(sum(vals))])
-        else:
-            out.append([day, round(sum(vals) / len(vals), 3)])
-    return out
-
-
-def clean_article(a: dict) -> dict:
-    s = str(a.get("seendate", ""))
-    date = f"{s[:4]}-{s[4:6]}-{s[6:8]}T{s[9:11]}:{s[11:13]}:{s[13:15]}Z" if len(s) >= 15 else ""
-    return {
-        "title": a.get("title", ""),
-        "url": a["url"],
-        "domain": a.get("domain", ""),
-        "language": a.get("language", ""),
-        "country": a.get("sourcecountry", ""),
-        "date": date,
-    }
-
-
-def fetch_gdelt():
-    prev = load_previous("gdelt").get("groups", {})
-    groups, errors = {}, {}
-
-    for key, query in GDELT_QUERIES.items():
-        try:
-            volume = timeline_points(gdelt_request(query, "timelinevolraw"), "sum")
-            tone = timeline_points(gdelt_request(query, "timelinetone"), "mean")
-            arts = gdelt_request(query, "artlist", maxrecords=10, sort="DateDesc").get("articles", [])
-        except Exception as e:
-            errors[key] = f"{type(e).__name__}: {e}"
-            if key in prev:  # 沿用上次成功的數據
-                groups[key] = {**prev[key], "stale": True}
-            continue
-
-        counts = dict(volume)
-        weight = sum(counts.get(d, 0) for d, _ in tone)
-        avg_tone = sum(t * counts.get(d, 0) for d, t in tone) / weight if weight else None
-        groups[key] = {
-            "query": query,
-            "volume": volume,
-            "tone": tone,
-            "total": sum(counts.values()),
-            "avg_tone": round(avg_tone, 3) if avg_tone is not None else None,
-            "articles": [
-                clean_article(a) for a in arts
-                if str(a.get("url", "")).startswith(("http://", "https://"))
-            ],
-            "updated": now_iso(),
-        }
-
-    if not any(not g.get("stale") for g in groups.values()):
-        raise RuntimeError(f"GDELT 全部查詢失敗: {errors}")
-    save("gdelt", {
-        "updated": now_iso(),
-        "source": "The GDELT Project, DOC 2.0 API",
-        "timespan": "3months",
-        "groups": groups,
-        "errors": errors,
-    })
-    return {"groups": len(groups), "errors": list(errors)}
-
-
 # ---------- 股價 ----------
 def fetch_stocks():
     import yfinance as yf
@@ -420,24 +322,172 @@ def fetch_sec():
     return {"companies": len(companies), "missing": missing}
 
 
+# ---------- GDELT 新聞聲量 ----------
+GDELT_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
+GDELT_TIMESPAN = "3months"
+GDELT_BUDGET = int(os.environ.get("GDELT_BUDGET", "300"))  # GDELT 總共最多用多少秒
+GDELT_GAP = 5.5           # GDELT 要求每 5 秒最多一次請求
+GDELT_TIMEOUT = (10, 40)  # (連線, 讀取) 秒
+
+
+class GdeltOutOfTime(Exception):
+    """剩餘時間不夠再發一次請求"""
+
+
+class GdeltClient:
+    def __init__(self, budget: int):
+        self.deadline = time.monotonic() + budget
+        self.next_allowed = 0.0
+
+    def left(self) -> float:
+        return self.deadline - time.monotonic()
+
+    def get(self, query: str, mode: str, **extra) -> dict:
+        params = {"query": query, "mode": mode, "format": "json",
+                  "timespan": GDELT_TIMESPAN, **extra}
+        last_err = "未知錯誤"
+        for _ in range(2):  # 最多重試 1 次
+            wait = max(0.0, self.next_allowed - time.monotonic())
+            if self.left() < wait + GDELT_TIMEOUT[0] + GDELT_TIMEOUT[1]:
+                raise GdeltOutOfTime()
+            time.sleep(wait)
+            try:
+                r = SESSION.get(GDELT_URL, params=params, timeout=GDELT_TIMEOUT)
+            except (requests.Timeout, requests.ConnectionError) as e:
+                last_err = f"{type(e).__name__}"
+                self.next_allowed = time.monotonic() + GDELT_GAP
+                continue
+            self.next_allowed = time.monotonic() + GDELT_GAP
+
+            text = r.text
+            if r.status_code == 429 or "limit requests" in text[:300].lower():
+                last_err = "被限流"
+                self.next_allowed = time.monotonic() + 15
+                continue
+            r.raise_for_status()
+            if not text.strip():
+                return {}
+            try:
+                return r.json()
+            except ValueError:
+                # 查詢語法錯誤或服務異常時 GDELT 會返回純文字或 HTML
+                raise RuntimeError(f"GDELT 回應不是 JSON：{text[:150]}")
+        raise RuntimeError(f"GDELT 請求失敗：{last_err}")
+
+
+def timeline_points(data: dict, how: str) -> list:
+    """把 GDELT 時間線整理成每日數據。how='sum' 加總，'mean' 取平均。"""
+    series = (data.get("timeline") or [{}])[0].get("data", [])
+    buckets = {}
+    for p in series:
+        d, v = str(p.get("date", "")), p.get("value")
+        if len(d) < 8 or v is None:
+            continue
+        buckets.setdefault(f"{d[:4]}-{d[4:6]}-{d[6:8]}", []).append(float(v))
+    out = []
+    for day in sorted(buckets):
+        vals = buckets[day]
+        if how == "sum":
+            out.append([day, int(sum(vals))])
+        else:
+            out.append([day, round(sum(vals) / len(vals), 3)])
+    return out
+
+
+def clean_article(a: dict) -> dict:
+    s = str(a.get("seendate", ""))
+    date = f"{s[:4]}-{s[4:6]}-{s[6:8]}T{s[9:11]}:{s[11:13]}:{s[13:15]}Z" if len(s) >= 15 else ""
+    return {
+        "title": a.get("title", ""),
+        "url": a["url"],
+        "domain": a.get("domain", ""),
+        "language": a.get("language", ""),
+        "country": a.get("sourcecountry", ""),
+        "date": date,
+    }
+
+
+def fetch_gdelt():
+    prev = load_previous("gdelt").get("groups", {})
+    client = GdeltClient(GDELT_BUDGET)
+
+    # 上次更新最舊的集團排前面。時間不夠時，被跳過的集團下次會優先處理
+    order = sorted(GDELT_QUERIES, key=lambda k: prev.get(k, {}).get("updated", ""))
+    groups, errors, refreshed, skipped = {}, {}, [], []
+
+    for key in order:
+        query = GDELT_QUERIES[key]
+        print(f"  [gdelt] {key}（剩餘 {int(client.left())} 秒）", flush=True)
+        try:
+            volume = timeline_points(client.get(query, "timelinevolraw"), "sum")
+            tone = timeline_points(client.get(query, "timelinetone"), "mean")
+            arts = client.get(query, "artlist", maxrecords=10, sort="DateDesc").get("articles", [])
+        except GdeltOutOfTime:
+            skipped.append(key)
+            if key in prev:  # 沿用上次的數據，不算失敗
+                groups[key] = prev[key]
+            print(f"  [gdelt] {key} 時間不夠，留待下次", flush=True)
+            continue
+        except Exception as e:
+            errors[key] = f"{type(e).__name__}: {e}"
+            if key in prev:
+                groups[key] = {**prev[key], "stale": True}
+            print(f"  [gdelt] {key} 失敗: {e}", flush=True)
+            continue
+
+        counts = dict(volume)
+        weight = sum(counts.get(d, 0) for d, _ in tone)
+        avg_tone = sum(t * counts.get(d, 0) for d, t in tone) / weight if weight else None
+        groups[key] = {
+            "query": query,
+            "volume": volume,
+            "tone": tone,
+            "total": sum(counts.values()),
+            "avg_tone": round(avg_tone, 3) if avg_tone is not None else None,
+            "articles": [
+                clean_article(a) for a in arts
+                if str(a.get("url", "")).startswith(("http://", "https://"))
+            ],
+            "updated": now_iso(),
+        }
+        refreshed.append(key)
+        print(f"  [gdelt] {key} 完成，{groups[key]['total']} 篇", flush=True)
+
+    if not refreshed:
+        raise RuntimeError(f"GDELT 本次沒有成功更新任何集團。錯誤: {errors}；跳過: {skipped}")
+
+    save("gdelt", {
+        "updated": now_iso(),
+        "source": "The GDELT Project, DOC 2.0 API",
+        "timespan": GDELT_TIMESPAN,
+        "groups": {k: groups[k] for k in GDELT_QUERIES if k in groups},  # 固定顯示順序
+        "errors": errors,
+        "skipped": skipped,
+    })
+    return {"refreshed": refreshed, "skipped": skipped, "errors": list(errors)}
+
+
 def main():
     meta = load_previous("meta")
     meta.pop("wikidata", None)  # 清除已移除數據源的舊記錄
+    meta["groups"] = {k: {"name": g["name"], "color": g["color"]} for k, g in GROUPS.items()}
 
+    # GDELT 最慢、最不穩定，放在最後
     jobs = {
         "osm": fetch_osm,
         "pageviews": fetch_pageviews,
-        "gdelt": fetch_gdelt,
         "stocks": fetch_stocks,
         "sec": fetch_sec,
+        "gdelt": fetch_gdelt,
     }
     failed = 0
     for name, fn in jobs.items():
         print(f"[{name}] 抓取中…", flush=True)
+        started = time.monotonic()
         try:
             info = fn()
             meta[name] = {"ok": True, "updated": now_iso(), "info": info}
-            print(f"[{name}] 完成: {info}", flush=True)
+            print(f"[{name}] 完成（{time.monotonic() - started:.0f} 秒）: {info}", flush=True)
         except Exception as e:
             failed += 1
             prev = meta.get(name, {})
@@ -446,10 +496,9 @@ def main():
                 "last_error": f"{type(e).__name__}: {e}",
                 "last_attempt": now_iso(),
             }
-            print(f"[{name}] 失敗: {e}", file=sys.stderr, flush=True)
+            print(f"[{name}] 失敗（{time.monotonic() - started:.0f} 秒）: {e}", file=sys.stderr, flush=True)
+        save("meta", meta)  # 每完成一個數據源就保存，即使後面卡住也不會丟失
 
-    meta["groups"] = {k: {"name": g["name"], "color": g["color"]} for k, g in GROUPS.items()}
-    save("meta", meta)
     sys.exit(1 if failed == len(jobs) else 0)
 
 
