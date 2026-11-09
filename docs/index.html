@@ -6,7 +6,7 @@
   <title>澳門酒店業品牌分析 | Macau Hotel Brand Analytics</title>
   <meta name="theme-color" content="#57068c">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#overview">跳到主要內容</a>
@@ -46,7 +46,7 @@
       <p class="eyebrow eyebrow-light">Data Dashboard</p>
       <h1>澳門酒店業品牌分析</h1>
       <p class="lead">
-        整合 OpenStreetMap、Wikidata、多語言維基百科瀏覽量、GDELT 全球新聞、股價與 SEC 財報，
+        整合 OpenStreetMap、多語言維基百科瀏覽量、GDELT 全球新聞、股價與 SEC 財報，
         追蹤六大綜合度假村集團在澳門的酒店佈局、品牌關注度與市場表現。
       </p>
       <div id="status" class="status" aria-live="polite"></div>
@@ -81,11 +81,6 @@
             <h3>各集團酒店數量</h3>
             <div id="chart-count" class="chart"></div>
             <p class="note">來源：OpenStreetMap。歸屬按名稱關鍵字判斷，見 scripts/config.py。</p>
-          </article>
-          <article class="card">
-            <h3>各集團客房數</h3>
-            <div id="chart-rooms" class="chart"></div>
-            <p class="note" id="rooms-note">來源：Wikidata。</p>
           </article>
           <article class="card">
             <h3>國際酒店品牌</h3>
@@ -223,10 +218,6 @@
             <p>澳門所有標記為酒店的地點，包括名稱、座標、星級和品牌。授權：ODbL。</p>
           </div>
           <div>
-            <h3>Wikidata</h3>
-            <p>酒店的營運商、業主、客房數和開業年份。客房數覆蓋不完整。授權：CC0。</p>
-          </div>
-          <div>
             <h3>Wikimedia Pageviews</h3>
             <p>各綜合度假村在英、中、粵、日、韓、葡文維基百科的每日瀏覽量。不含中國內地讀者。</p>
           </div>
@@ -251,14 +242,14 @@
     <div class="container footer-inner">
       <div>
         <strong>Macau Hotel Brand Analytics</strong>
-        <p>地圖與酒店數據 © OpenStreetMap contributors (ODbL)；Wikidata (CC0)；Wikimedia Pageviews；The GDELT Project；股價來自 Yahoo Finance；財務數據來自 SEC EDGAR。</p>
+        <p>地圖與酒店數據 © OpenStreetMap contributors (ODbL)；Wikimedia Pageviews；The GDELT Project；股價來自 Yahoo Finance；財務數據來自 SEC EDGAR。</p>
       </div>
-      <p class="disclaimer">本站為獨立研究項目，與任何酒店集團均無關聯。數據僅供研究參考，不構成投資建議。</p>
+      <p class="disclaimer">本站為獨立研究項目，與紐約大學及任何酒店集團均無關聯。數據僅供研究參考，不構成投資建議。</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
