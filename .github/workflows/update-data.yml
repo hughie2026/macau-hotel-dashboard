@@ -35,10 +35,10 @@ jobs:
 
       - name: Fetch data
         timeout-minutes: 15
-        continue-on-error: true   # 即使抓取卡住被終止，已保存的數據仍會提交和部署
+        continue-on-error: true   # 即使抓取被終止，已保存的數據仍會提交和部署
         env:
           SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
-          GDELT_BUDGET: "300"     # GDELT 最多用 5 分鐘
+          GDELT_BUDGET: "180"     # GDELT 最多用 3 分鐘
         run: python scripts/fetch_all.py
 
       - name: Commit data
