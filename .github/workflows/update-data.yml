@@ -19,6 +19,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -33,6 +34,8 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Fetch data
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
         run: python scripts/fetch_all.py
 
       - name: Commit data
