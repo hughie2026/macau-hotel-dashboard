@@ -78,8 +78,42 @@ WIKI_LANGS = {
     "pt": {"name": "葡文", "color": "#c99700"},
 }
 
-# GDELT 新聞查詢。用完整詞組避免誤中，例如只寫 "Galaxy" 會混入三星手機的新聞。
-# 語法：詞組用雙引號，多個詞組用 OR 連接並放在括號內
+# Google News RSS 查詢（主要的媒體聲量來源）。詞組用雙引號，多個詞組用 OR 連接。
+# 中文詞組盡量帶「澳門」，避免混入其他城市的同名酒店
+NEWS_QUERIES = {
+    "galaxy": {
+        "en": '"Galaxy Macau" OR "Galaxy Entertainment" OR "StarWorld Macau"',
+        "zh": '"澳門銀河" OR "銀河娛樂" OR "澳門星際酒店"',
+    },
+    "sands": {
+        "en": '"Sands China" OR "Venetian Macao" OR "Parisian Macao" OR "Londoner Macao"',
+        "zh": '"金沙中國" OR "澳門威尼斯人" OR "澳門巴黎人" OR "澳門倫敦人"',
+    },
+    "melco": {
+        "en": '"Melco Resorts" OR "City of Dreams Macau" OR "Studio City Macau"',
+        "zh": '"新濠博亞" OR "新濠天地" OR "新濠影滙"',
+    },
+    "mgm": {
+        "en": '"MGM China" OR "MGM Macau" OR "MGM Cotai"',
+        "zh": '"美高梅中國" OR "澳門美高梅" OR "美獅美高梅"',
+    },
+    "wynn": {
+        "en": '"Wynn Macau" OR "Wynn Palace"',
+        "zh": '"永利澳門" OR "永利皇宮"',
+    },
+    "sjm": {
+        "en": '"SJM Holdings" OR "SJM Resorts" OR "Grand Lisboa"',
+        "zh": '"澳博控股" OR "新葡京" OR "上葡京"',
+    },
+}
+
+# Google News 的語言版本
+NEWS_EDITIONS = {
+    "en": {"hl": "en-US", "gl": "US", "ceid": "US:en"},
+    "zh": {"hl": "zh-HK", "gl": "HK", "ceid": "HK:zh-Hant"},
+}
+
+# GDELT 查詢（只用來取得新聞語調，可選）。語法：詞組用雙引號，OR 連接並放在括號內
 GDELT_QUERIES = {
     "galaxy": '("Galaxy Macau" OR "Galaxy Entertainment" OR "StarWorld Macau" OR "Broadway Macau")',
     "sands": '("Sands China" OR "Venetian Macao" OR "Venetian Macau" OR "Parisian Macao" OR "Londoner Macao")',
@@ -89,7 +123,7 @@ GDELT_QUERIES = {
     "sjm": '("SJM Holdings" OR "SJM Resorts" OR "Grand Lisboa")',
 }
 
-# Yahoo Finance 代號 -> 集團
+# Yahoo Finance 代號 -> 集團。股價和年度財報都用這份列表
 TICKERS = {
     "1928.HK": "sands",
     "0027.HK": "galaxy",
@@ -99,7 +133,20 @@ TICKERS = {
     "MLCO": "melco",
 }
 
-# 在美國 SEC 申報的母公司（美股代號）。CIK 編號會自動從 SEC 的代號表查出
+# 財報的申報貨幣。Yahoo 有提供 financialCurrency 時以 Yahoo 為準，這裡只是後備
+FIN_CURRENCY = {
+    "1928.HK": "USD",
+    "0027.HK": "HKD",
+    "2282.HK": "HKD",
+    "1128.HK": "HKD",
+    "0880.HK": "HKD",
+    "MLCO": "USD",
+}
+
+# 1 美元可兌換多少該貨幣。港元聯繫匯率區間為 7.75 至 7.85，取中間值
+FX_TO_USD = {"USD": 1.0, "HKD": 7.8, "MOP": 8.03}
+
+# 在美國 SEC 申報的母公司（可選，需要設定 SEC_CONTACT）
 SEC_COMPANIES = {
     "LVS": {"group": "sands", "name": "Las Vegas Sands"},
     "WYNN": {"group": "wynn", "name": "Wynn Resorts"},
