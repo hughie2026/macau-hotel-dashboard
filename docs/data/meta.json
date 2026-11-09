@@ -1,31 +1,26 @@
 {
  "osm": {
-  "ok": false,
-  "updated": "2026-11-09T01:41:53+00:00",
+  "ok": true,
+  "updated": "2026-11-09T02:36:03+00:00",
   "info": {
    "hotels": 115
-  },
-  "last_error": "RuntimeError: 所有 Overpass 鏡像失敗: 504 Server Error: Gateway Timeout for url: https://overpass.kumi.systems/api/interpreter",
-  "last_attempt": "2026-11-09T01:54:27+00:00"
- },
- "wikidata": {
-  "ok": false,
-  "last_error": "HTTPError: 504 Server Error: Gateway Timeout for url: https://query.wikidata.org/sparql?query=%0ASELECT+%3Fhotel+%3FhotelLabel+%3FenLabel+%3FoperatorLabel+%3FownerLabel+%3Frooms+%3Fopening+%3Fcoord+WHERE+%7B%0A++%3Fhotel+wdt%3AP131%2A+wd%3AQ14773+.%0A++%3Fhotel+wdt%3AP31%2Fwdt%3AP279%2A+wd%3AQ27686+.%0A++OPTIONAL+%7B+%3Fhotel+rdfs%3Alabel+%3FenLabel+.+FILTER%28LANG%28%3FenLabel%29+%3D+%22en%22%29+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP137+%3Foperator+.+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP127+%3Fowner+.+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP8733+%3Frooms+.+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP1619+%3Fopening+.+%7D%0A++OPTIONAL+%7B+%3Fhotel+wdt%3AP625+%3Fcoord+.+%7D%0A++SERVICE+wikibase%3Alabel+%7B+bd%3AserviceParam+wikibase%3Alanguage+%22zh-hant%2Czh%2Cen%22.+%7D%0A%7D%0A&format=json",
-  "last_attempt": "2026-11-09T01:55:32+00:00"
+  }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-09T01:55:36+00:00",
+  "updated": "2026-11-09T02:36:15+00:00",
   "info": {
-   "articles": 13,
+   "articles": 12,
    "missing": [
+    "City_of_Dreams_(Macau)",
     "Grand_Lisboa_Palace"
-   ]
+   ],
+   "errors": 0
   }
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-09T01:55:38+00:00",
+  "updated": "2026-11-09T02:36:18+00:00",
   "info": {
    "tickers": 6
   }
@@ -55,5 +50,15 @@
    "name": "澳門博彩控股",
    "color": "#00857c"
   }
+ },
+ "sec": {
+  "ok": false,
+  "last_error": "RuntimeError: 未設定 SEC_CONTACT。SEC 要求 User-Agent 附上聯絡電郵，請在倉庫 Secrets 中加入",
+  "last_attempt": "2026-11-09T02:36:18+00:00"
+ },
+ "gdelt": {
+  "ok": false,
+  "last_error": "RuntimeError: GDELT 本次沒有成功更新任何集團。錯誤: {'galaxy': 'RuntimeError: GDELT 請求失敗：被限流', 'sands': 'RuntimeError: GDELT 請求失敗：被限流', 'melco': 'RuntimeError: GDELT 請求失敗：被限流', 'mgm': 'RuntimeError: GDELT 請求失敗：被限流'}；跳過: ['wynn', 'sjm']",
+  "last_attempt": "2026-11-09T02:40:23+00:00"
  }
 }
