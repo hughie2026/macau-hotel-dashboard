@@ -1,1 +1,184 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>澳門酒店業品牌分析 | Macau Hotel Brand Analytics</title>
+  <meta name="theme-color" content="#57068c">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#overview">跳到主要內容</a>
 
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span>開放數據研究項目</span>
+      <span>數據每 6 小時自動更新</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Macau Hotel</strong>
+          <span>Brand Analytics</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主導覽">
+        <a href="#overview">概覽</a>
+        <a href="#map-section">地圖</a>
+        <a href="#groups">集團比較</a>
+        <a href="#attention">國際關注度</a>
+        <a href="#stocks">股價</a>
+        <a href="#hotels">酒店清單</a>
+        <a href="#about">數據說明</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <p class="eyebrow eyebrow-light">Data Dashboard</p>
+      <h1>澳門酒店業品牌分析</h1>
+      <p class="lead">
+        整合 OpenStreetMap、Wikidata、維基百科瀏覽量與上市公司股價，
+        追蹤六大綜合度假村集團在澳門的酒店佈局與市場表現。
+      </p>
+      <div id="status" class="status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <main>
+    <section class="band" id="overview">
+      <div class="container">
+        <p class="eyebrow">Overview</p>
+        <h2>關鍵指標</h2>
+        <div class="kpis" id="kpis"></div>
+      </div>
+    </section>
+
+    <section class="band band-alt" id="map-section">
+      <div class="container">
+        <p class="eyebrow">Locations</p>
+        <h2>酒店分佈</h2>
+        <p class="section-intro">大圓點為六大集團旗下酒店，小灰點為其他或獨立酒店。點擊圓點查看詳情。</p>
+        <div id="map-legend" class="legend"></div>
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <section class="band" id="groups">
+      <div class="container">
+        <p class="eyebrow">Group Comparison</p>
+        <h2>集團比較</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>各集團酒店數量</h3>
+            <div id="chart-count" class="chart"></div>
+            <p class="note">來源：OpenStreetMap。歸屬按名稱關鍵字判斷，見 scripts/config.py。</p>
+          </article>
+          <article class="card">
+            <h3>各集團客房數</h3>
+            <div id="chart-rooms" class="chart"></div>
+            <p class="note" id="rooms-note">來源：Wikidata。</p>
+          </article>
+          <article class="card">
+            <h3>國際酒店品牌</h3>
+            <div id="chart-brands" class="chart"></div>
+            <p class="note">來源：OpenStreetMap 的 brand 標籤，只統計有填寫此標籤的酒店。</p>
+          </article>
+          <article class="card">
+            <h3>上市集團一年漲跌</h3>
+            <div id="chart-change" class="chart"></div>
+            <p class="note">來源：Yahoo Finance。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-alt" id="attention">
+      <div class="container">
+        <p class="eyebrow">Global Attention</p>
+        <h2>國際關注度</h2>
+        <p class="section-intro">英文維基百科日瀏覽量（7 日平均），按集團加總旗下度假村條目。</p>
+        <article class="card">
+          <div id="chart-views" class="chart tall"></div>
+          <p class="note" id="views-note">來源：Wikimedia Pageviews API。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="band" id="stocks">
+      <div class="container">
+        <p class="eyebrow">Market Performance</p>
+        <h2>上市集團股價</h2>
+        <p class="section-intro">以一年前收市價為 100 的指數走勢，方便比較不同貨幣和價位的股票。</p>
+        <article class="card">
+          <div id="chart-stocks" class="chart tall"></div>
+          <p class="note">來源：Yahoo Finance，經除權息調整。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="band band-alt" id="hotels">
+      <div class="container">
+        <p class="eyebrow">Directory</p>
+        <h2>酒店清單</h2>
+        <label class="search-label" for="search">搜尋</label>
+        <input id="search" type="search" placeholder="輸入酒店名稱、集團或品牌">
+        <p class="note" id="table-count"></p>
+        <div class="table-wrap">
+          <table id="table">
+            <thead>
+              <tr><th>名稱</th><th>英文名</th><th>集團</th><th>星級</th><th>品牌</th><th>OSM</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-violet" id="about">
+      <div class="container">
+        <p class="eyebrow eyebrow-light">About the Data</p>
+        <h2>數據說明</h2>
+        <div class="sources">
+          <div>
+            <h3>OpenStreetMap</h3>
+            <p>澳門所有標記為酒店的地點，包括名稱、座標、星級和品牌。授權：ODbL。</p>
+          </div>
+          <div>
+            <h3>Wikidata</h3>
+            <p>酒店的營運商、業主、客房數和開業年份。客房數覆蓋不完整。授權：CC0。</p>
+          </div>
+          <div>
+            <h3>Wikimedia Pageviews</h3>
+            <p>各綜合度假村英文維基百科條目的每日瀏覽量，用來衡量國際關注度。</p>
+          </div>
+          <div>
+            <h3>Yahoo Finance</h3>
+            <p>六大承批公司的日收市價。非官方介面，僅供研究參考。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Macau Hotel Brand Analytics</strong>
+        <p>地圖與酒店數據 © OpenStreetMap contributors (ODbL)；Wikidata (CC0)；Wikimedia Pageviews；股價來自 Yahoo Finance。</p>
+      </div>
+      <p class="disclaimer">本站為獨立研究項目，與紐約大學及任何酒店集團均無關聯。數據僅供研究參考，不構成投資建議。</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
