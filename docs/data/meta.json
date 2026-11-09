@@ -1,14 +1,14 @@
 {
  "osm": {
   "ok": true,
-  "updated": "2026-11-09T02:36:03+00:00",
+  "updated": "2026-11-09T02:47:44+00:00",
   "info": {
    "hotels": 115
   }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-09T02:36:15+00:00",
+  "updated": "2026-11-09T02:47:51+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -20,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-09T02:36:18+00:00",
+  "updated": "2026-11-09T02:47:53+00:00",
   "info": {
    "tickers": 6
   }
@@ -53,12 +53,37 @@
  },
  "sec": {
   "ok": false,
-  "last_error": "RuntimeError: 未設定 SEC_CONTACT。SEC 要求 User-Agent 附上聯絡電郵，請在倉庫 Secrets 中加入",
-  "last_attempt": "2026-11-09T02:36:18+00:00"
+  "last_error": "RuntimeError: SEC_CONTACT 未設定或不是電郵。請到 Settings → Secrets and variables → Actions 新增名為 SEC_CONTACT 的 Repository secret，值填你的電郵",
+  "last_attempt": "2026-11-09T02:47:53+00:00"
  },
  "gdelt": {
-  "ok": false,
-  "last_error": "RuntimeError: GDELT 本次沒有成功更新任何集團。錯誤: {'galaxy': 'RuntimeError: GDELT 請求失敗：被限流', 'sands': 'RuntimeError: GDELT 請求失敗：被限流', 'melco': 'RuntimeError: GDELT 請求失敗：被限流', 'mgm': 'RuntimeError: GDELT 請求失敗：被限流'}；跳過: ['wynn', 'sjm']",
-  "last_attempt": "2026-11-09T02:40:23+00:00"
+  "ok": true,
+  "updated": "2026-11-09T02:52:00+00:00",
+  "info": {
+   "refreshed": [
+    "galaxy",
+    "sands"
+   ],
+   "skipped": [
+    "sands:articles",
+    "melco:articles",
+    "mgm:articles",
+    "wynn:articles",
+    "sjm:articles",
+    "galaxy:tone",
+    "sands:tone",
+    "melco:tone",
+    "mgm:tone",
+    "wynn:tone",
+    "sjm:tone"
+   ],
+   "errors": [
+    "melco:volume",
+    "mgm:volume",
+    "wynn:volume",
+    "sjm:volume",
+    "galaxy:articles"
+   ]
+  }
  }
 }
