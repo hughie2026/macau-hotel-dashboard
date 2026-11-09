@@ -50,7 +50,7 @@ GROUPS = {
     },
 }
 
-# 英文維基百科條目 -> 集團。條目不存在時會被跳過並記錄在 pageviews.json 的 missing 欄位
+# 英文維基百科條目 -> 集團。其他語言的標題會透過維基百科的跨語言連結自動查出
 WIKI_ARTICLES = {
     "The_Venetian_Macao": "sands",
     "The_Parisian_Macao": "sands",
@@ -68,6 +68,27 @@ WIKI_ARTICLES = {
     "Grand_Lisboa_Palace": "sjm",
 }
 
+# 要比較的維基百科語言版本。代碼必須與維基百科子域名一致（例如 zh-yue 是粵語維基）
+WIKI_LANGS = {
+    "en": {"name": "英文", "color": "#57068c"},
+    "zh": {"name": "中文", "color": "#b5121b"},
+    "zh-yue": {"name": "粵語", "color": "#d36b00"},
+    "ja": {"name": "日文", "color": "#1f5aa6"},
+    "ko": {"name": "韓文", "color": "#00857c"},
+    "pt": {"name": "葡文", "color": "#c99700"},
+}
+
+# GDELT 新聞查詢。用完整詞組避免誤中，例如只寫 "Galaxy" 會混入三星手機的新聞。
+# 語法：詞組用雙引號，多個詞組用 OR 連接並放在括號內
+GDELT_QUERIES = {
+    "galaxy": '("Galaxy Macau" OR "Galaxy Entertainment" OR "StarWorld Macau" OR "Broadway Macau")',
+    "sands": '("Sands China" OR "Venetian Macao" OR "Venetian Macau" OR "Parisian Macao" OR "Londoner Macao")',
+    "melco": '("Melco Resorts" OR "City of Dreams Macau" OR "Studio City Macau" OR "Morpheus Macau")',
+    "mgm": '("MGM China" OR "MGM Macau" OR "MGM Cotai")',
+    "wynn": '("Wynn Macau" OR "Wynn Palace")',
+    "sjm": '("SJM Holdings" OR "SJM Resorts" OR "Grand Lisboa")',
+}
+
 # Yahoo Finance 代號 -> 集團
 TICKERS = {
     "1928.HK": "sands",
@@ -76,4 +97,12 @@ TICKERS = {
     "1128.HK": "wynn",
     "0880.HK": "sjm",
     "MLCO": "melco",
+}
+
+# 在美國 SEC 申報的母公司（美股代號）。CIK 編號會自動從 SEC 的代號表查出
+SEC_COMPANIES = {
+    "LVS": {"group": "sands", "name": "Las Vegas Sands"},
+    "WYNN": {"group": "wynn", "name": "Wynn Resorts"},
+    "MGM": {"group": "mgm", "name": "MGM Resorts"},
+    "MLCO": {"group": "melco", "name": "Melco Resorts"},
 }
