@@ -13,14 +13,6 @@
 
 沒有數據的圖表會自動隱藏，抓取狀態顯示在頁面頂部。
 
-## 部署
-1. 上傳全部檔案到 main 分支
-2. Settings → Pages → Source 選 **GitHub Actions**
-3. Settings → Actions → General → Workflow permissions 選 **Read and write**
-4. （可選）Settings → Secrets and variables → Actions → New repository secret，
-   名稱 `SEC_CONTACT`，值填你的電郵
-5. Actions → Update data → Run workflow
-
 ## 本地執行
 pip install -r requirements.txt
 python scripts/fetch_all.py
