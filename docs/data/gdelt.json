@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-09T03:37:29+00:00",
+ "updated": "2026-11-10T14:57:18+00:00",
  "source": "The GDELT Project, DOC 2.0 API",
  "timespan": "3months",
  "groups": {
-  "sands": {
+  "mgm": {
    "tone": [],
    "avg_tone": null,
-   "updated": "2026-11-09T03:36:19+00:00"
+   "updated": "2026-11-10T14:57:18+00:00"
   }
  },
  "errors": {
@@ -14,8 +14,8 @@
   "melco": "RuntimeError: 請求失敗：被限流"
  },
  "skipped": [
-  "mgm",
   "wynn",
-  "sjm"
+  "sjm",
+  "sands"
  ]
 }
