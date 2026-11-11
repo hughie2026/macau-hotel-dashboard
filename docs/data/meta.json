@@ -1,14 +1,14 @@
 {
  "osm": {
   "ok": true,
-  "updated": "2026-11-10T23:20:51+00:00",
+  "updated": "2026-11-11T06:18:14+00:00",
   "info": {
    "hotels": 115
   }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-10T23:21:00+00:00",
+  "updated": "2026-11-11T06:18:21+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -20,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-10T23:21:02+00:00",
+  "updated": "2026-11-11T06:18:23+00:00",
   "info": {
    "tickers": 6
   }
@@ -57,7 +57,7 @@
   "last_error": "未設定 SEC_CONTACT，已跳過（可選）"
  },
  "gdelt": {
-  "ok": true,
+  "ok": false,
   "updated": "2026-11-10T23:23:45+00:00",
   "info": {
    "refreshed": [
@@ -72,11 +72,13 @@
     "galaxy",
     "sands"
    ]
-  }
+  },
+  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'galaxy': 'RuntimeError: 請求失敗：被限流', 'sands': 'RuntimeError: 請求失敗：ReadTimeout', 'mgm': '連續 3 次連線失敗（ReadTimeout）'}",
+  "last_attempt": "2026-11-11T06:20:27+00:00"
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-10T23:21:10+00:00",
+  "updated": "2026-11-11T06:18:31+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -84,10 +86,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-10T23:21:32+00:00",
+  "updated": "2026-11-11T06:18:52+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 17,
+   "new_articles": 19,
    "errors": []
   }
  }

@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-10T23:21:32+00:00",
+ "updated": "2026-11-11T06:18:52+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
- "until": "2026-11-10",
- "days": 8,
+ "until": "2026-11-11",
+ "days": 9,
  "groups": {
   "galaxy": {
    "volume": [
@@ -13,7 +13,7 @@
     ],
     [
      "2026-11-04",
-     3
+     5
     ],
     [
      "2026-11-05",
@@ -33,17 +33,21 @@
     ],
     [
      "2026-11-09",
-     9
+     10
     ],
     [
      "2026-11-10",
-     5
+     6
+    ],
+    [
+     "2026-11-11",
+     2
     ]
    ],
-   "total": 53,
+   "total": 59,
    "by_lang": {
-    "zh": 24,
-    "en": 29
+    "zh": 29,
+    "en": 30
    },
    "publishers": [
     [
@@ -51,16 +55,24 @@
      8
     ],
     [
+     "Investing.com 香港 - 股市報價& 財經新聞",
+     6
+    ],
+    [
      "IAG – Inside Asian Gaming",
      5
     ],
     [
-     "Investing.com 香港 - 股市報價& 財經新聞",
-     4
+     "www.marketscreener.com",
+     3
     ],
     [
      "Moomoo",
      3
+    ],
+    [
+     "香港經濟日報HKET",
+     2
     ],
     [
      "Yahoo 財經",
@@ -71,23 +83,36 @@
      2
     ],
     [
-     "www.marketscreener.com",
-     2
-    ],
-    [
      "macau daily times 澳門每日時報",
      2
     ],
     [
      "富途牛牛",
      2
-    ],
-    [
-     "Media OutReach Newswire",
-     2
     ]
    ],
    "articles": [
+    {
+     "title": "FASHION+TRAVEL｜澳門「銀河度假」Ralph新店開幕 佘詩曼女王風采現身",
+     "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxPNEt4M25FWVRibjhXc2RKcV92SHdCZDVSc0tBX2Z0SWlITjBObk5PeDUxSllDa2hVVWIwYWpwMzkzTTVGcklKTHdHeDd3SUp0bDZqTWF4QkRUYlR2b19vSHV3YkY2X3lsanU0Nk1CNmVVWXV6blVSRE9Cem9mTFltVVJ1ZVVaZC11RGJnYzBMc2hfeVFCenA5aktfaXZUUC01OHh4S0ttOTYteVVvREVCenMwQ3JHaGJuMlZJVXpIdHNlM2pfTkRldEhzSDVMWk5ZV093aGV1bGJ1eGZfNFBwNlVFaHhkZGxFd1VlcUhXMTJuanZQU2gxbkhQMndNQjhRckRTdE1qNWZsdkM4VVVvaXo5ei0yMEc1SGVsZ1NFU1AtNTB3NWY5c0ZFRWhVSGZfWE5fTHFlWkx4Tlh5Z3J6UlNJRG5YVk9DNmR4V3hLUmlSUTZOSldQcDdoSXNFNzV6cGpvT3ViM2VtTWZpLW03S05ZX1d1TEx2UkIzSm93WHEwd29P?oc=5",
+     "source": "香港經濟日報HKET",
+     "lang": "zh",
+     "date": "2026-11-11T02:20:34Z"
+    },
+    {
+     "title": "GF Securities Adjusts Galaxy Entertainment Group's Price Target to HK$36.67",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVklzemJ5ZmsydDVfVUJZU29Td0ZsQmFUVjhhQnA4Ujl2NkNuOHRCQ0RtTVhwYXpyTm54ZGxSMS1vdmJXaTdQaVhDTGM2NFp3UTJYRjlGYnUzck5CclFjWV9aUUZCQ0pvV1Y4ZUMxaVpmS0QyQVZ4c2tadF84TDVlU2VKcEkydkVuTWpVbmpocUZXMm5JamJxeEEtblhFY3ZJcFdLVUFhUEUxVklfZ1lrdW52amN3S0RDT19DMjlNNk9ZQjU5Mlhv?oc=5",
+     "source": "www.marketscreener.com",
+     "lang": "en",
+     "date": "2026-11-11T01:08:11Z"
+    },
+    {
+     "title": "花旗：銀河娛樂(00027)10月市場份額下跌因贏率不利 毋須過度解讀 續列行業首選 作者 智通財經",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NVExPb2djbC1JelRHSFdIMThZZzk4RTZKSDNmU3QzcmkteTg4SGUtd0VFYnVPUFhkZTJJQUJpczJzQl9jM3YzaTdLX05aMWRZQk02Z2NnRGVlSE1uRFF4Y0dTSVVGUHZCdmlodEkxZGg?oc=5",
+     "source": "Investing.com 香港 - 股市報價& 財經新聞",
+     "lang": "zh",
+     "date": "2026-11-10T17:07:52Z"
+    },
     {
      "title": "技術分析丨銀河娛樂突破小雙底頸綫|香港經濟日報",
      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNME9SMVFNRW5BNjlvS3hWMGtlcXc3SVMyc2t3cDFJMHAwTUpMVTBwRVFDRWliNXVEYUMzRGRiS3FGbEotMFZzY0xhWC1sd3lkUGh1UWl5Vm5KazlhWEp5ckl0dEJydVNTd054UDljcG9faUFIUDN0LUNSc2xBaDVVYXQ2d2JGODBrOHBnTGNyLXNCRTlzRXlQeDVEMWd5RWZYaWRYSFQ2SnZlODJ5aXRfSGhvRE1EQmF3RDVjZG03XzVHY19rTFdJUDJQX0JLVVNGdXdhTkExRG9JN01kdnZ6VUFrYlJyOXM5WU9yazVvNmlrQjg2bWNTaTBmSmZSOXR4YU02VlktWXlUSzYzci1LRU9B?oc=5",
@@ -136,27 +161,6 @@
      "source": "Moomoo",
      "lang": "zh",
      "date": "2026-11-09T11:23:07Z"
-    },
-    {
-     "title": "2026 Asian Gaming Power 50: Number 14 – Kevin Kelley",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUGR2dC1uX19FVFl1NlpSVmxGSkViTUpvdzNNaXlRODV6RUVBZXJGNU5LSFpvZkVPcVVRZUItZXl4MlpJLUNUMlVHcFA2UXc5X1hDdW5XUHVrTUE3X1FxQnNwQ3M5TFhxbmRab2d4dXlNR1hkc0l6bm5jTy1wYkJsQmk3elZzQQ?oc=5",
-     "source": "IAG – Inside Asian Gaming",
-     "lang": "en",
-     "date": "2026-11-09T11:16:42Z"
-    },
-    {
-     "title": "Galaxy Entertainment dividend growth potential remains strong, says Seaport",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1EU0ppZ3lnRTlNYXBUaEtDbkkxSEtTLW5xNW9VTXNsWHU1QkRZSUVmX09NZ0dJeEoxcEx2Mm5kTzRUX3h4bHdqV0MxX0hFeFNUVzNMemVnLWFPdEI2WFg3S2hZT2xkZzRrWDBiRUNDNndoMFdlV3hpYQ?oc=5",
-     "source": "Focus Gaming News",
-     "lang": "en",
-     "date": "2026-11-09T10:22:22Z"
-    },
-    {
-     "title": "里昂：維持銀河娛樂(00027)“跑贏大市”評級及39.7港元目標價第三季度EBITDA符合預期作者智通財經",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjZFlFbFFCYWNqTDFOUFVhR2dkODlfQWZwOXJjSVdRU19DLUhxQlhFS2x2Rmx2a1QzaDdqTjh5dENieFRsaXJoX2xPVGU3V0l6Y1h6eHEzbkVXeDFvd2RIeGxtN0hVeGViX3RDcmJ6VDI?oc=5",
-     "source": "Investing.com 香港 - 股市報價& 財經新聞",
-     "lang": "zh",
-     "date": "2026-11-09T07:33:59Z"
     }
    ]
   },
@@ -168,7 +172,7 @@
     ],
     [
      "2026-11-04",
-     13
+     14
     ],
     [
      "2026-11-05",
@@ -192,18 +196,26 @@
     ],
     [
      "2026-11-10",
-     7
+     8
+    ],
+    [
+     "2026-11-11",
+     3
     ]
    ],
-   "total": 49,
+   "total": 54,
    "by_lang": {
-    "zh": 31,
-    "en": 18
+    "en": 20,
+    "zh": 34
    },
    "publishers": [
     [
      "澳門會展經濟報",
-     4
+     5
+    ],
+    [
+     "macau daily times 澳門每日時報",
+     3
     ],
     [
      "澳門力報",
@@ -226,23 +238,47 @@
      3
     ],
     [
+     "華僑報",
+     2
+    ],
+    [
      "Plataforma Media",
      2
     ],
     [
      "香港經濟日報HKET",
      2
-    ],
-    [
-     "世界新聞網",
-     2
-    ],
-    [
-     "U Travel",
-     2
     ]
    ],
    "articles": [
+    {
+     "title": "Sands China Performing Arts Programme Presents: 'Macau Band Directors Association 30th Anniversary Concert'",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPaC13UVBRQzIyMzUtSTdSaFd2eTZaRnVxcDV2WFk4YXlIVFcteE14aDdEWVJxSGZNV2FlRzJOOEZMUnlVTjlhUDFTYzBfUlZsdzZKSWV6bE44d3doQ0J4cDZXQlVKTXA4UnBqcEpnSnVtTDJRVU53UXRvSGNGTmIwWENzdEpnNXpHeHNLMFQ5dkd4MVc5dExBQTAyaWtadVhiZVpGWFF0SzNkU0g0dy0tOXRRcFZTc1ZQaXIzdm9INHB5RVEwOXY5SjYyR3JXNENKZmYxWXJUVkNLZk9FbzV5U3VmQUFzT1JWWnBGbDhMVkh2Zw?oc=5",
+     "source": "PR Newswire",
+     "lang": "en",
+     "date": "2026-11-11T04:19:00Z"
+    },
+    {
+     "title": "金沙中國表演藝術計劃呈獻「三十年華‧傳承樂章--澳門管樂協會成立30周年會慶音樂會」",
+     "url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxQVTRlc2VYRzBrRDNubmJ3djZUNGo3Yng0aG9pdzVPaGE2VllKUDNDU01lRzBqOXN3MW8wZnpjY295X1FKdEpXcHFZSFl2dUFfNk94TlBhZ2diOFFMS2l2Q19xcnB6Sk1aY01hNEVkRjEyUEpWYlVsRjdQTmxkcXUtUV9fME5YbGZOYl9EVnJBR1F3RncxLXdCUF80a19Kb2Y1UGdGUHJOeE1yeE9xNDBJek9Sdk5Vb1duSG9yX2s1MV8ycHZ4RUZqVnI1MUlaYXgxNlpCRFlzSEFqWkVDUEk3akNNalpMUTNyc0tnNjVLQU5VUUtHVlBUUVBUWkItWVd6SmRLdFdobGExeWlBbHdUX3VFTHFDVXk5ZjI4RkJwbkFBckhDM2dWYTZfQWtNTjlUZUM0U2tTWm9hNGo4MHJ4amllb0Q2bEdEb2J3NHlfcm16Q0tZT2VhTXdMS3B5a0JDbnROQ3JjSzc4UnViTUJKVmZvVlNuRml2Q1d2R2wzcS10eG5lZXVJSnZzQlFaNlZNWnk1aEZDUUcyR09VLWRZeUh2bzc3TGlhTlJHMjJRVHFUQ1JBanRHeU9YOWNnYXVST2ctYlloci1VTGd6VjFuS1d3ajd3Rzl1TTRWeWNpclYxTWF2Yk03ZGEtWTAybjl1eXhDdHJxSUxoRGZlRXZabHl4QzI5bDVw?oc=5",
+     "source": "Yahoo 財經",
+     "lang": "zh",
+     "date": "2026-11-11T03:21:53Z"
+    },
+    {
+     "title": "Sands China donates over MOP400,000 to support Caritas charities",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVmZpUUFRS0xERHZZRHdoeTZ2bFdWODc5elBfOC1GQkJnd2dieWxZaDhBdVpPQ2w2eTNVc3VaSFJnVTdnUFNUcHI0THhnZzl5cHRNcmU4blNNQnhpVW5aSklucnVLeFJQWDJaY0xnVDBqSS0wWmN4MFA4RWRPU1hXb0VpY1ItWUpYa1pGTDF4TGF6TUZDWFFsSDJzalo3X2VK?oc=5",
+     "source": "macau daily times 澳門每日時報",
+     "lang": "en",
+     "date": "2026-11-11T00:23:57Z"
+    },
+    {
+     "title": "華僑報",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DTElkYnVmQW5GWmY3OGI5Q05YTVd4SmVTVksyVV9HWFdnQ2V3ZkRvaGgtOTRVM3V3Z3gwdl9uOTNZTXVocmI5RF9feHFoRi1KNnNNdDJxYzE?oc=5",
+     "source": "華僑報",
+     "lang": "zh",
+     "date": "2026-11-10T22:34:06Z"
+    },
     {
      "title": "金沙中國表演藝術計劃呈獻",
      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5EeU1XNWt6ZS05QmlVaXZqWGdPYjZrc01VbHBtLVlLdmZtTDlSVmdtSXVQNFNwbU1ldktKNU1qRDNvVnhJalZWd0hldW1ZOVAxMDFsYklEUUtpXzg3?oc=5",
@@ -284,34 +320,6 @@
      "source": "GGRAsia",
      "lang": "en",
      "date": "2026-11-10T03:15:27Z"
-    },
-    {
-     "title": "澳門日報電子版",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4tR1NXNEZCcG1zMGZ0dVRKWThpYjVjTldNOGUwNUZMTFdVM3VNZVpHY0Jhb0tCc1NTRjBUekNWTXk1eFlUMnlad282UWdjZFFCdVdBOWNmT3ZRNmdmZUx6MlR0NnoyMUhjZGpyRm9uWQ?oc=5",
-     "source": "澳門日報",
-     "lang": "zh",
-     "date": "2026-11-10T00:43:45Z"
-    },
-    {
-     "title": "2026 Asian Gaming Power 50: Number 8 – Grant Chum",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcXpxMWVlZUVGOWVrOUlrVjNhcThrYm5oYUhXVFZ5U280TE9ReU94b1BOdHc0MEFlVFlkSTBKWDdBVWFXM2dHWmhVR09WdThZWnZILVJiYmpobFBoSzhLdmJ5NE1udkU4VEswNjU3cDZpSzMzbm5EQXV1YlFvNVRJM1pR?oc=5",
-     "source": "IAG – Inside Asian Gaming",
-     "lang": "en",
-     "date": "2026-11-09T11:22:42Z"
-    },
-    {
-     "title": "2026 Asian Gaming Power 50: Number 10 – Wilfred Wong",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVUhGSm8xS1RxdXJSaGQ0OHJsbkU0eXpZenlwa3hpNXlpcm9POHpPRDhmS01SZG5LMFBJNDFMYzgzaU1RZ1JOSGlFb18zT1FRWDZ5NThWUkhEaGJrQnJheFF2T2tsSThONkxPZFl1dUROMkhnZVROa3RjLVRHUU1LTW5IOVhidw?oc=5",
-     "source": "IAG – Inside Asian Gaming",
-     "lang": "en",
-     "date": "2026-11-09T11:20:42Z"
-    },
-    {
-     "title": "周生生旗下點睛品進駐澳門威尼斯人！奢雅珠寶殿堂設私密VIP鑑賞室、獨家展出意大利珠寶",
-     "url": "https://news.google.com/rss/articles/CBMijgRBVV95cUxQd2V3R0lFX3ExZ0JUMnBYcG82OVE2UFQ3Z01YZ2RjdWc2eF9TdkprWXhEc04yUU4zcEEzRFZ3bHlzNU9fX1gzM09ZT1A3TUNQTlZpMWJJSnRLNFdyZzdfbF9SbERhTWFodlNSdDJfRHNRd2ZUNzMxb1VDMlZYclE5RGkxT3l2b1gxOGZxLTFRdnRKLUdEa3BzSlo0MHFpR05XZENfbld1MDUyQXUzVXZFcm1XRlBfRFBzT2M3dUxPUkd3ZjJvTkM0UHhQYlpRbUFOWUxRbjlIeGRrUWRMNE41VlVLN2hqMjhINmROY1A5WlItUnNHX3dRaURMQWpYaDZXSnpJSWdFc2dCSlYxZ3AzN0NsMVduM0hxWGcxZFlKcE4xZ0xyVFRnQzBfUW05LVNWZXBNczc4WWhaSnJTNHZvSVN0U19IaTZJUE9zQjVBTmlKRmR4V1lXVktCdldVNVZrTTJjeU5QMEloS3NhR001dkdhanAzNV9kcGpObEhBNVlRUXBUVnp5ck9BRjdGeGQzWkxhNVNxeFRKVTc5VHRXb3dad0JCV1NHU05UZGNMOWRaMExtRWpiazRycVV5NC01bDhlMEZBWnFEODJyYUZnT1RwM0ZOOURvdVZMeW9YanlKQU52WEUwcGJTZkpoQkt6ckQ2OElHR041VnZkNm9ycHdNV3ZpOXdncS1VZHhB?oc=5",
-     "source": "晴報 Sky Post",
-     "lang": "zh",
-     "date": "2026-11-09T10:22:16Z"
     }
    ]
   },
@@ -323,7 +331,7 @@
     ],
     [
      "2026-11-04",
-     42
+     43
     ],
     [
      "2026-11-05",
@@ -339,7 +347,7 @@
     ],
     [
      "2026-11-08",
-     1
+     2
     ],
     [
      "2026-11-09",
@@ -348,17 +356,21 @@
     [
      "2026-11-10",
      1
+    ],
+    [
+     "2026-11-11",
+     0
     ]
    ],
-   "total": 79,
+   "total": 81,
    "by_lang": {
-    "zh": 30,
-    "en": 49
+    "zh": 31,
+    "en": 50
    },
    "publishers": [
     [
      "TradingView",
-     10
+     11
     ],
     [
      "TDM",
@@ -371,6 +383,10 @@
     [
      "MarketBeat",
      4
+    ],
+    [
+     "澳門力報",
+     3
     ],
     [
      "Yahoo Finance",
@@ -387,10 +403,6 @@
     [
      "信報網站",
      3
-    ],
-    [
-     "澳門力報",
-     2
     ],
     [
      "澳門日報",
@@ -411,6 +423,13 @@
      "source": "GQ Hong Kong",
      "lang": "zh",
      "date": "2026-11-09T04:11:53Z"
+    },
+    {
+     "title": "新濠看好澳門長遠前景 酒店零售升級迎客需",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1nYkw5TGFqaE5BWVBXZzEzbnpfa3hPdVF6YklzS054NmxKUGZNTUNYTjdsZ3JINXVoZ0JRWmlsMExXVF9GQUpCb29OSEpZVWFwMGNz?oc=5",
+     "source": "澳門力報",
+     "lang": "zh",
+     "date": "2026-11-08T23:17:41Z"
     },
     {
      "title": "新濠看好澳門長遠前景 酒店零售升級迎客需",
@@ -460,13 +479,6 @@
      "source": "Moomoo",
      "lang": "en",
      "date": "2026-11-07T05:43:46Z"
-    },
-    {
-     "title": "Melco Resorts & Entertainment Limited (MLCO) Stock Price, News, Quote & History",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zMHltRXZHak5qUWFJdFFWUEEySk1xRXZIZzhjV193X0lmYlJVaGIyeW9nV0lJemtRU0xVQU1kREtLUjNfZGJxX3c2OEltaXBHUUE?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "lang": "en",
-     "date": "2026-11-06T23:53:51Z"
     }
    ]
   },
@@ -503,11 +515,15 @@
     [
      "2026-11-10",
      3
+    ],
+    [
+     "2026-11-11",
+     1
     ]
    ],
-   "total": 34,
+   "total": 35,
    "by_lang": {
-    "en": 23,
+    "en": 24,
     "zh": 11
    },
    "publishers": [
@@ -518,6 +534,10 @@
     [
      "TDM",
      5
+    ],
+    [
+     "macau daily times 澳門每日時報",
+     3
     ],
     [
      "Casino.com",
@@ -536,10 +556,6 @@
      2
     ],
     [
-     "macau daily times 澳門每日時報",
-     2
-    ],
-    [
      "Focus Gaming News",
      1
     ],
@@ -553,6 +569,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "MGM launches staff development programs through learning festival",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNFh5YW5Sdnp6VW1qbmZTZkRRclY4d0xDOGpSUUtUTFhOTFNuSnRIOWp3Z3BVc3E5UDBYakt3cnVfa0ZqTGhsbVFmeDJKcE1SRC1jaVAwX1BjNC01LXlFVzFXaFRPY2hzWFN2RzBrb0tMaWlETFE4a1FSMUg5M0tma0ViVFFFNGxRekNucWNqZl9lTmQzY1RJY05GdUxZMkRSbGZJ?oc=5",
+     "source": "macau daily times 澳門每日時報",
+     "lang": "en",
+     "date": "2026-11-11T00:18:28Z"
+    },
     {
      "title": "Melco Profit Nearly Vanishes as Macau Q3 Results Split",
      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdDV5VWRsSVRYVG95ZzRIZlZiLUNXTDB3ZDhPVzVZNTFfX1Q5S3NEZjlwMV83REs5OC1rWjZNWjRyd1FabXpMU0FiUnQyMVpsd2lTNEhVM3RVZkZuYU1wS1pJNlZRYmxrVVg2elROU2VHUDI2QWgta1NpdHhPdDFnVm5aRTFfOU5yNFVweGdJMUN1MWpfM3JSdA?oc=5",
@@ -615,13 +638,6 @@
      "source": "IAG – Inside Asian Gaming",
      "lang": "en",
      "date": "2026-11-09T11:14:42Z"
-    },
-    {
-     "title": "保時捷 澳門旗艦新店開幕！座落 MGM Cotai 美獅美高梅酒店 搶先睇「赤金恐龍」911 GT3 R 戰車",
-     "url": "https://news.google.com/rss/articles/CBMiywNBVV95cUxOalBnbkNkUnlaUGFhaFB6UjYzWDQ1dzJJbUZEVV9GZFBUcGhDRmJPWlpmZ01Od05SUkRXdXlXcTJtWW1VWWZMSXpRWGZCRnpLbVozOWhXcFRaVkpWV0NWQ2stRWVhdl9kRFVTQ05fNmN2MUhkNHNUOGdGM1ZjZml2ck5kNnFrRzdVak0wYmRYeFh4dU83YzlLbmdyV2xBaDRDT3hienNuUXVDMjZ6d0NzWW44X3B6ckZuT0JRMGRhZDJId0NmRTZMd0dmQmlBaVFreXB5XzNHZ3FYUnV0d2IweXJkNE5jNFcxb2ZFdWZVVi1ZTjctTExIM2YzTTljanhYd2JWQ2VFalY4a0FjRHpHb3drc0NkTm5tUGlaREFGTXJfQVBEM01ocFhpZ2c4aUxaVXB0TXpGZDdWM1N6a2pYd2lSNVc3LXcyaGNwaUk3V2poN1AwWWx0V1A4LU52Q3RhWXpqMGdLVHM3eXNDNnZqS29SSk10TlhkbkVfSEJXTG5rTUt1ZThRZTBoS0U4cm91UVB6SURtM1RSczZUZUYwaG02X3lmMnFKVUR3eVpqbXI0UXJ1cjNOQlk3STljZlBaWmFRdHl6aGcwZk0?oc=5",
-     "source": "星島頭條",
-     "lang": "zh",
-     "date": "2026-11-09T10:30:44Z"
     }
    ]
   },
@@ -653,26 +669,30 @@
     ],
     [
      "2026-11-09",
-     8
+     9
     ],
     [
      "2026-11-10",
      3
+    ],
+    [
+     "2026-11-11",
+     1
     ]
    ],
-   "total": 61,
+   "total": 63,
    "by_lang": {
-    "en": 36,
-    "zh": 25
+    "zh": 26,
+    "en": 37
    },
    "publishers": [
     [
-     "Yahoo 財經",
+     "macau daily times 澳門每日時報",
      5
     ],
     [
-     "macau daily times 澳門每日時報",
-     4
+     "Yahoo 財經",
+     5
     ],
     [
      "Moomoo",
@@ -699,15 +719,22 @@
      3
     ],
     [
-     "The Globe and Mail",
+     "澳門力報",
      2
     ],
     [
-     "Macau Business",
+     "The Globe and Mail",
      2
     ]
    ],
    "articles": [
+    {
+     "title": "永利澳門債券仍獲看好 研究機構關注資本開支",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9hRDBZbVlsbnBqVTI3aURiNjlfRU1hNC1JMmpZeWpXd18yQTIzMC1tN1NfeWtMUVpwMmM1aXo3Y2RTT05PSVhFZ193Q25YalBQdkU0?oc=5",
+     "source": "澳門力報",
+     "lang": "zh",
+     "date": "2026-11-11T05:21:19Z"
+    },
     {
      "title": "Melco Profit Nearly Vanishes as Macau Q3 Results Split",
      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdDV5VWRsSVRYVG95ZzRIZlZiLUNXTDB3ZDhPVzVZNTFfX1Q5S3NEZjlwMV83REs5OC1rWjZNWjRyd1FabXpMU0FiUnQyMVpsd2lTNEhVM3RVZkZuYU1wS1pJNlZRYmxrVVg2elROU2VHUDI2QWgta1NpdHhPdDFnVm5aRTFfOU5yNFVweGdJMUN1MWpfM3JSdA?oc=5",
@@ -765,18 +792,11 @@
      "date": "2026-11-09T08:40:02Z"
     },
     {
-     "title": "Wynn Resorts reports 7.7% revenue drop to $1.69B",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9vLUNvZTVTRUtvM1NBdFNWVERGVkk5SUpsTG0zQ2M0Wmk1OVB1bTFuZDF2ck05aHE5MXJYRjNibXR3THlOZFR1ZFRyYlMxWXBLY242cm5ZYi1DUnNJZjhRVGV4UkJNeDB0Wlp1M0QyQmg?oc=5",
-     "source": "AffPapa",
+     "title": "Chef Tam’s Seasons ranks 73rd on 50 Best Restaurants extended list",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOblpqUUpmZ2hFaTloZFo0TnhPSXNua3RTSjZvWGV6djMtcVBrM3JZVW1tVGpFTnBNZ05ZYlcxMDJPSlUxeHpjQ1VsWkI2WXRBUU9lRER3ei11SXV1OEo5bm8zaVhrVFExanRwZTBnMTY4d1hQMGlOWUVKTXFzVHV5MUVkZGpxVEdaWDdNTTFIYUJlSzlRR2JORFJWMXNjLVRHaElj?oc=5",
+     "source": "macau daily times 澳門每日時報",
      "lang": "en",
-     "date": "2026-11-09T07:08:06Z"
-    },
-    {
-     "title": "Wynn Macau Ltd capex, weaker earnings temper CreditSights bond outlook",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZVc2SHNWX0tPV2FPRVg5VllRX3JPX0JiNEdDNWhReGxMcTJidFlzUWhjYjdHeWRRdVN0dFQ2ajNfYnI2c0VsNGROWHZlS0dmcmdTQVFtZnh1Nk1yNnZKOTFUTGxVNEMzUm9DOW52OXBic3JSdGtUaVF6Q1g4RElsbkdMaG8xcVprNWJqcHZiY1RweXc?oc=5",
-     "source": "GGRAsia",
-     "lang": "en",
-     "date": "2026-11-09T05:25:34Z"
+     "date": "2026-11-09T08:00:00Z"
     }
    ]
   },
@@ -792,7 +812,7 @@
     ],
     [
      "2026-11-05",
-     13
+     15
     ],
     [
      "2026-11-06",
@@ -800,7 +820,7 @@
     ],
     [
      "2026-11-07",
-     2
+     3
     ],
     [
      "2026-11-08",
@@ -813,12 +833,16 @@
     [
      "2026-11-10",
      1
+    ],
+    [
+     "2026-11-11",
+     0
     ]
    ],
-   "total": 35,
+   "total": 38,
    "by_lang": {
     "en": 18,
-    "zh": 17
+    "zh": 20
    },
    "publishers": [
     [
@@ -826,7 +850,15 @@
      4
     ],
     [
+     "TDM",
+     4
+    ],
+    [
      "Moomoo",
+     3
+    ],
+    [
+     "信報網站",
      3
     ],
     [
@@ -838,19 +870,11 @@
      2
     ],
     [
-     "TDM",
-     2
-    ],
-    [
      "香港商报",
      2
     ],
     [
      "BigGo Finance",
-     2
-    ],
-    [
-     "信報網站",
      2
     ],
     [
@@ -927,11 +951,11 @@
      "date": "2026-11-07T10:50:27Z"
     },
     {
-     "title": "[Major Banks] Goldman Sachs cuts SJM Holdings (00880.HK) target price to HK$1.6, maintains \"Neutral\" rating; highlights debt refinancing risks",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNFU0aDZKOFBCNXhQaTN4YWNOYkdjQnV4V1g2Q3l0NTUtWk8zdkh4NjRlSEM5bDY5N1g5Z0pYUjJQaVRhQ2M4Z25nZ2pZem56NHJfVG1iVm5XTlRJMEhlQUNwRWt1NWxyVmx1bFVVZnlua2xQV1Y0Tlk1TFhmUXh3VW9xM0FkZ2RnOEI1dWQzMjlWNkN3b2FSeUZzVFItOG5UU0VjSQ?oc=5",
-     "source": "富途牛牛",
-     "lang": "en",
-     "date": "2026-11-06T22:45:27Z"
+     "title": "澳博控股第三季收益52.87億港元",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdzVYMkJmQ1A0UjREMGlnb1FfSDNXMmtfOUZGOWFlVmdTc2t4Qk1tTzItT2lJRzFoLWdHbWlWaGlORFJ2ZUVRU2hmQkdlUThOSHg5NEZnQ2ZzYWpDN3BlMXprWXRYTHhUY1NGdjd3a0dKMFplQUQ0V1hHMENkMW1BUHZyZFQwQnAyb1dWem43V0FGaEVBR3VRQg?oc=5",
+     "source": "TDM",
+     "lang": "zh",
+     "date": "2026-11-07T10:18:49Z"
     }
    ]
   }
