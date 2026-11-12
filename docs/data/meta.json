@@ -1,14 +1,14 @@
 {
  "osm": {
   "ok": true,
-  "updated": "2026-11-11T19:35:44+00:00",
+  "updated": "2026-11-12T07:09:44+00:00",
   "info": {
    "hotels": 115
   }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-11T19:35:52+00:00",
+  "updated": "2026-11-12T07:09:52+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -20,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-11T19:35:54+00:00",
+  "updated": "2026-11-12T07:09:55+00:00",
   "info": {
    "tickers": 6
   }
@@ -58,25 +58,25 @@
  },
  "gdelt": {
   "ok": true,
-  "updated": "2026-11-11T19:38:43+00:00",
+  "updated": "2026-11-12T07:12:29+00:00",
   "info": {
    "refreshed": [
+    "galaxy",
+    "mgm"
+   ],
+   "skipped": [
+    "wynn",
     "sands",
     "sjm"
    ],
-   "skipped": [
-    "melco",
-    "wynn"
-   ],
    "errors": [
-    "galaxy",
-    "mgm"
+    "melco"
    ]
   }
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-11T19:36:03+00:00",
+  "updated": "2026-11-12T07:10:03+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -84,10 +84,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-11T19:36:25+00:00",
+  "updated": "2026-11-12T07:10:24+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 17,
+   "new_articles": 19,
    "errors": []
   }
  }
