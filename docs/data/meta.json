@@ -1,14 +1,14 @@
 {
  "osm": {
   "ok": true,
-  "updated": "2026-11-13T06:44:51+00:00",
+  "updated": "2026-11-13T19:41:32+00:00",
   "info": {
-   "hotels": 116
+   "hotels": 115
   }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-13T06:45:02+00:00",
+  "updated": "2026-11-13T19:41:44+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -20,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-13T06:45:04+00:00",
+  "updated": "2026-11-13T19:41:46+00:00",
   "info": {
    "tickers": 6
   }
@@ -73,12 +73,12 @@
     "melco"
    ]
   },
-  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'sands': 'RuntimeError: 請求失敗：ReadTimeout', 'melco': '連續 3 次連線失敗（ReadTimeout）'}",
-  "last_attempt": "2026-11-13T06:46:14+00:00"
+  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'sands': 'RuntimeError: 請求失敗：被限流', 'melco': 'RuntimeError: 請求失敗：被限流', 'wynn': 'RuntimeError: 請求失敗：被限流'}",
+  "last_attempt": "2026-11-13T19:44:24+00:00"
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-13T06:45:12+00:00",
+  "updated": "2026-11-13T19:41:53+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -86,10 +86,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-13T06:45:33+00:00",
+  "updated": "2026-11-13T19:42:14+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 30,
+   "new_articles": 27,
    "errors": []
   }
  }
