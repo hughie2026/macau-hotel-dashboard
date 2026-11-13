@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T07:09:44+00:00",
+ "updated": "2026-11-13T06:44:51+00:00",
  "source": "© OpenStreetMap contributors (ODbL)",
  "hotels": [
   {
@@ -243,6 +243,18 @@
    "group": null
   },
   {
+   "osm": "node/11612554766",
+   "name": "YOHO名勝世界酒店 YOHO Resorts World Hotel",
+   "name_en": "YOHO Resorts World Hotel",
+   "brand": "",
+   "operator": "",
+   "stars": "",
+   "rooms": "",
+   "lat": 22.1872046,
+   "lon": 113.5429872,
+   "group": null
+  },
+  {
    "osm": "node/13440036623",
    "name": "澳門上葡京綜合度假村",
    "name_en": "",
@@ -340,8 +352,8 @@
   },
   {
    "osm": "way/192095900",
-   "name": "幻宇 REM Hotel",
-   "name_en": "REM Hotel",
+   "name": "迎尚酒店 The Countdown Hotel",
+   "name_en": "The Countdown Hotel",
    "brand": "",
    "operator": "",
    "stars": "",
@@ -616,7 +628,7 @@
   },
   {
    "osm": "way/229205169",
-   "name": "鷺環海天度假酒店",
+   "name": "鷺環海天度假酒店, 澳門高爾夫球鄉村俱樂部",
    "name_en": "Grand Coloane Resort , Macau Golf & Country Club",
    "brand": "",
    "operator": "",
