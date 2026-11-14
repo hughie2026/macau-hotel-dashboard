@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T18:02:40+00:00",
+ "updated": "2026-11-14T22:24:28+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
  "until": "2026-11-14",
@@ -212,7 +212,7 @@
     ],
     [
      "2026-11-11",
-     10
+     11
     ],
     [
      "2026-11-12",
@@ -227,10 +227,10 @@
      0
     ]
    ],
-   "total": 84,
+   "total": 85,
    "by_lang": {
     "en": 33,
-    "zh": 51
+    "zh": 52
    },
    "publishers": [
     [
@@ -558,7 +558,7 @@
     ],
     [
      "2026-11-12",
-     6
+     7
     ],
     [
      "2026-11-13",
@@ -566,18 +566,18 @@
     ],
     [
      "2026-11-14",
-     0
+     2
     ]
    ],
-   "total": 47,
+   "total": 50,
    "by_lang": {
-    "zh": 17,
-    "en": 30
+    "en": 32,
+    "zh": 18
    },
    "publishers": [
     [
      "IAG – Inside Asian Gaming",
-     7
+     8
     ],
     [
      "TDM",
@@ -617,6 +617,20 @@
     ]
    ],
    "articles": [
+    {
+     "title": "MGM China adopts alternative public float threshold after switching to share-based executive incentives",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVlhJc0RLcXhyRFI1Q3p5a1lBb09jMjQtT18wTXFTdkFmNFBKaVVPOXhkRUlYNUxiMjZ5R0RtWGdQQUFCaDFzWjllRWE3cFFYYkhkdnhkVGl4Y21Pdk1WU1Z0UVJMUk9odkY0azY4Y25IYnQ5blVmZ1pyaExFUm53N0lQemVhbkdVZVZzT3hHbVFtYmkza1pyZFhWODBFY0NGbFpOWkRqeXE2X1VoUjE4eV9WVzFfMnZsaW5vUWJzVHlwY1hUR0M0NDZZX1NkUQ?oc=5",
+     "source": "IAG – Inside Asian Gaming",
+     "lang": "en",
+     "date": "2026-11-14T20:36:09Z"
+    },
+    {
+     "title": "美高梅中國第3季收入89億港元",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41V3JaTmtkU3U2RloydkxGeElIaVVJd1VPMXZlbFJsZlNPajdoZkI2OGhTMWRaQzRfZmVPYWF6d1AwWmE2Ti1zX3d1ZFBNc3FnQzVIVFBCRk5Qdw?oc=5",
+     "source": "澳門廣播電視股份有限公司",
+     "lang": "zh",
+     "date": "2026-11-14T10:45:20Z"
+    },
     {
      "title": "美高梅中國(02282) 公眾持股量充足度",
      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNeXZFajZiazN4R1VGMk0zZllnZFlhcUkyUExNeU1HSVU1Z0NGS1luREZrbmlueFJlRDBYS1lHTXY3RVRfN2RLN3ZsWnBndy1UWHdxbFV0YXZaazQ0eEdpSE1FOERXTm9DcWRsXzgwMG9faGVRYUgyRG94Qi1DQlJTU3pCcEo5bG9jQ0d3bkRmaF84R0lvSnl6TEtfbzJWX0E5RDRLdFJzU2xrQzl5SUFOU0lVSnh3WjRlRk9Xb05RX2dfdTZrZ3JfTHlmeUFncFBEMC00NERUT1F2dVhkTGhqeE0wdGR5YUNMSWtMeEc1MnJwMHAzLUR4dW5FaldPazNTZW5CQ3p2c21aY3lFdUFmTQ?oc=5",
@@ -667,25 +681,11 @@
      "date": "2026-11-12T09:56:40Z"
     },
     {
-     "title": "MGM China Holdings Ltd (M04.DU) Seasonal Returns Chart",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56dWFRdHA0RWp6ak9OWjZtaUFXVmMxZmZyMk9yMWl5cW10dVlmSDlnbWdyYll6TXNhdHAtdDJORmk0VmRYN016Ml9zNGx4N041R2hGUzFpUzExOFVHMjVHQlpldHQ?oc=5",
-     "source": "Yahoo! Finance Canada",
+     "title": "Pansy Ho Exits MGM Resorts With $140M Share Sale",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPa3RhNWJHczRabEkyUS0zR2tXM0w3SkFLQWp0ZzNoRGg0bnR2azJVYlNTNjA1MTF4a1NscFFpaVJZdDExQzJKeTRFX0wxQ0dqUkVQb1RvZWgxdVlTOHVmdnNObkNKcWs0QmxyRzBQdWRIYWFGSGxHWkdyTWFPMndvbHlUUlV4MXhZeGdXdXRSVUd0QXNSMTBVZVF5cDA?oc=5",
+     "source": "World Casino News",
      "lang": "en",
-     "date": "2026-11-12T04:10:01Z"
-    },
-    {
-     "title": "Consumer discretionary - casino operator stocks Q3 highlights: MGM Resorts",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcUxYQVZFT3RYVFJhZXlCSTZDS2o0OU5lUEFLZ1VuR3M1X21tVGFxN2N3em1mR3RjNUFUNEc3VldLeVUyOXJqQ3RyNnpsX2VDNFRxUmNyUUpLbEwyc2g4ajFNRm9QSzBLRUpxdHYwamNXWElnQXNESGRIbnhJdWRPLWJOclpmYlUyVU9YVXA3MFcxd01LQzduNksybVA2Zkc3cDB5akI1NS04aE0tVUhIdi1Sb09hUEpNMmhzS1h3OUFNRmdZa2p1bHYzNE0?oc=5",
-     "source": "TradingView",
-     "lang": "en",
-     "date": "2026-11-12T03:34:00Z"
-    },
-    {
-     "title": "週末出走澳門｜美獅美高梅先看《澳門2049》再吃米芝蓮一星料理+美酒微醺作結",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZzhqQ0VkS2o2WWR0bmdIUFVLVVl4YTRST093ejVGeFRQaEc1VDVMd01RRC0zOGtqOUhQWVpMellKS2czb1AxTGVYMkFZaHZIdWZsWVg1X3I0ZzdVNGw5TTZJaHE0RldVbVlVWWxWcExNeW42TEdPYkNxY2dwR0hwSVZuUkFySjVpWmp4VkhHdVVWRDVXXzlwQnVZMUo4bkw3eGRpTXViTGFBdTNw?oc=5",
-     "source": "新假期",
-     "lang": "zh",
-     "date": "2026-11-11T15:59:00Z"
+     "date": "2026-11-12T06:52:43Z"
     }
    ]
   },
@@ -737,13 +737,13 @@
     ],
     [
      "2026-11-14",
-     1
+     2
     ]
    ],
-   "total": 85,
+   "total": 86,
    "by_lang": {
-    "en": 52,
-    "zh": 33
+    "zh": 34,
+    "en": 52
    },
    "publishers": [
     [
@@ -788,6 +788,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "美高梅中國第3季收入89億港元",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41V3JaTmtkU3U2RloydkxGeElIaVVJd1VPMXZlbFJsZlNPajdoZkI2OGhTMWRaQzRfZmVPYWF6d1AwWmE2Ti1zX3d1ZFBNc3FnQzVIVFBCRk5Qdw?oc=5",
+     "source": "澳門廣播電視股份有限公司",
+     "lang": "zh",
+     "date": "2026-11-14T10:45:20Z"
+    },
     {
      "title": "Wynn Macau, Limited (WYNMF) Seasonal Returns Chart - Yahoo Finance",
      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA3Z3Ffa01Wb2VXNXdXTWJVWHc1S1g5N2wwMFd2S0pKM3ZWQk5xdzM0X3phT2Q0SmJTOU1UOXpEdk0wYm9Rd05tN2Fqa1RXVjhRclJnZ0FnRHVtTDhWejhWNUZJZw?oc=5",
@@ -850,13 +857,6 @@
      "source": "Casino.org",
      "lang": "en",
      "date": "2026-11-11T17:23:20Z"
-    },
-    {
-     "title": "港股異動| 永利澳門(01128)跌近2% 第三季度物業EBITDA遜於市場預期花旗料公司明年派息存下行風險作者智通財經",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1FaFpERHNuclk5Z0huX2NvNTBJWHRFUmFZczdUYWlYWC13TE81YWdwUzMtdS1IdHo0aThfRjJmajltNEd3OUQtSDZpZGZmcUlRQy1JbTZIdzBVc0FSOHlWMERRTlJVN2lnWll0RG1DNVk?oc=5",
-     "source": "Investing.com 香港 - 股市報價& 財經新聞",
-     "lang": "zh",
-     "date": "2026-11-11T06:24:31Z"
     }
    ]
   },
@@ -896,11 +896,11 @@
     ],
     [
      "2026-11-11",
-     2
+     3
     ],
     [
      "2026-11-12",
-     5
+     7
     ],
     [
      "2026-11-13",
@@ -908,30 +908,30 @@
     ],
     [
      "2026-11-14",
-     0
+     2
     ]
    ],
-   "total": 54,
+   "total": 59,
    "by_lang": {
-    "en": 28,
-    "zh": 26
+    "en": 29,
+    "zh": 30
    },
    "publishers": [
+    [
+     "澳門日報",
+     6
+    ],
     [
      "TDM",
      5
     ],
     [
-     "Investing.com 香港 - 股市報價& 財經新聞",
+     "IAG – Inside Asian Gaming",
      4
     ],
     [
-     "IAG – Inside Asian Gaming",
-     3
-    ],
-    [
-     "澳門日報",
-     3
+     "Investing.com 香港 - 股市報價& 財經新聞",
+     4
     ],
     [
      "GGRAsia",
@@ -946,19 +946,33 @@
      3
     ],
     [
+     "澳門會展經濟報",
+     2
+    ],
+    [
      "華僑報",
      2
     ],
     [
      "澳門力報",
      2
-    ],
-    [
-     "香港商报",
-     2
     ]
    ],
    "articles": [
+    {
+     "title": "Fitch becomes latest ratings agency to downgrade SJM Holdings due to weaker performance and mounting debt concerns",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORDY3MTB2LV82cnktUVV0aUNocU5LZnZZSmdzY2o4X0tIeEdlZ0VpRWFYZFAtTXRHM3JoaEhFaXVYcXZMeU1FS3pjMnFLWUZHUGU1Ym91aGk3QnFjdHdrOXRpTU96UXN2ODJQLUtseHBXdXVPTDBzR0lubkZ1dHVRbXZvYTFVM3hNMnBJcTk5MTZLMnhGc2RFLTF3MG9pMmxjM1c2MDF6dUY2ZU85NS1uRDZELTYwWmdHTW5USk5lUW1jNHZRaGhVQlA3ck1BLTE0akhSRE5QRjNaTGgt?oc=5",
+     "source": "IAG – Inside Asian Gaming",
+     "lang": "en",
+     "date": "2026-11-14T20:30:14Z"
+    },
+    {
+     "title": "Garmin進駐上葡京",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wSnZTdDE1QXkydUdDMkR6MW9USTFibm5nZ1NQb3J0TDJFYWljb0ZxbGhndm5iODRQdlZ6OVk1OTEtZ3dhR05YY2RNMWR2UjNOdVFhV2hyTVZJOXVna1pkRGFvZUdXMEJa?oc=5",
+     "source": "澳門日報",
+     "lang": "zh",
+     "date": "2026-11-14T19:23:42Z"
+    },
     {
      "title": "Moody’s Downgrades SJM Holdings to B2 on Very High Leverage and Macau GGR Pressures",
      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNQmFBRkwtc2kyTVhDUGE0a1ZFS0E3SFptaHR1SWVxaVFUdWdxNUpPQWxhSUVLeDV1elM2N3BDSVFqMWdRSVhOb04tQ3ZZeVJ2d2JKNWZ2dXpWM1NvZXdodzBuWFpGX2xXd244bS10ZzkwRE5fc0ZINlM1eTVUdFlPTUVGU0dyc2pXbVZzbkJnbFI2NDdWdmpOWnptQXhrdC1aWUlBVXh1MUthYXdDdWo2LTdVY3JnOEZYZzB0dDZPV3FJRTFELXd6cHpjaTJ2WW5x?oc=5",
@@ -995,39 +1009,25 @@
      "date": "2026-11-12T19:27:49Z"
     },
     {
+     "title": "六位東張女神台慶變跑女",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE56N241cGFncGtrMHhFVS1qNVY0bERSbDRjNTdZVXNjZUo3R0R1QTdYU1M0ZUVZMzRhV2Z6eXVVTk1Ua0s4Z2hJS1gzVURqU2hOcjdDX3lMNDJiMEZuYjVCQlRjYTctT3Vs?oc=5",
+     "source": "澳門日報",
+     "lang": "zh",
+     "date": "2026-11-12T19:25:31Z"
+    },
+    {
+     "title": "2026-11-13",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1jVTNlOE5KZFhOWGRwSzZNWHgyV1o5Z1czQmxneWhWeWhIVlhBNXBMWm5weUNVdFU2bVJ5bnRYQnZudjZacUVzQXFOR1lnM092Tk5hNUZhczZXLWhSQTB4SGo2b19vQQ?oc=5",
+     "source": "澳門日報",
+     "lang": "zh",
+     "date": "2026-11-12T18:25:07Z"
+    },
+    {
      "title": "Moody’s downgrades SJM again as debt pressures mount",
      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE12Zl9OQi1GdllVODR0ZnFPaHZrN05laDBRajB3NHh2NmFBa3lucGVVb3JkREU3bEZza3pPcV96VHEtZzQzNjdFTUl5aHYwbC1la0RXSEl6S2lZZkdOWW84YXJlRTNsVjMyLXBYZjkxRG9GV1BhQ2UxTFVOVQ?oc=5",
      "source": "Focus Gaming News",
      "lang": "en",
      "date": "2026-11-12T11:39:43Z"
-    },
-    {
-     "title": "Moody’s downgrades SJM Holdings to ‘B2’, warns of ‘very high leverage’",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZnAyUGFhQmk4ZEpBNFpxY3pZb08wY2ZHQ2xUTVlybkE5VHUxYklycUN2QkxDZWhTWGd3cG5jM1VfSV9iMFNnLWVSSFhxMWc4VFZPYlYyaHp4YVlHUVA2czRBQ3Z1WHRaNTJOSE9qT19xZjFUN2dWRGFmWjVtM05KcUdQSjVSOGpTUWhXSk1sSF9UZw?oc=5",
-     "source": "GGRAsia",
-     "lang": "en",
-     "date": "2026-11-12T10:17:58Z"
-    },
-    {
-     "title": "“澳娛綜合宴會巡禮” 綻放專屬盛典啟迪非凡時刻",
-     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBiTmZocjJKa1JCLXJBM0tUSThiYThfbVVUM3ZLQjJ1NUdsUzN2cnM5YTFETU1pbXVwdEk5REhGWGRSN1ljem84RHVVd0xVQkRKTXFybXpLY29ya1lX?oc=5",
-     "source": "澳門會展經濟報",
-     "lang": "zh",
-     "date": "2026-11-11T18:18:03Z"
-    },
-    {
-     "title": "上葡京火警疏散演習",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE14WDdiU3BkbXJsLTNMOV9YN3Jkbk5oazBldmRJQlpsVnNwNEEtVy1aUklmNkdnTnRwX0ZvbU9Wc0hMYkI2cEQ4a3BmMWlhMlpwZkE?oc=5",
-     "source": "澳門特別行政區政府入口網站",
-     "lang": "zh",
-     "date": "2026-11-11T07:30:00Z"
-    },
-    {
-     "title": "Melco Profit Nearly Vanishes as Macau Q3 Results Split",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdDV5VWRsSVRYVG95ZzRIZlZiLUNXTDB3ZDhPVzVZNTFfX1Q5S3NEZjlwMV83REs5OC1rWjZNWjRyd1FabXpMU0FiUnQyMVpsd2lTNEhVM3RVZkZuYU1wS1pJNlZRYmxrVVg2elROU2VHUDI2QWgta1NpdHhPdDFnVm5aRTFfOU5yNFVweGdJMUN1MWpfM3JSdA?oc=5",
-     "source": "Casino.com",
-     "lang": "en",
-     "date": "2026-11-10T21:38:50Z"
     }
    ]
   }
