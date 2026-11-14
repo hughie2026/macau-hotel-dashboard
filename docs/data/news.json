@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T06:22:42+00:00",
+ "updated": "2026-11-14T18:02:40+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
  "until": "2026-11-14",
@@ -49,16 +49,16 @@
     ],
     [
      "2026-11-13",
-     3
+     4
     ],
     [
      "2026-11-14",
-     0
+     1
     ]
    ],
-   "total": 89,
+   "total": 91,
    "by_lang": {
-    "en": 48,
+    "en": 50,
     "zh": 41
    },
    "publishers": [
@@ -91,19 +91,33 @@
      4
     ],
     [
+     "Yahoo! Finance Canada",
+     3
+    ],
+    [
      "澳門會展經濟報",
      3
     ],
     [
      "富途牛牛",
      3
-    ],
-    [
-     "香港經濟日報HKET",
-     3
     ]
    ],
    "articles": [
+    {
+     "title": "Macao marathon route passes A-Ma Temple on 6 December 2026",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaGd0RUlHZHp1QjItUzRVcmZSV29kYWxyR25UcnZZc2ZfeWJ4cGlON21uUkVWZ0U0aTE5LWVNbTJ2VzFWY0RrRktFZEtnZWJQcGRiRnJlejllcVhYZjUyTHM1UFZTSzM4SUg2UG1iaGhmVEF6ZDljZElPNEVNQTh2WTFjR1ZnVnQzcmUwSDVIUjFrRmZEOFowcUw4WEl2Q1pnb2NYckN3TnlCV0F5c1h6aXMxeEE?oc=5",
+     "source": "ad-hoc-news.de",
+     "lang": "en",
+     "date": "2026-11-14T11:59:43Z"
+    },
+    {
+     "title": "Galaxy Entertainment Group Ltd (KW9A.SG) Seasonal Returns Chart - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5mWHM5ZlJKNy16c3N1dGMwZUU5RTVZRWF2c2dLcS1zb29wNVl6c0hGZE5iWWJwZXhnc1ZodTcxb3Rfa3lNWVppTzcyRUJaQWh5cHZhdXpkOXk0X2NXOHM0OVRiNzZQQQ?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "lang": "en",
+     "date": "2026-11-13T16:49:24Z"
+    },
     {
      "title": "GEG donates MOP 700,000 to Tung Sin Tong for 23rd Consecutive Year to Support Macau Its Annual Charity Fundraising Campaign",
      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPaEM4bHV0LVlnWHhReFRpbERaUWJZRW1sclBxMi1CZ0l5NDI4VFlmc21hMkd5UTVjRDZFVzM0NVQzQUxxVV9SRGh5ZUt5RUlmck9qekxjOHNtTXZCWDJndGJKbzR0RXRJTDMtdVExOTdWOE9GZHBTc09Da0VsbHpKNGxPcG94VXVhbzh5MWx5NG9rUDRlX0pTdmFEajM1RlR5LWFmRzlsbGl6MG5fNmR0MzlMdkxNWm1oSWcxYjI0R1p4MkxoNGdYV0pCYTdocGZ5NDRpYTA5SU5rMmpRZnY0R3ZkbzJ5QzNOMERqdDZBQzRnTFBKTUFNSWMxcHVQY0l6cnFlQkJoYWZZRmM?oc=5",
@@ -159,20 +173,6 @@
      "source": "澳門力報",
      "lang": "zh",
      "date": "2026-11-12T05:44:11Z"
-    },
-    {
-     "title": "Join Cliff Avril for a Game Day Viewing Party Sunday, November 15th at Muckleshoot Casino Resort!",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeWhFd1NmY1pVSDlxVnU4V0Z5TnJyM0RxcHNuaXA3QWkzZHhFOHBDTWhHWjNTbGFVckVhX0x6NTJsNUpHaW9ZanJEVEtnODVrVHlvOXlMWkVWb0NQbVc1TDc5a2JJVEp0U2ZBaVdkMEtBak1EcHpnQUZabWoycjdtR1BaYnFFbUxudk81cm9TZXc2b2dDQVJiM3dsSWcwc1JjOHN2V1loTXAycXRkaVJtZ2gySmN0eGRuVXpRc3ZVdG43Z3FZUzZBdlJyZHhCT0RoZS1ad1N0MmtyUQ?oc=5",
-     "source": "Seattle Sports",
-     "lang": "en",
-     "date": "2026-11-11T22:52:54Z"
-    },
-    {
-     "title": "佘詩曼現身RALPH LAUREN澳門銀河新店開幕活動",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1DUkZfdDY5TXJiT3ZIOXRheDAzQ0xQQVBwY2NuT2dGSmJ3WFZYaXA5eHVDNFV4M0FzTEVPOUNxZmVGNlFhTTZqS1psRFFLeFZxQzgzZzEyb0U2SmtBTzlpQQ?oc=5",
-     "source": "澳門力報",
-     "lang": "zh",
-     "date": "2026-11-11T17:18:34Z"
     }
    ]
   },
@@ -709,7 +709,7 @@
     ],
     [
      "2026-11-07",
-     5
+     7
     ],
     [
      "2026-11-08",
@@ -737,13 +737,13 @@
     ],
     [
      "2026-11-14",
-     0
+     1
     ]
    ],
-   "total": 82,
+   "total": 85,
    "by_lang": {
-    "en": 50,
-    "zh": 32
+    "en": 52,
+    "zh": 33
    },
    "publishers": [
     [
@@ -788,6 +788,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Wynn Macau, Limited (WYNMF) Seasonal Returns Chart - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA3Z3Ffa01Wb2VXNXdXTWJVWHc1S1g5N2wwMFd2S0pKM3ZWQk5xdzM0X3phT2Q0SmJTOU1UOXpEdk0wYm9Rd05tN2Fqa1RXVjhRclJnZ0FnRHVtTDhWejhWNUZJZw?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "lang": "en",
+     "date": "2026-11-14T09:40:27Z"
+    },
     {
      "title": "Six decades of speed and innovation",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9oUXFhYlA5M3M4bHVZeDBPeDlDRVF6Ylp4VVhESTdJQmdfcGxwR0RIUHBPVXhkUWRXNXVwOVhWc3RLVmhZQUNKcWYwSEZnQkZvNDlLVlkzXzFkTzhoekdjOWFjbEpaOVJ6WjFLY3Y2TQ?oc=5",
@@ -850,13 +857,6 @@
      "source": "Investing.com 香港 - 股市報價& 財經新聞",
      "lang": "zh",
      "date": "2026-11-11T06:24:31Z"
-    },
-    {
-     "title": "Wynn sues Melbourne-based former junket rep for alleged HK$2 million Macau gambling debt",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNW5hWHp1Q0RIamlac01rbE1Wd2otdUNoUFBQMVVzRW9DbzBEVFloTlRIX0xiYllDSTV4QWpTYzMxZ1Z3UVFhMnJRM082bDFOMi1fRWg0RU1KLXlKSVI5V1JDQzZ2c3RxQjBLdFpwSlloTW52UFZLY2dIVEFVUkwtVTNkclBwczlHZHhzbXI1MDJsWGVGd3ZTMk0wME1feVpURTh6QkxpcmFFMDVxQzZUeEZ5cWowY2lz?oc=5",
-     "source": "IAG – Inside Asian Gaming",
-     "lang": "en",
-     "date": "2026-11-11T06:16:02Z"
     }
    ]
   },
@@ -892,7 +892,7 @@
     ],
     [
      "2026-11-10",
-     4
+     5
     ],
     [
      "2026-11-11",
@@ -900,7 +900,7 @@
     ],
     [
      "2026-11-12",
-     4
+     5
     ],
     [
      "2026-11-13",
@@ -911,9 +911,9 @@
      0
     ]
    ],
-   "total": 52,
+   "total": 54,
    "by_lang": {
-    "en": 26,
+    "en": 28,
     "zh": 26
    },
    "publishers": [
@@ -924,6 +924,10 @@
     [
      "Investing.com 香港 - 股市報價& 財經新聞",
      4
+    ],
+    [
+     "IAG – Inside Asian Gaming",
+     3
     ],
     [
      "澳門日報",
@@ -943,10 +947,6 @@
     ],
     [
      "華僑報",
-     2
-    ],
-    [
-     "IAG – Inside Asian Gaming",
      2
     ],
     [
@@ -972,6 +972,13 @@
      "source": "Traders Union",
      "lang": "en",
      "date": "2026-11-13T12:18:31Z"
+    },
+    {
+     "title": "Moody’s downgrades Macau concessionaire SJM on “very high leverage” and near-term refinancing needs",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXJZVkM0dFFtRFZIUFdJaWlqeHlsWXlQc0Z0MHNBQ3Z2d3F6bXE1QlFaZGtvcm1ndXBZV2F2Wk1SUXZCb2o0UEFYamZQeFNJUUdXeHMwVnk3QVNvY0RIQkpFbXlvUFdZVWFTYnlab1k2anNGbC05WFk3Y25oU2ZkS3RHeGtydjdEQkJ3LUpOdm81NUc5NEh1aW1seWV6QndDZFhOTDdoLVMxMHAyYjQ0TG1DTFFBMGVHNlI1d0xtZWtvaWNB?oc=5",
+     "source": "IAG – Inside Asian Gaming",
+     "lang": "en",
+     "date": "2026-11-12T21:41:04Z"
     },
     {
      "title": "上葡京火警演習增突發應變",
@@ -1016,18 +1023,11 @@
      "date": "2026-11-11T07:30:00Z"
     },
     {
-     "title": "華僑報",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAydEVYdEN3UEJiTWMxVHVQd3NwZjEyNkZGWnM3anJ4OS1ZS0RRRVdPYmZfeVJxNVUzMzlzYUhtRFc5YmNXWUs2R2pmZ2J4SXlYMGk1d1NIOTg?oc=5",
-     "source": "華僑報",
-     "lang": "zh",
-     "date": "2026-11-10T19:26:33Z"
-    },
-    {
-     "title": "SJM Holdings (SEHK:880) Stock May Be Undervalued Based On Its Sales Base",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNEdUazZpV0s1RENaWW9IN0ZqSkIyUHJyQ2gtb0k4WDFfd1BCMXBVNm5jV1E4cXAwME52VHZTY0ZuR3JtcFE0eWpKNWtiRWEwTGlnRUV0cmkyNVBuS3VoeFB5TGhvTmRSZWNoWDBzb3JpbmZ1cy01V2wxN3dFeUlHRndEaHZ5RmkzZzNpM1dqdmpyY1JLUnJF?oc=5",
-     "source": "Yahoo Finance",
+     "title": "Melco Profit Nearly Vanishes as Macau Q3 Results Split",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdDV5VWRsSVRYVG95ZzRIZlZiLUNXTDB3ZDhPVzVZNTFfX1Q5S3NEZjlwMV83REs5OC1rWjZNWjRyd1FabXpMU0FiUnQyMVpsd2lTNEhVM3RVZkZuYU1wS1pJNlZRYmxrVVg2elROU2VHUDI2QWgta1NpdHhPdDFnVm5aRTFfOU5yNFVweGdJMUN1MWpfM3JSdA?oc=5",
+     "source": "Casino.com",
      "lang": "en",
-     "date": "2026-11-10T08:14:14Z"
+     "date": "2026-11-10T21:38:50Z"
     }
    ]
   }
