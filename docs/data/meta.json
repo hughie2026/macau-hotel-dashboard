@@ -1,14 +1,14 @@
 {
  "osm": {
   "ok": true,
-  "updated": "2026-11-13T19:41:32+00:00",
+  "updated": "2026-11-14T06:22:01+00:00",
   "info": {
    "hotels": 115
   }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-13T19:41:44+00:00",
+  "updated": "2026-11-14T06:22:13+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -20,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-13T19:41:46+00:00",
+  "updated": "2026-11-14T06:22:14+00:00",
   "info": {
    "tickers": 6
   }
@@ -57,28 +57,26 @@
   "last_error": "未設定 SEC_CONTACT，已跳過（可選）"
  },
  "gdelt": {
-  "ok": false,
-  "updated": "2026-11-12T07:12:29+00:00",
+  "ok": true,
+  "updated": "2026-11-14T06:24:58+00:00",
   "info": {
    "refreshed": [
+    "sands"
+   ],
+   "skipped": [
+    "sjm",
     "galaxy",
     "mgm"
    ],
-   "skipped": [
-    "wynn",
-    "sands",
-    "sjm"
-   ],
    "errors": [
-    "melco"
+    "melco",
+    "wynn"
    ]
-  },
-  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'sands': 'RuntimeError: 請求失敗：被限流', 'melco': 'RuntimeError: 請求失敗：被限流', 'wynn': 'RuntimeError: 請求失敗：被限流'}",
-  "last_attempt": "2026-11-13T19:44:24+00:00"
+  }
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-13T19:41:53+00:00",
+  "updated": "2026-11-14T06:22:21+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -86,10 +84,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-13T19:42:14+00:00",
+  "updated": "2026-11-14T06:22:42+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 27,
+   "new_articles": 8,
    "errors": []
   }
  }

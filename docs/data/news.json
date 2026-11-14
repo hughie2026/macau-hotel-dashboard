@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-13T19:42:14+00:00",
+ "updated": "2026-11-14T06:22:42+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
- "until": "2026-11-13",
- "days": 11,
+ "until": "2026-11-14",
+ "days": 12,
  "groups": {
   "galaxy": {
    "volume": [
@@ -33,7 +33,7 @@
     ],
     [
      "2026-11-09",
-     12
+     13
     ],
     [
      "2026-11-10",
@@ -50,11 +50,15 @@
     [
      "2026-11-13",
      3
+    ],
+    [
+     "2026-11-14",
+     0
     ]
    ],
-   "total": 88,
+   "total": 89,
    "by_lang": {
-    "en": 47,
+    "en": 48,
     "zh": 41
    },
    "publishers": [
@@ -71,15 +75,15 @@
      6
     ],
     [
+     "IAG – Inside Asian Gaming",
+     6
+    ],
+    [
      "macau daily times 澳門每日時報",
      5
     ],
     [
      "Moomoo",
-     5
-    ],
-    [
-     "IAG – Inside Asian Gaming",
      5
     ],
     [
@@ -212,25 +216,29 @@
     ],
     [
      "2026-11-12",
-     15
+     16
     ],
     [
      "2026-11-13",
-     5
+     7
+    ],
+    [
+     "2026-11-14",
+     0
     ]
    ],
-   "total": 81,
+   "total": 84,
    "by_lang": {
-    "en": 32,
-    "zh": 49
+    "en": 33,
+    "zh": 51
    },
    "publishers": [
     [
-     "澳門力報",
-     6
+     "澳門會展經濟報",
+     8
     ],
     [
-     "澳門會展經濟報",
+     "澳門力報",
      6
     ],
     [
@@ -267,6 +275,20 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Sands China Ltd. (599A.F) Seasonal Returns Chart",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ONWdNdVNZblI4SjJ5a0JJZWh1TG53RkZZTUJRb1lqS29JWExGWnUta0dHbk8zZmw4S1NGZk5vWWpDX0VjcTlNVVBBUGplaEcxSnZaSTR3YXMzWlpNa0FVUGluZS0?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "lang": "en",
+     "date": "2026-11-13T18:58:32Z"
+    },
+    {
+     "title": "從環境研究到社區實踐： 聖大於金沙中國旗下物業建成澳門首個試點雨水花園",
+     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5XNWJNamtYZkEwT0FzR2kxaHRIVFJzQkdlOVpjclhvSGx2d0ZVRkFkRkF1QXQwYUZSWGJhSC1GTWxOOVhTUlU2bnNGT3M5X010clo4Q1VuRQ?oc=5",
+     "source": "澳門會展經濟報",
+     "lang": "zh",
+     "date": "2026-11-13T16:17:00Z"
+    },
     {
      "title": "MSCI to Remove Sands China from Hong Kong Index After Parent Stake Increase Reduces Free Float",
      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPaTItakNUUlZlRWt6emdVNVgtbmFrV1kxSjhTMDZwS3c4cTQ0WHY3Y19Id0lWVm10dDFjOVRiSS1wamtUb2VNSGVMWVk3aTZXS0xqeEZISld5d0JiVGNZY0dUM2ZJak4zbldmeFF2WS1KVVdRcTh1Sml0cTBuWXd1b2RnZzVXTl9EUnlLNmxKSndWajlRTndXSmw2cUpGbk1lUjJYZW5lMVhJTzNCUGZ6dDQyYXA4RDc1NURBYXJodl96eUhZUk1Nb3pwRnZqWTVBSm9YSW5kVHlyU2lVZ1lhZQ?oc=5",
@@ -322,20 +344,6 @@
      "source": "華僑報",
      "lang": "zh",
      "date": "2026-11-12T19:29:52Z"
-    },
-    {
-     "title": "金沙中國無伴奏音樂祭2026 打造澳門首個大型無伴奏合唱盛事",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE42UDV1MkFaMmRkS19CWnd3TTlnM21hU1NPNHU4akRQWWNhVWp6Y1V5blZVUUZhaXFTZ09UdHhfclRPTk1SWUEySFFSY21nclVFZDNKZ0o2NV9aajlEdEZ6aA?oc=5",
-     "source": "澳門力報",
-     "lang": "zh",
-     "date": "2026-11-12T19:27:01Z"
-    },
-    {
-     "title": "金沙中國無伴奏音樂祭 2026",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ndmU2SDFGRXZXUGhlWjlUUHNCRUtzUHctd3ZZbk4zVlpMQWpSSUlqZkxSejlPcnZpdVJtRlFoYWdybWFOSmtjOVFBREhoLUFOQ2t0d2FkeWpEblJlNmJiaA?oc=5",
-     "source": "澳門力報",
-     "lang": "zh",
-     "date": "2026-11-12T09:25:08Z"
     }
    ]
   },
@@ -379,17 +387,21 @@
     ],
     [
      "2026-11-12",
-     11
+     12
     ],
     [
      "2026-11-13",
      1
+    ],
+    [
+     "2026-11-14",
+     0
     ]
    ],
-   "total": 103,
+   "total": 104,
    "by_lang": {
     "zh": 41,
-    "en": 62
+    "en": 63
    },
    "publishers": [
     [
@@ -449,6 +461,13 @@
      "date": "2026-11-12T22:25:11Z"
     },
     {
+     "title": "Why is Melco Resorts & Entertainment stock sliding today? By Investing.com",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTXJxSDQxX1FyTUpmUGFEeF9YMHgzbXQ0OFNoS3ZxOHprTi1aRFNkOWliQ1pGeU9jUDBYMzItbzN2YXpxZ0ZFZEY1NnVvVVNiOF9WazF0VkNJY1BJZWdENFVBd2FBX0VBTjRfWlAwNFJRVTZDVTFzZmxHX3Y0ZDZmS2oySDNNWExZM0NhZE1USk9EYXc1UkIxaHhXNXcwZnhMTUI3bjlGelN0dS1LYWFtZ3pDOXhBUzg?oc=5",
+     "source": "Investing.com Nigeria",
+     "lang": "en",
+     "date": "2026-11-12T17:43:09Z"
+    },
+    {
      "title": "UBS Downgrades Melco Resorts & Entertainment to Sell From Buy, Price Target Is $3.70",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU0I3REluaS1zZDZRVV82cVZvNHZ4Tlk1R2JyeVhfNnBObmU1RzAyTUd6TElwUEI2STdBWkl5NFZnNi1ublNhSU1pZEVqLUNJSURsaXpRWWV1SWt3REdhdG85NWQwY0I0NUdweDdhVE5HcE1CYnFWWjNGcTZ5REJKOXZwOVk2eTBnLUVoSXhJWFJxU0NOVU1IakZBU00yUy1odmQ1YTlxU2h4MFg5T0E?oc=5",
      "source": "Moomoo",
@@ -496,13 +515,6 @@
      "source": "GGRAsia",
      "lang": "en",
      "date": "2026-11-12T09:09:21Z"
-    },
-    {
-     "title": "Melco Resorts & Entertainment Limited (MAS.F) Seasonal Returns Chart - Yahoo Finance",
-     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5qX1NaWmktV2pmQl9SbGZiUVRFYVJKSUp0dmhOSUpxWWlNQVVidUJGOThaY2FLSFA3anBDODF2bGVDeGpqZ2h0Q1BDckd5ZjlVRWM0R0Z3QWVEMmwwWEl4cmEtVQ?oc=5",
-     "source": "Yahoo! Finance Canada",
-     "lang": "en",
-     "date": "2026-11-12T02:42:35Z"
     }
    ]
   },
@@ -551,6 +563,10 @@
     [
      "2026-11-13",
      3
+    ],
+    [
+     "2026-11-14",
+     0
     ]
    ],
    "total": 47,
@@ -693,11 +709,11 @@
     ],
     [
      "2026-11-07",
-     4
+     5
     ],
     [
      "2026-11-08",
-     3
+     4
     ],
     [
      "2026-11-09",
@@ -717,13 +733,17 @@
     ],
     [
      "2026-11-13",
-     4
+     5
+    ],
+    [
+     "2026-11-14",
+     0
     ]
    ],
-   "total": 79,
+   "total": 82,
    "by_lang": {
-    "en": 49,
-    "zh": 30
+    "en": 50,
+    "zh": 32
    },
    "publishers": [
     [
@@ -739,19 +759,19 @@
      6
     ],
     [
+     "Moomoo",
+     5
+    ],
+    [
      "Yahoo 財經",
      5
     ],
     [
-     "Macau Business",
-     4
-    ],
-    [
-     "Moomoo",
-     4
-    ],
-    [
      "TDM",
+     5
+    ],
+    [
+     "Macau Business",
      4
     ],
     [
@@ -781,6 +801,13 @@
      "source": "Gambling.com",
      "lang": "en",
      "date": "2026-11-13T11:48:24Z"
+    },
+    {
+     "title": "Hong Kong Stocks in Focus | Wynn Macau (01128) Falls Over 4% Again as Q3 Gaming Revenue Misses Expectations; Citi Says Dividend Payout May Decline Next Year",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbHFMSXJrRFhFVTN3MWxrdVhTaUkwLTZGT3U0cE9ReU81MTRvUTJ6Q3R2Y2MyNjJzSl8tTW5PVTFHMEtlLUVBcnk0ZFEwa3A1cUFFU2Y2R2JxWDFhM2VYMzhJTXU1RFhlXzg2aHFUYlJMdFB3NFRzYTIxNjdJT0FzV1h2QkF1elVueWVxOThWN01RR3VDZjloOHFNQmJaQQ?oc=5",
+     "source": "Moomoo",
+     "lang": "en",
+     "date": "2026-11-13T05:24:09Z"
     },
     {
      "title": "港股異動| 永利澳門(01128)再跌超4% 第三季度博彩收入低於預期花旗稱明年派息或下滑作者智通財經",
@@ -830,13 +857,6 @@
      "source": "IAG – Inside Asian Gaming",
      "lang": "en",
      "date": "2026-11-11T06:16:02Z"
-    },
-    {
-     "title": "永利澳門債券仍獲看好 研究機構關注資本開支",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9hRDBZbVlsbnBqVTI3aURiNjlfRU1hNC1JMmpZeWpXd18yQTIzMC1tN1NfeWtMUVpwMmM1aXo3Y2RTT05PSVhFZ193Q25YalBQdkU0?oc=5",
-     "source": "澳門力報",
-     "lang": "zh",
-     "date": "2026-11-11T05:21:19Z"
     }
    ]
   },
@@ -885,6 +905,10 @@
     [
      "2026-11-13",
      2
+    ],
+    [
+     "2026-11-14",
+     0
     ]
    ],
    "total": 52,
