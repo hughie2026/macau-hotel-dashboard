@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T06:31:45+00:00",
+ "updated": "2026-11-15T18:51:57+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
  "until": "2026-11-15",
@@ -33,7 +33,7 @@
     ],
     [
      "2026-11-09",
-     13
+     14
     ],
     [
      "2026-11-10",
@@ -60,9 +60,9 @@
      0
     ]
    ],
-   "total": 91,
+   "total": 92,
    "by_lang": {
-    "en": 50,
+    "en": 51,
     "zh": 41
    },
    "publishers": [
@@ -75,11 +75,11 @@
      7
     ],
     [
-     "澳門力報",
-     6
+     "IAG – Inside Asian Gaming",
+     7
     ],
     [
-     "IAG – Inside Asian Gaming",
+     "澳門力報",
      6
     ],
     [
@@ -220,7 +220,7 @@
     ],
     [
      "2026-11-12",
-     17
+     18
     ],
     [
      "2026-11-13",
@@ -235,10 +235,10 @@
      0
     ]
    ],
-   "total": 86,
+   "total": 87,
    "by_lang": {
     "en": 33,
-    "zh": 53
+    "zh": 54
    },
    "publishers": [
     [
@@ -391,15 +391,15 @@
     ],
     [
      "2026-11-11",
-     1
+     2
     ],
     [
      "2026-11-12",
-     12
+     14
     ],
     [
      "2026-11-13",
-     1
+     2
     ],
     [
      "2026-11-14",
@@ -410,10 +410,10 @@
      0
     ]
    ],
-   "total": 104,
+   "total": 108,
    "by_lang": {
-    "zh": 41,
-    "en": 63
+    "zh": 43,
+    "en": 65
    },
    "publishers": [
     [
@@ -425,15 +425,19 @@
      9
     ],
     [
+     "Simply Wall St",
+     6
+    ],
+    [
+     "Moomoo",
+     5
+    ],
+    [
      "MarketBeat",
      5
     ],
     [
-     "Simply Wall St",
-     5
-    ],
-    [
-     "Moomoo",
+     "鏡週刊Mirror Media",
      4
     ],
     [
@@ -451,10 +455,6 @@
     [
      "Investing.com India",
      3
-    ],
-    [
-     "Yahoo! Finance Canada",
-     3
     ]
    ],
    "articles": [
@@ -464,6 +464,20 @@
      "source": "鏡週刊Mirror Media",
      "lang": "zh",
      "date": "2026-11-13T09:53:00Z"
+    },
+    {
+     "title": "美夢專賣店 澳門新濠天地REM幻宇#鏡週刊",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAxclFObzRieDVuM3BBM21aZEV3UkhEY3hZamdFYVlSRkVjS0ZyZlYzOExieUdFWHZGcmc2bDVYek1DREpVRnJCT29ySXdzbVphRUFLQ25PQXZOemtPTGxTMmRNX3llYkZPVjVzT2ZFNktTd9IBckFVX3lxTFAxclFObzRieDVuM3BBM21aZEV3UkhEY3hZamdFYVlSRkVjS0ZyZlYzOExieUdFWHZGcmc2bDVYek1DREpVRnJCT29ySXdzbVphRUFLQ25PQXZOemtPTGxTMmRNX3llYkZPVjVzT2ZFNktTdw?oc=5",
+     "source": "鏡週刊Mirror Media",
+     "lang": "zh",
+     "date": "2026-11-13T09:53:00Z"
+    },
+    {
+     "title": "UBS Downgrades Melco Resorts and Entertainment(MLCO.US) to Sell Rating, Cuts Target Price to $3.7",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcGQ1THN0TlZOTzlzTFRnVU5WTFc5RVNYSEpNN3V5V2VxN2hueXNlRkNMZTRrR0xvREhac1ViQnIxWVAtaEVjd1FLQV9HVS1Hc3pGTl9vWkV1QUVuR1pxdjNoR0VOelRMRnpNX0hjNHBKbWhkUHRwRzJ4NWVfVmRCalJ1cTZuNXdUMC1jYkRNZzVDb0RFeFRBbzRObXgyajJTN0VhU05TekZmS1ZwVWhlZWp3?oc=5",
+     "source": "Moomoo",
+     "lang": "en",
+     "date": "2026-11-12T23:06:59Z"
     },
     {
      "title": "瑞銀降級後，新濠博亞娛樂股價下跌",
@@ -513,20 +527,6 @@
      "source": "MarketBeat",
      "lang": "en",
      "date": "2026-11-12T15:13:39Z"
-    },
-    {
-     "title": "Melco Resorts & Entertainment downgraded by UBS with a new price target",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOLUdDdmpjTDVwSERVd2pRbDlpREpKc1lON2ZDNldRVjRLcHo1LWRXVTdubzN4UDZOUUN4M25WYXAzZ0lyOE96SWROMG5YZjRiaDNaMmQzanVqNWY4aml6TzF6WjE5eENNNEJxM3EwZkppWThaaHpjY0xPUy1uVUFoY0ltcXAzWGxuZDAyZm1ObUVaQUcybVZSUFlDVUdFcWN2dEZCMXlyYXY?oc=5",
-     "source": "Quantisnow",
-     "lang": "en",
-     "date": "2026-11-12T14:06:52Z"
-    },
-    {
-     "title": "Melco Resorts supports Tung Sin Tong’s welfare programmes",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcDdWam1aRlV3LW9mcThERFI3WTB1Y1RhZHY5NVFBd0ZsdENMRmZzZ0hkeWJiYVZ1U2VHdVE0OTM3al9WdjFPNnJYZEhSX2Y0OFVzM2hMTGk3T2JBdE10LTg0TFJZQU93TUtfZmV1QVdlRjJVc29HelJMeVJwTnRQSWFUdFRvZ2M?oc=5",
-     "source": "GGRAsia",
-     "lang": "en",
-     "date": "2026-11-12T09:09:21Z"
     }
    ]
   },
@@ -757,12 +757,12 @@
     ],
     [
      "2026-11-15",
-     0
+     1
     ]
    ],
-   "total": 87,
+   "total": 88,
    "by_lang": {
-    "zh": 34,
+    "zh": 35,
     "en": 53
    },
    "publishers": [
@@ -808,6 +808,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "休企就業培訓計劃提供5職缺",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQkJJWW5FekpKWnN1OXEyWmZDSDRxZExyZXBRRGRpSGFEcThGNzFvcS1rQjRIdzhlQ2s0NmZ4NHpxc0hZTGhCUFg4TXJxc09pYjlUVWk3eS1QWkRHX3A5bHJweVhZekNITlpWdkN5WmZwNFRmRW5LTlVJNnFBNEpxTTlBLTNNbTd5QjJZNnlCSQ?oc=5",
+     "source": "澳門廣播電視股份有限公司",
+     "lang": "zh",
+     "date": "2026-11-15T07:25:55Z"
+    },
     {
      "title": "美高梅中國第3季收入89億港元",
      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41V3JaTmtkU3U2RloydkxGeElIaVVJd1VPMXZlbFJsZlNPajdoZkI2OGhTMWRaQzRfZmVPYWF6d1AwWmE2Ti1zX3d1ZFBNc3FnQzVIVFBCRk5Qdw?oc=5",
@@ -870,13 +877,6 @@
      "source": "BigGo 財經",
      "lang": "zh",
      "date": "2026-11-12T01:44:40Z"
-    },
-    {
-     "title": "永利澳門債券仍獲看好 研究機構關注資本開支",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE01Y09oSkdGYnJMSFJxV0V4NjJBei1fbThRQXEweWVSZDRnS1loU00zVjZDSWZqaEFrR3E0QS1qM3lIYjZwWG9yRmxWMlJ6cW5QVFlN?oc=5",
-     "source": "澳門力報",
-     "lang": "zh",
-     "date": "2026-11-11T23:27:59Z"
     }
    ]
   },
@@ -920,11 +920,11 @@
     ],
     [
      "2026-11-12",
-     8
+     9
     ],
     [
      "2026-11-13",
-     2
+     3
     ],
     [
      "2026-11-14",
@@ -935,9 +935,9 @@
      0
     ]
    ],
-   "total": 61,
+   "total": 63,
    "by_lang": {
-    "en": 30,
+    "en": 32,
     "zh": 31
    },
    "publishers": [
@@ -951,6 +951,10 @@
     ],
     [
      "IAG – Inside Asian Gaming",
+     4
+    ],
+    [
+     "Yahoo! Finance Canada",
      4
     ],
     [
@@ -975,10 +979,6 @@
     ],
     [
      "華僑報",
-     2
-    ],
-    [
-     "澳門力報",
      2
     ]
    ],
@@ -1010,6 +1010,13 @@
      "source": "Traders Union",
      "lang": "en",
      "date": "2026-11-13T12:18:31Z"
+    },
+    {
+     "title": "SJM Holdings Limited (0880.HK) Stock Price, News, Quote & History",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wTkVEQkRfMGtjX3FjV2duVk1wWTZfbEtWR01YV3lWcERBNkh3R1V1Ul9FWjhJYXJJSzNRZjVxbnRyT2NNLWg2dVJ5WGo0QThKY1RXZEFR?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "lang": "en",
+     "date": "2026-11-13T08:08:15Z"
     },
     {
      "title": "Moody’s downgrades Macau concessionaire SJM on “very high leverage” and near-term refinancing needs",
@@ -1045,13 +1052,6 @@
      "source": "澳門日報",
      "lang": "zh",
      "date": "2026-11-12T19:25:31Z"
-    },
-    {
-     "title": "2026-11-13",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1jVTNlOE5KZFhOWGRwSzZNWHgyV1o5Z1czQmxneWhWeWhIVlhBNXBMWm5weUNVdFU2bVJ5bnRYQnZudjZacUVzQXFOR1lnM092Tk5hNUZhczZXLWhSQTB4SGo2b19vQQ?oc=5",
-     "source": "澳門日報",
-     "lang": "zh",
-     "date": "2026-11-12T18:25:07Z"
     }
    ]
   }
