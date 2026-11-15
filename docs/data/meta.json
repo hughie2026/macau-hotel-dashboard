@@ -1,14 +1,14 @@
 {
  "osm": {
   "ok": true,
-  "updated": "2026-11-14T22:23:48+00:00",
+  "updated": "2026-11-15T06:31:04+00:00",
   "info": {
    "hotels": 115
   }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-14T22:23:56+00:00",
+  "updated": "2026-11-15T06:31:16+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -20,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-14T22:23:59+00:00",
+  "updated": "2026-11-15T06:31:17+00:00",
   "info": {
    "tickers": 6
   }
@@ -57,7 +57,7 @@
   "last_error": "未設定 SEC_CONTACT，已跳過（可選）"
  },
  "gdelt": {
-  "ok": true,
+  "ok": false,
   "updated": "2026-11-14T22:26:30+00:00",
   "info": {
    "refreshed": [
@@ -72,11 +72,13 @@
     "galaxy",
     "wynn"
    ]
-  }
+  },
+  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'galaxy': 'RuntimeError: 請求失敗：ReadTimeout', 'sands': '連續 3 次連線失敗（ReadTimeout）'}",
+  "last_attempt": "2026-11-15T06:32:26+00:00"
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-14T22:24:08+00:00",
+  "updated": "2026-11-15T06:31:24+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -84,10 +86,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-14T22:24:28+00:00",
+  "updated": "2026-11-15T06:31:45+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 10,
+   "new_articles": 4,
    "errors": []
   }
  }

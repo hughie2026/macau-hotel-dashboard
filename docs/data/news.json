@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-14T22:24:28+00:00",
+ "updated": "2026-11-15T06:31:45+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
- "until": "2026-11-14",
- "days": 12,
+ "until": "2026-11-15",
+ "days": 13,
  "groups": {
   "galaxy": {
    "volume": [
@@ -54,6 +54,10 @@
     [
      "2026-11-14",
      1
+    ],
+    [
+     "2026-11-15",
+     0
     ]
    ],
    "total": 91,
@@ -216,7 +220,7 @@
     ],
     [
      "2026-11-12",
-     16
+     17
     ],
     [
      "2026-11-13",
@@ -225,12 +229,16 @@
     [
      "2026-11-14",
      0
+    ],
+    [
+     "2026-11-15",
+     0
     ]
    ],
-   "total": 85,
+   "total": 86,
    "by_lang": {
     "en": 33,
-    "zh": 52
+    "zh": 53
    },
    "publishers": [
     [
@@ -266,11 +274,11 @@
      3
     ],
     [
-     "澳門日報",
+     "信報網站",
      3
     ],
     [
-     "明報財經網",
+     "澳門日報",
      3
     ]
    ],
@@ -395,6 +403,10 @@
     ],
     [
      "2026-11-14",
+     0
+    ],
+    [
+     "2026-11-15",
      0
     ]
    ],
@@ -567,6 +579,10 @@
     [
      "2026-11-14",
      2
+    ],
+    [
+     "2026-11-15",
+     0
     ]
    ],
    "total": 50,
@@ -729,7 +745,7 @@
     ],
     [
      "2026-11-12",
-     1
+     2
     ],
     [
      "2026-11-13",
@@ -738,12 +754,16 @@
     [
      "2026-11-14",
      2
+    ],
+    [
+     "2026-11-15",
+     0
     ]
    ],
-   "total": 86,
+   "total": 87,
    "by_lang": {
     "zh": 34,
-    "en": 52
+    "en": 53
    },
    "publishers": [
     [
@@ -838,6 +858,13 @@
      "date": "2026-11-13T00:09:54Z"
     },
     {
+     "title": "Wynn Resorts Reports Mixed Q2 2025 Earnings, Strong Vegas Performance",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYmVOQ09BZ2xTd1ZTczN0MzI3OHdwenZSUGFZTFRKQkZFT0xFVzhYZ1ZONnlrZC1qTU00VnVYMEVKeS1BdWMxOWMzR0txT25CME5zT2RyeU4wX0ZyR3V5bU92Rm9yY1ZsaGY2SWIzNDhfU0VhVVhzR1FkU1UxT0lYdWVBR2toQy1HcFUyb2VYT1JTV1VRV05lUGZXUV9SWEMtUnlTdzl0ZFVhRUxZQUpQckJYQWwta0gzaUlGeXBKcktNRDNwQl8zTXA0Mks3RjNOOXExamdjbw?oc=5",
+     "source": "World Casino News",
+     "lang": "en",
+     "date": "2026-11-12T10:01:35Z"
+    },
+    {
      "title": "永利澳門 | 1128.HK 股價走勢與即時報價",
      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE14ZHliT3FHSnVUSGtTeW8yQVdKNlBOV25HMjY1YTZTOXNHYVJqUXYxWkc1aW5pcTl4NVVoZThlVUpuTFEzSVZRLXRaWVNxeWRlSG45Rw?oc=5",
      "source": "BigGo 財經",
@@ -850,13 +877,6 @@
      "source": "澳門力報",
      "lang": "zh",
      "date": "2026-11-11T23:27:59Z"
-    },
-    {
-     "title": "Wynn Resorts Sues Ex-Brothel Owner Over $255K Debt After $2.3M Macau Spree",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQejhacDFfSzRXM2lLLW0ta2kyYzdRaWp4VUx6aVpXQTlzcFZjcU9wNFU2a1duMFNlTjNtNm84cHNRcnA1b052RjN1cXRSMk53bjlzNm10OGVFTS1XcGJjRy1sNktGbFJBbko5TTdrcjdxWGdTT2sxY2ZiOVVSMzFTZ2g2RjM0XzNtU0xuRGY5d0RVbWdmVmp3TDdiYjY5WGJXbGVxVG9qbVNhSDBaOWFn?oc=5",
-     "source": "Casino.org",
-     "lang": "en",
-     "date": "2026-11-11T17:23:20Z"
     }
    ]
   },
@@ -888,7 +908,7 @@
     ],
     [
      "2026-11-09",
-     5
+     6
     ],
     [
      "2026-11-10",
@@ -900,7 +920,7 @@
     ],
     [
      "2026-11-12",
-     7
+     8
     ],
     [
      "2026-11-13",
@@ -909,17 +929,21 @@
     [
      "2026-11-14",
      2
+    ],
+    [
+     "2026-11-15",
+     0
     ]
    ],
-   "total": 59,
+   "total": 61,
    "by_lang": {
-    "en": 29,
-    "zh": 30
+    "en": 30,
+    "zh": 31
    },
    "publishers": [
     [
      "澳門日報",
-     6
+     7
     ],
     [
      "TDM",
@@ -1009,6 +1033,13 @@
      "date": "2026-11-12T19:27:49Z"
     },
     {
+     "title": "上交所支持^[“]硬科技企^[”]科創板上市",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RWFBzWE1DUWxETmQxVXJSV2RSR0dhdzBsaENOUHJQZ09rSXJjdDNOVDVuckRUd0FPVkZUTE1GMjRIU3ZVMHJaUFdLOXdKSFZIdHdkelBfeUlRNWQ1T3hPeU5yLUE3WVZ0?oc=5",
+     "source": "澳門日報",
+     "lang": "zh",
+     "date": "2026-11-12T19:27:48Z"
+    },
+    {
      "title": "六位東張女神台慶變跑女",
      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE56N241cGFncGtrMHhFVS1qNVY0bERSbDRjNTdZVXNjZUo3R0R1QTdYU1M0ZUVZMzRhV2Z6eXVVTk1Ua0s4Z2hJS1gzVURqU2hOcjdDX3lMNDJiMEZuYjVCQlRjYTctT3Vs?oc=5",
      "source": "澳門日報",
@@ -1021,13 +1052,6 @@
      "source": "澳門日報",
      "lang": "zh",
      "date": "2026-11-12T18:25:07Z"
-    },
-    {
-     "title": "Moody’s downgrades SJM again as debt pressures mount",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE12Zl9OQi1GdllVODR0ZnFPaHZrN05laDBRajB3NHh2NmFBa3lucGVVb3JkREU3bEZza3pPcV96VHEtZzQzNjdFTUl5aHYwbC1la0RXSEl6S2lZZkdOWW84YXJlRTNsVjMyLXBYZjkxRG9GV1BhQ2UxTFVOVQ?oc=5",
-     "source": "Focus Gaming News",
-     "lang": "en",
-     "date": "2026-11-12T11:39:43Z"
     }
    ]
   }
