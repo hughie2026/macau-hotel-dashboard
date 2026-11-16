@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-15T18:51:57+00:00",
+ "updated": "2026-11-16T06:28:38+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
- "until": "2026-11-15",
- "days": 13,
+ "until": "2026-11-16",
+ "days": 14,
  "groups": {
   "galaxy": {
    "volume": [
@@ -57,6 +57,10 @@
     ],
     [
      "2026-11-15",
+     0
+    ],
+    [
+     "2026-11-16",
      0
     ]
    ],
@@ -233,11 +237,15 @@
     [
      "2026-11-15",
      0
+    ],
+    [
+     "2026-11-16",
+     1
     ]
    ],
-   "total": 87,
+   "total": 88,
    "by_lang": {
-    "en": 33,
+    "en": 34,
     "zh": 54
    },
    "publishers": [
@@ -252,6 +260,10 @@
     [
      "香港經濟日報HKET",
      5
+    ],
+    [
+     "GGRAsia",
+     4
     ],
     [
      "Plataforma Media",
@@ -270,10 +282,6 @@
      3
     ],
     [
-     "GGRAsia",
-     3
-    ],
-    [
      "信報網站",
      3
     ],
@@ -283,6 +291,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Sands China raises LVS shared services caps by 47pct to US$115mln",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNeXkyM01IdWVSaVhXY1hqWTFsa3lITjdJVnItczk1WmhOb1ZsQ0M0Rmxjc21xaFJxQjYySDdwSG1Nd0xuYkM5a2VfbTdfY2tXQldRZ3p3WDBkQjRHamZFWnhxTTBDSFRZZ0NkM1ZPZWJiRkdpUUJ6NkZwX3FzUHpRSnZXaTlsanFGcjJLOGpDcUtrUQ?oc=5",
+     "source": "GGRAsia",
+     "lang": "en",
+     "date": "2026-11-16T03:28:43Z"
+    },
     {
      "title": "Sands China Ltd. (599A.F) Seasonal Returns Chart",
      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ONWdNdVNZblI4SjJ5a0JJZWh1TG53RkZZTUJRb1lqS29JWExGWnUta0dHbk8zZmw4S1NGZk5vWWpDX0VjcTlNVVBBUGplaEcxSnZaSTR3YXMzWlpNa0FVUGluZS0?oc=5",
@@ -345,13 +360,6 @@
      "source": "東方日報",
      "lang": "zh",
      "date": "2026-11-12T19:58:12Z"
-    },
-    {
-     "title": "華僑報",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ZLWNJOWVnN2xjLVlOVlhBbXhDU0hyOFdqdTM5MGNuRlFTNzdVSThiWkVWYXV4S2g0aGpjNEdFTmJhSGNYLXlQVGxpU241Uy0wNnJNTF9vb3Q?oc=5",
-     "source": "華僑報",
-     "lang": "zh",
-     "date": "2026-11-12T19:29:52Z"
     }
    ]
   },
@@ -407,6 +415,10 @@
     ],
     [
      "2026-11-15",
+     0
+    ],
+    [
+     "2026-11-16",
      0
     ]
    ],
@@ -558,7 +570,7 @@
     ],
     [
      "2026-11-09",
-     11
+     12
     ],
     [
      "2026-11-10",
@@ -583,12 +595,16 @@
     [
      "2026-11-15",
      0
+    ],
+    [
+     "2026-11-16",
+     0
     ]
    ],
-   "total": 50,
+   "total": 51,
    "by_lang": {
     "en": 32,
-    "zh": 18
+    "zh": 19
    },
    "publishers": [
     [
@@ -745,7 +761,7 @@
     ],
     [
      "2026-11-12",
-     2
+     4
     ],
     [
      "2026-11-13",
@@ -757,13 +773,17 @@
     ],
     [
      "2026-11-15",
-     1
+     2
+    ],
+    [
+     "2026-11-16",
+     0
     ]
    ],
-   "total": 88,
+   "total": 91,
    "by_lang": {
-    "zh": 35,
-    "en": 53
+    "zh": 36,
+    "en": 55
    },
    "publishers": [
     [
@@ -795,19 +815,26 @@
      4
     ],
     [
+     "澳門廣播電視股份有限公司",
+     3
+    ],
+    [
      "澳門力報",
      3
     ],
     [
      "GGRAsia",
      3
-    ],
-    [
-     "TradingView",
-     3
     ]
    ],
    "articles": [
+    {
+     "title": "美高梅中國第3季收入89億港元",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMUNPVUJ0Z2tJaTEtNi1fcmJJZjhvTmFvWTBmVDR1aUpSWmJoZkVtZGpISE5MOVhiQWkxekt3VFdHbFJReVU3U1phaTNaak9SeVRCai11SEF0MUlrZ0VzcV91ck52cFpLMldPVkl0RDJVQTlHSjUzM2lFeEdOMzJLeGU1SVJaR1VJ?oc=5",
+     "source": "澳門廣播電視股份有限公司",
+     "lang": "zh",
+     "date": "2026-11-15T17:41:50Z"
+    },
     {
      "title": "休企就業培訓計劃提供5職缺",
      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQkJJWW5FekpKWnN1OXEyWmZDSDRxZExyZXBRRGRpSGFEcThGNzFvcS1rQjRIdzhlQ2s0NmZ4NHpxc0hZTGhCUFg4TXJxc09pYjlUVWk3eS1QWkRHX3A5bHJweVhZekNITlpWdkN5WmZwNFRmRW5LTlVJNnFBNEpxTTlBLTNNbTd5QjJZNnlCSQ?oc=5",
@@ -865,18 +892,11 @@
      "date": "2026-11-13T00:09:54Z"
     },
     {
-     "title": "Wynn Resorts Reports Mixed Q2 2025 Earnings, Strong Vegas Performance",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYmVOQ09BZ2xTd1ZTczN0MzI3OHdwenZSUGFZTFRKQkZFT0xFVzhYZ1ZONnlrZC1qTU00VnVYMEVKeS1BdWMxOWMzR0txT25CME5zT2RyeU4wX0ZyR3V5bU92Rm9yY1ZsaGY2SWIzNDhfU0VhVVhzR1FkU1UxT0lYdWVBR2toQy1HcFUyb2VYT1JTV1VRV05lUGZXUV9SWEMtUnlTdzl0ZFVhRUxZQUpQckJYQWwta0gzaUlGeXBKcktNRDNwQl8zTXA0Mks3RjNOOXExamdjbw?oc=5",
-     "source": "World Casino News",
+     "title": "Wynn Macau, Limited (1128.HK) Seasonal Returns Chart - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5tTkJrMi1QQ1FQVGdwamVjSzZhUDBXUm9WLXBSYWNHbjBrMTVQVUJPNTVGbjZhNS02bmdySFI2UHBIV2l0RkpNT1oxbTRzU1o1MjlUdmw3UHA1U2lkNGlkUUhNdVNudw?oc=5",
+     "source": "Yahoo! Finance Canada",
      "lang": "en",
-     "date": "2026-11-12T10:01:35Z"
-    },
-    {
-     "title": "永利澳門 | 1128.HK 股價走勢與即時報價",
-     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE14ZHliT3FHSnVUSGtTeW8yQVdKNlBOV25HMjY1YTZTOXNHYVJqUXYxWkc1aW5pcTl4NVVoZThlVUpuTFEzSVZRLXRaWVNxeWRlSG45Rw?oc=5",
-     "source": "BigGo 財經",
-     "lang": "zh",
-     "date": "2026-11-12T01:44:40Z"
+     "date": "2026-11-12T15:00:00Z"
     }
    ]
   },
@@ -933,12 +953,16 @@
     [
      "2026-11-15",
      0
+    ],
+    [
+     "2026-11-16",
+     3
     ]
    ],
-   "total": 63,
+   "total": 66,
    "by_lang": {
-    "en": 32,
-    "zh": 31
+    "en": 34,
+    "zh": 32
    },
    "publishers": [
     [
@@ -948,6 +972,10 @@
     [
      "TDM",
      5
+    ],
+    [
+     "GGRAsia",
+     4
     ],
     [
      "IAG – Inside Asian Gaming",
@@ -962,10 +990,6 @@
      4
     ],
     [
-     "GGRAsia",
-     3
-    ],
-    [
      "Moomoo",
      3
     ],
@@ -974,15 +998,36 @@
      3
     ],
     [
-     "澳門會展經濟報",
+     "富途牛牛",
      2
     ],
     [
-     "華僑報",
+     "澳門會展經濟報",
      2
     ]
    ],
    "articles": [
+    {
+     "title": "Fitch Downgrades SJM Holdings to B- as Debt and Refinancing Concerns Grow",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUTk1Nlp5NnFnLVFiekdaY3MwOG5KQnRaQlFSMFRkTHVQcnhkZHBOeUh5RkZod3BIVF84cW43Um41bTZadWZNVkJhajJmb0hZQTdhZW1PRUFrWjdua3Q2YUJCRlRrMURUR0ZCVE52blNsNTFEWkVTMjVUQ09jaFNSZW1CRElsSlc5dVBERHNpc2tyTEVjTHZJekJra3hyVEtxRlJYRA?oc=5",
+     "source": "iGamingToday.com",
+     "lang": "en",
+     "date": "2026-11-16T04:01:39Z"
+    },
+    {
+     "title": "惠譽：下調澳博控股長期外幣發行人評級至「B」，展望「負面」",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BaUVreDhtNWIwRnlsdDRESERtc09EUjFkNHdmU3RpUUpZVTVqUmhLaUFHTDhDYVExSTdMM3Q1VmFjRjhxOGxQdWpxN2xBOEw2S3VGZw?oc=5",
+     "source": "富途牛牛",
+     "lang": "zh",
+     "date": "2026-11-16T01:40:00Z"
+    },
+    {
+     "title": "Fitch downgrades SJM Holdings to ‘B’, cites slower deleveraging and refinancing risks",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVllQSThNMlA2YllxbkMwM2JFSU5ERjhLalJzSVQzX1ZDSll5M0pOaWFCeW5acDNLUldiMHRDc21Dc3pITy1FaEZqNEJRX2NCdmdDc3pyMk5xeFJaYlRQQWNMSmxsYXVvV2tnM28tN2R3cWxQanhqZldtNktfTHdEQk5zRDFYSUdhUnMyb0QzSy1ZN0FiLXE4XzRueVNBYnpRLUxDMWhQYTd5Zw?oc=5",
+     "source": "GGRAsia",
+     "lang": "en",
+     "date": "2026-11-16T01:23:16Z"
+    },
     {
      "title": "Fitch becomes latest ratings agency to downgrade SJM Holdings due to weaker performance and mounting debt concerns",
      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORDY3MTB2LV82cnktUVV0aUNocU5LZnZZSmdzY2o4X0tIeEdlZ0VpRWFYZFAtTXRHM3JoaEhFaXVYcXZMeU1FS3pjMnFLWUZHUGU1Ym91aGk3QnFjdHdrOXRpTU96UXN2ODJQLUtseHBXdXVPTDBzR0lubkZ1dHVRbXZvYTFVM3hNMnBJcTk5MTZLMnhGc2RFLTF3MG9pMmxjM1c2MDF6dUY2ZU85NS1uRDZELTYwWmdHTW5USk5lUW1jNHZRaGhVQlA3ck1BLTE0akhSRE5QRjNaTGgt?oc=5",
@@ -1031,27 +1076,6 @@
      "source": "澳門日報",
      "lang": "zh",
      "date": "2026-11-12T19:28:01Z"
-    },
-    {
-     "title": "上葡京頂級威士忌狂歡夜",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE43QVA2ZWxmUHFScmpRaUxKdmpiSFY0VmJBdGE1M0otNDVFa2EzSzFWamxkS2FORGk1WFdrNUE2SVp2SjhmekdyRU1RNHZ5T2xBdklLbjY4c0tVbzBTT0dTdGVSVEVBazdZ?oc=5",
-     "source": "澳門日報",
-     "lang": "zh",
-     "date": "2026-11-12T19:27:49Z"
-    },
-    {
-     "title": "上交所支持^[“]硬科技企^[”]科創板上市",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RWFBzWE1DUWxETmQxVXJSV2RSR0dhdzBsaENOUHJQZ09rSXJjdDNOVDVuckRUd0FPVkZUTE1GMjRIU3ZVMHJaUFdLOXdKSFZIdHdkelBfeUlRNWQ1T3hPeU5yLUE3WVZ0?oc=5",
-     "source": "澳門日報",
-     "lang": "zh",
-     "date": "2026-11-12T19:27:48Z"
-    },
-    {
-     "title": "六位東張女神台慶變跑女",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE56N241cGFncGtrMHhFVS1qNVY0bERSbDRjNTdZVXNjZUo3R0R1QTdYU1M0ZUVZMzRhV2Z6eXVVTk1Ua0s4Z2hJS1gzVURqU2hOcjdDX3lMNDJiMEZuYjVCQlRjYTctT3Vs?oc=5",
-     "source": "澳門日報",
-     "lang": "zh",
-     "date": "2026-11-12T19:25:31Z"
     }
    ]
   }
