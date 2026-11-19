@@ -1,16 +1,14 @@
 {
  "osm": {
-  "ok": false,
-  "updated": "2026-11-17T20:55:12+00:00",
+  "ok": true,
+  "updated": "2026-11-19T07:25:05+00:00",
   "info": {
    "hotels": 115
-  },
-  "last_error": "RuntimeError: 所有 Overpass 鏡像失敗: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=120)",
-  "last_attempt": "2026-11-18T20:32:00+00:00"
+  }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-18T20:32:08+00:00",
+  "updated": "2026-11-19T07:25:21+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -22,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-18T20:32:10+00:00",
+  "updated": "2026-11-19T07:25:23+00:00",
   "info": {
    "tickers": 6
   }
@@ -59,28 +57,26 @@
   "last_error": "未設定 SEC_CONTACT，已跳過（可選）"
  },
  "gdelt": {
-  "ok": false,
-  "updated": "2026-11-17T20:58:06+00:00",
+  "ok": true,
+  "updated": "2026-11-19T07:27:58+00:00",
   "info": {
    "refreshed": [
+    "melco",
+    "sjm"
+   ],
+   "skipped": [
     "mgm",
     "wynn"
    ],
-   "skipped": [
-    "sjm",
-    "sands",
-    "melco"
-   ],
    "errors": [
-    "galaxy"
+    "galaxy",
+    "sands"
    ]
-  },
-  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'galaxy': 'RuntimeError: 請求失敗：被限流', 'sands': 'RuntimeError: 請求失敗：被限流', 'melco': 'RuntimeError: 請求失敗：被限流'}",
-  "last_attempt": "2026-11-18T20:34:56+00:00"
+  }
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-18T20:32:18+00:00",
+  "updated": "2026-11-19T07:25:31+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -88,10 +84,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-18T20:32:40+00:00",
+  "updated": "2026-11-19T07:25:52+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 15,
+   "new_articles": 26,
    "errors": []
   }
  }
