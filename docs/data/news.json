@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T07:17:06+00:00",
+ "updated": "2026-11-20T20:20:18+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
  "until": "2026-11-20",
@@ -73,22 +73,22 @@
     ],
     [
      "2026-11-19",
-     4
+     5
     ],
     [
      "2026-11-20",
      0
     ]
    ],
-   "total": 121,
+   "total": 122,
    "by_lang": {
-    "zh": 53,
+    "zh": 54,
     "en": 68
    },
    "publishers": [
     [
      "澳門力報",
-     9
+     10
     ],
     [
      "macau daily times 澳門每日時報",
@@ -128,6 +128,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "摩通：美獅美高梅與倫敦人 合佔澳門博彩收入兩成",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9uVzJtUVpTcnlKNWFWQnp3MW5zV2wwRXZmR3VwR1NUdmZtN2w1c2s3eS1MQWxQcXNGSlNKamdqN2l0eXBraDFXQjRlaEdRVVhmRXhF?oc=5",
+     "source": "澳門力報",
+     "lang": "zh",
+     "date": "2026-11-19T23:09:21Z"
+    },
     {
      "title": "華僑報",
      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9aTnRTNXVCWGhicnJfakEyX253c20zSTY3Z0ZGVWJpcFlJaXdCV0pzWnVpT1lMRGs4ZUh3TTBHQ094eTVTU2xZaldPRkNiS1hKalhic1NQcXE?oc=5",
@@ -190,13 +197,6 @@
      "source": "HospiBuz",
      "lang": "en",
      "date": "2026-11-17T10:00:23Z"
-    },
-    {
-     "title": "Opera legends Plácido Domingo, José Carreras to perform in Macau on Valentine's Day",
-     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPbENMUlI5TXdHOWtGSUF3RHBuWVRqTkk1R2ZzbEo1Q2RGWHhYS2ZUR09rS0Y3M2ZUZkV1OWZReHNfLWU5YlNNaGhkS1cxMWU1d3ZrRFFfdi1KTm1waEhzMFJ2ZmdGVS10NGx6aFpxYUtIVnYyQ3U0aXBjMFBIRGpZRjFuaEx4SHBBTHJqUm9xNlZqUllQSFhLNnB5SXZQUnpmbEhqU0FmWWpQNXI5N3dYQ1Vuc3hfRTd5Z0pNbWFlcEp6cG1ZRW5CTUpWVmR5WWZOZjJwd05RWjVDZm0tSjhPNDRBWWNrSEd1WUE?oc=5",
-     "source": "The Standard (HK)",
-     "lang": "en",
-     "date": "2026-11-17T09:53:16Z"
     }
    ]
   },
@@ -260,7 +260,7 @@
     ],
     [
      "2026-11-17",
-     21
+     22
     ],
     [
      "2026-11-18",
@@ -268,17 +268,17 @@
     ],
     [
      "2026-11-19",
-     6
+     7
     ],
     [
      "2026-11-20",
      1
     ]
    ],
-   "total": 123,
+   "total": 125,
    "by_lang": {
-    "en": 52,
-    "zh": 71
+    "en": 53,
+    "zh": 72
    },
    "publishers": [
     [
@@ -302,12 +302,12 @@
      6
     ],
     [
-     "macau daily times 澳門每日時報",
+     "TradingView",
      6
     ],
     [
-     "TradingView",
-     5
+     "macau daily times 澳門每日時報",
+     6
     ],
     [
      "香港經濟日報HKET",
@@ -318,7 +318,7 @@
      3
     ],
     [
-     "華僑報",
+     "PR Newswire",
      3
     ]
    ],
@@ -336,6 +336,13 @@
      "source": "澳門力報",
      "lang": "zh",
      "date": "2026-11-19T23:09:21Z"
+    },
+    {
+     "title": "港股異動丨金沙中國績後升近6%領升濠賭股上升 中期息翻倍提振市場情緒",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1qUjlidVZEYUhOZ2FhWDVwbTVmRzFmTGNjOXRXeU5NS0hnZ1lVakRnVnlleU5sNEJhdEFFdzktR0lWM2xmel9CWTMzbEhraTZWMGwwSldqZVRhUXJaQ3BzQ3pCT0gtTWdDNmc?oc=5",
+     "source": "TradingView",
+     "lang": "zh",
+     "date": "2026-11-19T15:31:23Z"
     },
     {
      "title": "Sands China’s Community Revitalization Programme Unveils ‘The Hall of Glory – Iec Long Firecracker Factory’",
@@ -385,13 +392,6 @@
      "source": "macau daily times 澳門每日時報",
      "lang": "en",
      "date": "2026-11-18T00:36:08Z"
-    },
-    {
-     "title": "金沙中國調高共享服務上限 三年合計增至逾億美元",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0yR203UnJ0ZFJmZjgzcnRLRFcyTmlqNG4xamgzZE53Q0prOFljYlZKazV0d0hXdDI5STFMcDVJZ1ZnOTZoY1NVSXBVYWVBNnJtNG9N?oc=5",
-     "source": "澳門力報",
-     "lang": "zh",
-     "date": "2026-11-17T23:28:26Z"
     }
    ]
   },
@@ -849,7 +849,7 @@
     ],
     [
      "2026-11-18",
-     1
+     2
     ],
     [
      "2026-11-19",
@@ -857,12 +857,12 @@
     ],
     [
      "2026-11-20",
-     0
+     1
     ]
    ],
-   "total": 106,
+   "total": 108,
    "by_lang": {
-    "en": 63,
+    "en": 65,
     "zh": 43
    },
    "publishers": [
@@ -883,6 +883,10 @@
      6
     ],
     [
+     "Yahoo! Finance Canada",
+     5
+    ],
+    [
      "TradingView",
      5
     ],
@@ -895,19 +899,22 @@
      5
     ],
     [
-     "Yahoo! Finance Canada",
+     "GGRAsia",
      4
     ],
     [
      "Macau Business",
      4
-    ],
-    [
-     "澳門廣播電視股份有限公司",
-     3
     ]
    ],
    "articles": [
+    {
+     "title": "Asia Pioneer gets UAE vendor licence to complement existing international permits",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV0NjdWpPRlNtUmFGaEY2dmlNWW9OOFg3R2M2T3dzSUUwM3RRSXFKWUdxc2hlUm02Tk1xWUM3M05qQk56UmJQd01udlVpaHY5VnFtTnFXdmFfSFNvQ0pRV2EyOTA5dm1zX3B4Tng1ckdTaW1kSkk4YzlNN0NKaWJDcGhycHltNXlIenY0UlBmOVQteEtoajBlS1p0MTZpTkFhSndVWDJJWHE?oc=5",
+     "source": "GGRAsia",
+     "lang": "en",
+     "date": "2026-11-20T09:52:44Z"
+    },
     {
      "title": "Londoner and MGM Cotai capture fifth of gaming revenue",
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWHNodldrN1JVMjFVUGtBbUFzZEhWT0lQdks3Q0RhUlRQdmZ2R01MLXdYZjhEVDNoMkl1LXkwcDBHWjdMeWxCYnNvU3VoVDBycmE5NHlMVHV2ZVpkRTl3ZzFXckpDUzIwaGZQMV9JUVYwZDRjSU14Y0VtYmlvSjJ4cUJKajNYUzlyNnVUa2tlelZNVGRu?oc=5",
@@ -921,6 +928,13 @@
      "source": "Yahoo Finance Singapore",
      "lang": "en",
      "date": "2026-11-18T18:14:11Z"
+    },
+    {
+     "title": "Wynn Resorts, Limited (WYNN) Stock Forecasts",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVkFEN0xHelRlZGpRNmg2Wmh3NEZuRFVqZlMxSTgycXZ5LVZvSEpkUEdoeTFDakMwdUI3UXFwQ180OUhiT193Ymp4a3BEeWh6TUJSMmF3enBCY2otZ1hYY0JDUU10OFZjY25YUjY2MGNfRktSMjNMLUtSUjBndm9PSWszX3dOelpyVDJWSQ?oc=5",
+     "source": "Yahoo! Finance Canada",
+     "lang": "en",
+     "date": "2026-11-18T08:00:00Z"
     },
     {
      "title": "J.P. Morgan: MGM COTAI and Sands China’s Londoner now account for combined 20% share of Macau-wide GGR",
@@ -963,20 +977,6 @@
      "source": "TDM",
      "lang": "zh",
      "date": "2026-11-16T01:38:15Z"
-    },
-    {
-     "title": "美高梅中國第3季收入89億港元",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkbFd4TnFPbEtTdmgtUjl4ZVpVMUZkeU5uLWhpRmZqb3dQYVppdXZhV29DVnN3UFhLajE4YzRUTlh3T016TWVwRzVoelZXNFM1VVl2RGFNVFVyNTc3V08wQg?oc=5",
-     "source": "TDM",
-     "lang": "zh",
-     "date": "2026-11-15T23:17:20Z"
-    },
-    {
-     "title": "美高梅中國第3季收入89億港元",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMUNPVUJ0Z2tJaTEtNi1fcmJJZjhvTmFvWTBmVDR1aUpSWmJoZkVtZGpISE5MOVhiQWkxekt3VFdHbFJReVU3U1phaTNaak9SeVRCai11SEF0MUlrZ0VzcV91ck52cFpLMldPVkl0RDJVQTlHSjUzM2lFeEdOMzJLeGU1SVJaR1VJ?oc=5",
-     "source": "澳門廣播電視股份有限公司",
-     "lang": "zh",
-     "date": "2026-11-15T17:41:50Z"
     }
    ]
   },
@@ -1176,7 +1176,5 @@
    ]
   }
  },
- "errors": {
-  "sjm:en": "HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22SJM+Holdings%22+OR+%22SJM+Resorts%22+OR+%22Grand+Lisboa%22+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen"
- }
+ "errors": {}
 }
