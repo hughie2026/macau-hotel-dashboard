@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T07:08:26+00:00",
+ "updated": "2026-11-21T19:17:22+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
  "until": "2026-11-21",
@@ -479,13 +479,13 @@
     ],
     [
      "2026-11-21",
-     0
+     1
     ]
    ],
-   "total": 132,
+   "total": 133,
    "by_lang": {
-    "en": 80,
-    "zh": 52
+    "zh": 53,
+    "en": 80
    },
    "publishers": [
     [
@@ -530,6 +530,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "新濠影滙×可口可樂攜手打造“冰FUN嘉年華”",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51bmZTR00wakp1b2w2M0xORFdzOG9nMV9jUnR6NjFrZHIyX3kwcmNhbC1LZ09fYmNEbDE3UjJBZmp3Z2VqR1ppMVBwXzA3Z1ZPXzdiMEYzd1BvS0x1?oc=5",
+     "source": "澳門會展經濟報",
+     "lang": "zh",
+     "date": "2026-11-21T11:04:18Z"
+    },
     {
      "title": "Melco Resorts Repurchases $35.2 Million in Shares Under Buyback Program, Lifting Potential Parent Stake to 64.09%",
      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOLW9vSWg4TXZKdGhRNW9XUmgxV3RKQ2dNQmpRZmZXdmJvbEhoS3haYXFNeG13WnZYcjI2N090Zjd4QnEzSTJuZzNBLU5sZUNYUDllWnh5VDFINUJEQXdDaWF2VWRGdXpvWkRySm9uclZOWWd1MmIwNlFGNENLSzRyeTFxeFJrVWx0WDZaNDkzaEdMejcxaUpneGJLTFZKQ3kwX1V4dGUtYnZkTEF5ODZFNVJEMWhBU08wRlhKOHByQ2NkMVBzSi1qZnpSdV9tMkNSMmJFdjYtQzNPZ3hkRnZ6VFZzYkc0aE9kWWVweklkdjItNDBIVEE?oc=5",
@@ -592,13 +599,6 @@
      "source": "TipRanks",
      "lang": "en",
      "date": "2026-11-18T12:28:26Z"
-    },
-    {
-     "title": "Under a buyback plan capped at $500M, Melco Resorts (MLCO) has made open-market purchases.",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSEtlUTZqaDlkcVp2c1FNMElsNDB2T1hJeG9VUDhBWkczXzRfZjF4dy1uN2wydWRIbXEzREZxUTZKa2tHYVBCaTZNUndXUmdadXl3azl4LUlVdlpxZ05lNzZkMFdtUEVGWFlfb1RsNFgzQW9LcXJqYVpncVE2OGhMMDUtY19vTDd4cVdwVjJzSk5PTldhT0dJZjNpeHhIQjh2a1diNEJiV1hJbjhVU1BwSlJiTTFOeEVOblFHVElseW5Pb21Ea2c?oc=5",
-     "source": "Stock Titan",
-     "lang": "en",
-     "date": "2026-11-18T11:53:23Z"
     }
    ]
   },
@@ -658,11 +658,11 @@
     ],
     [
      "2026-11-16",
-     5
+     6
     ],
     [
      "2026-11-17",
-     6
+     7
     ],
     [
      "2026-11-18",
@@ -681,10 +681,10 @@
      0
     ]
    ],
-   "total": 82,
+   "total": 84,
    "by_lang": {
     "en": 51,
-    "zh": 31
+    "zh": 33
    },
    "publishers": [
     [
@@ -724,7 +724,7 @@
      2
     ],
     [
-     "澳門會展經濟報",
+     "Investing.com 香港 - 股市報價& 財經新聞",
      2
     ]
    ],
@@ -865,7 +865,7 @@
     ],
     [
      "2026-11-18",
-     2
+     3
     ],
     [
      "2026-11-19",
@@ -877,13 +877,13 @@
     ],
     [
      "2026-11-21",
-     0
+     1
     ]
    ],
-   "total": 111,
+   "total": 113,
    "by_lang": {
-    "en": 65,
-    "zh": 46
+    "zh": 47,
+    "en": 66
    },
    "publishers": [
     [
@@ -892,7 +892,7 @@
     ],
     [
      "TradingView",
-     7
+     8
     ],
     [
      "macau daily times 澳門每日時報",
@@ -903,12 +903,12 @@
      7
     ],
     [
-     "Investing.com 香港 - 股市報價& 財經新聞",
+     "Yahoo! Finance Canada",
      6
     ],
     [
-     "Yahoo! Finance Canada",
-     5
+     "Investing.com 香港 - 股市報價& 財經新聞",
+     6
     ],
     [
      "Moomoo",
@@ -928,6 +928,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "港股異動丨濠賭股集體走低，金界控股跌近5%，花旗下調8月賭收預期",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50VUU5czZBUW1VSjNJMEhTUnNNVlZEVlNCVUV2eGE1dXAxZmpncmx3amxUenRFUFB1bGdObG5HczFnaVUtTFNpSlktSC02WFFnaHVEbjFxb3ZEbjROTU0xUGp6VEZBbEMwcnc?oc=5",
+     "source": "TradingView",
+     "lang": "zh",
+     "date": "2026-11-21T06:00:00Z"
+    },
     {
      "title": "Asia Pioneer gets UAE vendor licence to complement existing international permits",
      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV0NjdWpPRlNtUmFGaEY2dmlNWW9OOFg3R2M2T3dzSUUwM3RRSXFKWUdxc2hlUm02Tk1xWUM3M05qQk56UmJQd01udlVpaHY5VnFtTnFXdmFfSFNvQ0pRV2EyOTA5dm1zX3B4Tng1ckdTaW1kSkk4YzlNN0NKaWJDcGhycHltNXlIenY0UlBmOVQteEtoajBlS1p0MTZpTkFhSndVWDJJWHE?oc=5",
@@ -953,6 +960,13 @@
      "title": "Wynn Macau (SEHK:1128) Stock May Be Reasonably Priced On Cash Flow",
      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVXN6NHdaU0hSd1VNUHVQRjlfMHcza2RGS3BxNjk3VTJYNUNZMjdrQzdqaVRWcktVWE1FN2dXVlU4QXlCUUxjRXZPZWl6RHBQVURnYmJCTWRSUS1mb0tXblkxU1p2X2t0UnRJdk41ZjJaQlk2OG1MdWJCX3BiLUNXSg?oc=5",
      "source": "Yahoo Finance Singapore",
+     "lang": "en",
+     "date": "2026-11-18T18:14:11Z"
+    },
+    {
+     "title": "Wynn Macau (SEHK:1128) Stock May Be Reasonably Priced On Cash Flow",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObmNsYjZHclFaczhneEc1SW9Kbjk1VjIwOW1pcFZFRTFtZjlneFFrdlRxajJEN2NLRnVQRWVyY3l0Vk9sUzFIR2xvbVlTWElCQzdpOTY1OE40SUtnUzMxZEdfY3BPakdXNFVfTUZaSWctTG5zb19ETTNTMWJiRWNUNQ?oc=5",
+     "source": "Yahoo! Finance Canada",
      "lang": "en",
      "date": "2026-11-18T18:14:11Z"
     },
@@ -983,20 +997,6 @@
      "source": "TradingView",
      "lang": "en",
      "date": "2026-11-17T09:39:56Z"
-    },
-    {
-     "title": "大行評級｜瑞銀：澳門博彩收入過去七天放緩，列金沙中國及美高梅為首選",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA2XzNKcEV4UjBMUXFKTzQ3cUdtWjZzdVBSMWlwV0YzWFBCNi1WMTl5dlJGZGdXY2s0ZnhfODByUTJSdzIteldRZFZlZWtHN0ZjZVJRZWcwM0hvX3FJT3V6S3hKcmEtYWppOXRZ?oc=5",
-     "source": "TradingView",
-     "lang": "zh",
-     "date": "2026-11-17T03:03:06Z"
-    },
-    {
-     "title": "大行評級｜瑞銀：澳門博彩收入過去七天放緩，列金沙中國及美高梅為首選",
-     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLWnMybG5YTGRsREZSN3lqc2lxOW5ndC1teF9FaFllYWoxc0pYb0NkdWpFeDJtR3k0TEFaR3RTUExEUFJQeDBRQ0U1N2wyTW5VMlRUb1ZvSDJJQlBnUkM3V0NZS3A1STUtZnc?oc=5",
-     "source": "TradingView",
-     "lang": "zh",
-     "date": "2026-11-17T03:03:00Z"
     }
    ]
   },
