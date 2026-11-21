@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-20T20:20:18+00:00",
+ "updated": "2026-11-21T07:08:26+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
- "until": "2026-11-20",
- "days": 18,
+ "until": "2026-11-21",
+ "days": 19,
  "groups": {
   "galaxy": {
    "volume": [
@@ -69,7 +69,7 @@
     ],
     [
      "2026-11-18",
-     2
+     3
     ],
     [
      "2026-11-19",
@@ -77,13 +77,17 @@
     ],
     [
      "2026-11-20",
+     1
+    ],
+    [
+     "2026-11-21",
      0
     ]
    ],
-   "total": 122,
+   "total": 124,
    "by_lang": {
-    "zh": 54,
-    "en": 68
+    "en": 69,
+    "zh": 55
    },
    "publishers": [
     [
@@ -123,11 +127,18 @@
      4
     ],
     [
-     "Media OutReach Newswire",
+     "Focus Gaming News",
      3
     ]
    ],
    "articles": [
+    {
+     "title": "MGM COTAI and The Londoner double Macau GGR share to 20.1%, JP Morgan reports",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSDQyaVV2Zjd6WHU3V1RDdndoVWNhaUZfTGtvZGtOMXlOVVRBMFBkY3FILWFPdlRtWDhzWi1nbnFYZ25La1NuTXYxUUFZZEJXTk5IQTRfZWlNYktCTWkxU3V2MXZoRFhaVEhzZFphcU10cUkwMkV6RWxva2VhUGJubTZ4TnlpeTBWYXFDd2JpRFVMdDRPdV93MFM0VjVlc0lfYXdXZnM5RzhBT1hM?oc=5",
+     "source": "Focus Gaming News",
+     "lang": "en",
+     "date": "2026-11-20T13:26:07Z"
+    },
     {
      "title": "摩通：美獅美高梅與倫敦人 合佔澳門博彩收入兩成",
      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9uVzJtUVpTcnlKNWFWQnp3MW5zV2wwRXZmR3VwR1NUdmZtN2w1c2s3eS1MQWxQcXNGSlNKamdqN2l0eXBraDFXQjRlaEdRVVhmRXhF?oc=5",
@@ -171,6 +182,13 @@
      "date": "2026-11-18T05:50:21Z"
     },
     {
+     "title": "澳門親子酒店10間推介｜近大三巴／室內恆溫水上樂園／人均$210起",
+     "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxOdDBrWWUwZnBzTTJSZDN0X0ZGYkRPNWdqem0zLWF0TG1Nak1LN2t6LVRHUUpMUldpeVhfM3Z4RkkxTFBPUk5aaU5DRFlnczIyOHFlRm9XeDVhTzFiODNBUDFvTndWS2NwZ2Rjb0N5czFZQlhqX25ESXpIZUF6X29VSjctejN6VXhvQUR4OG9hTVVnRXlXc0JfN0lkSG1JZEpScWhyd1JoaUJJU19Vam9JS1FmSUZXbmN6bGFQaTV3WUZPOTJHS2Z1YnFkR3pzX1lNUFpucEJCZ1J3ZFhsamFRSjVySzBWRm44YmluM0JnbTc0TzVMVE9rWmRCSUZLdW44UlRjS25LcVpOOGJuSWlwazdCd3lUT1NYSFZmUW84ejdpb1k3SG9kSWNTNjBySWpyTGg3aFdieWdjQlNGSF9vTlNtMHY5RFBKZDFZWGFVVTZ4bGlyWHhyTGRRd0xZVlhzQ1hFeDdtV3N6S3ppZXBlSFd3QTBqUmRpcGczNExST1hzaEJJREJV?oc=5",
+     "source": "香港01",
+     "lang": "zh",
+     "date": "2026-11-18T04:01:24Z"
+    },
+    {
      "title": "Galaxy Resort Presents: \"Plácido Domingo & José Carreras: The Legends United Opera Gala\"",
      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcjJVd1dmQndxazR0dHhFQkJ3aV9fUUFpRGJkS1lfMVNrMExidFlGMWhLZEZLMTV5WGpWTXBRTXVvQnAyV2txU2h1WjlBT1lERUhHZ3lrRU5MQnhtQnBnYUZBRU8tLW54RzFCNnE5MWUtOFMxY3E4bXExUHFqMm1TX3NnU05QMG5PLXVJa212Mkt4WVZKNXU0Q1ZaMmk1MW1mb3dycXlXcDMwWm1tZGZkZkNjUUM3ZnJyMHFHRkpCcW1maXZ0bi1BdHc1RFZCSDlZVmVKYVpTQkhtT0U?oc=5",
      "source": "Riau Green.com",
@@ -183,20 +201,6 @@
      "source": "IAG – Inside Asian Gaming",
      "lang": "en",
      "date": "2026-11-17T20:42:25Z"
-    },
-    {
-     "title": "Anatomy of Taste, In Five Movements",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5qNmV1RlJNLWVfQ3kxVG9sYUZTSDdSVlJ0bk5ZVFpPVFpXanhrU0o5U1lBX3FYUGdZdVA5cFRieTBNVFE5SmlqWjdwV245Y1NLUERSRjFOZmhoNUxpeHlEZDRJOExVaTZuSy1PSm5n?oc=5",
-     "source": "IBTimes India",
-     "lang": "en",
-     "date": "2026-11-17T12:58:16Z"
-    },
-    {
-     "title": "12 Culinary Masters, 24 Michelin Stars and Award-Winning Mixologists Unite at 'Galaxy Stars of Gastronomy' 2026",
-     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQdFRMYzJrOEd0RkFNVkZGbU9VcVMyMTFpamVER3dYZ01tVk9tQ1FmaG5Ta21TYUxwZ0xUcnVvYmJ5bWFpSkk4WUk0SDU5dVQ0dmdVMEw5eTFKUVVXamljV1pzVXhFMFpTQmZSNFNfUkdFRXVHMlNNN2lBNjNndjBLQ0ZhUzBJa3JNcWZ4NE01SUthMWZlN200WHJwc3lDNGVLUmdwbkptTkJFLUlIaHhZVHZlY2NCZmFfRUZicHJDaTVhWU02bDdVbjhKQXZ4VHpMVE1MLXNaa0MwVGkwMlhiRWk1c1F0LUViZGNJMkwwcVpIUdIB8gFBVV95cUxQdFRMYzJrOEd0RkFNVkZGbU9VcVMyMTFpamVER3dYZ01tVk9tQ1FmaG5Ta21TYUxwZ0xUcnVvYmJ5bWFpSkk4WUk0SDU5dVQ0dmdVMEw5eTFKUVVXamljV1pzVXhFMFpTQmZSNFNfUkdFRXVHMlNNN2lBNjNndjBLQ0ZhUzBJa3JNcWZ4NE01SUthMWZlN200WHJwc3lDNGVLUmdwbkptTkJFLUlIaHhZVHZlY2NCZmFfRUZicHJDaTVhWU02bDdVbjhKQXZ4VHpMVE1MLXNaa0MwVGkwMlhiRWk1c1F0LUViZGNJMkwwcVpIUQ?oc=5",
-     "source": "HospiBuz",
-     "lang": "en",
-     "date": "2026-11-17T10:00:23Z"
     }
    ]
   },
@@ -260,7 +264,7 @@
     ],
     [
      "2026-11-17",
-     22
+     23
     ],
     [
      "2026-11-18",
@@ -273,12 +277,16 @@
     [
      "2026-11-20",
      1
+    ],
+    [
+     "2026-11-21",
+     0
     ]
    ],
-   "total": 125,
+   "total": 126,
    "by_lang": {
     "en": 53,
-    "zh": 72
+    "zh": 73
    },
    "publishers": [
     [
@@ -290,6 +298,10 @@
      9
     ],
     [
+     "TradingView",
+     7
+    ],
+    [
      "Plataforma Media",
      7
     ],
@@ -299,10 +311,6 @@
     ],
     [
      "GGRAsia",
-     6
-    ],
-    [
-     "TradingView",
      6
     ],
     [
@@ -467,6 +475,10 @@
     ],
     [
      "2026-11-20",
+     0
+    ],
+    [
+     "2026-11-21",
      0
     ]
    ],
@@ -650,7 +662,7 @@
     ],
     [
      "2026-11-17",
-     5
+     6
     ],
     [
      "2026-11-18",
@@ -662,12 +674,16 @@
     ],
     [
      "2026-11-20",
-     2
+     3
+    ],
+    [
+     "2026-11-21",
+     0
     ]
    ],
-   "total": 80,
+   "total": 82,
    "by_lang": {
-    "en": 49,
+    "en": 51,
     "zh": 31
    },
    "publishers": [
@@ -700,19 +716,26 @@
      3
     ],
     [
+     "Focus Gaming News",
+     2
+    ],
+    [
      "SCCG Management",
      2
     ],
     [
      "澳門會展經濟報",
      2
-    ],
-    [
-     "澳門廣播電視股份有限公司",
-     2
     ]
    ],
    "articles": [
+    {
+     "title": "MGM COTAI and The Londoner double Macau GGR share to 20.1%, JP Morgan reports",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSDQyaVV2Zjd6WHU3V1RDdndoVWNhaUZfTGtvZGtOMXlOVVRBMFBkY3FILWFPdlRtWDhzWi1nbnFYZ25La1NuTXYxUUFZZEJXTk5IQTRfZWlNYktCTWkxU3V2MXZoRFhaVEhzZFphcU10cUkwMkV6RWxva2VhUGJubTZ4TnlpeTBWYXFDd2JpRFVMdDRPdV93MFM0VjVlc0lfYXdXZnM5RzhBT1hM?oc=5",
+     "source": "Focus Gaming News",
+     "lang": "en",
+     "date": "2026-11-20T13:26:07Z"
+    },
     {
      "title": "MGM China (SEHK:2282) Stock Could Be 42% Undervalued As Cash Flow Holds Up",
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdWhTMF9LcTQ1aDJzS01pSVhjQWpvQ1ZRYlVpMzM1ZjNUOTRjSktIRVlCMmczZzBYeHF5NGFhY1piY3lSWGRvSWt0VFY1WlAzVXBPRUtsLVdudHJYTEJ3V2NndTl5bFg1UGsxNktSSTdWNTdsZ3FrbDZ4bElhX3hQRGNRYVdvRjBLajEtQnY5NUlqcl9S?oc=5",
@@ -775,13 +798,6 @@
      "source": "TelecomLead",
      "lang": "en",
      "date": "2026-11-19T03:33:07Z"
-    },
-    {
-     "title": "MGM Resorts stock: Moody's affirms B1 corporate family rating",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdFNMUENiSm9uVzlDejk3WXhLQUNkVndQdDRFbmdXWlJNNEQxVFc0Ym1ZZU45VXc1Q2RydmdpRVFSbkwzd2NxaWFYVkRvZTVpdHRWQXVpaml0VDFmVjVheWpRLVVweUp5eXZUVk1DY2lxekxCeEdNV2JVRFdLclUzUUl3WTFqMWZ6MmtmVnhoT3Z2VEJaSEZ5dVBqTDFVMTVXSXZ3anZza0labG1tanQ2X2hwem45WkZtNTE4?oc=5",
-     "source": "ad-hoc-news.de",
-     "lang": "en",
-     "date": "2026-11-19T03:07:35Z"
     }
    ]
   },
@@ -841,11 +857,11 @@
     ],
     [
      "2026-11-16",
-     2
+     3
     ],
     [
      "2026-11-17",
-     4
+     5
     ],
     [
      "2026-11-18",
@@ -853,22 +869,30 @@
     ],
     [
      "2026-11-19",
-     1
+     2
     ],
     [
      "2026-11-20",
      1
+    ],
+    [
+     "2026-11-21",
+     0
     ]
    ],
-   "total": 108,
+   "total": 111,
    "by_lang": {
     "en": 65,
-    "zh": 43
+    "zh": 46
    },
    "publishers": [
     [
      "TDM",
-     9
+     10
+    ],
+    [
+     "TradingView",
+     7
     ],
     [
      "macau daily times 澳門每日時報",
@@ -884,10 +908,6 @@
     ],
     [
      "Yahoo! Finance Canada",
-     5
-    ],
-    [
-     "TradingView",
      5
     ],
     [
@@ -914,6 +934,13 @@
      "source": "GGRAsia",
      "lang": "en",
      "date": "2026-11-20T09:52:44Z"
+    },
+    {
+     "title": "港股異動丨金沙中國績後升近6%領升濠賭股上升 中期息翻倍提振市場情緒",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1qUjlidVZEYUhOZ2FhWDVwbTVmRzFmTGNjOXRXeU5NS0hnZ1lVakRnVnlleU5sNEJhdEFFdzktR0lWM2xmel9CWTMzbEhraTZWMGwwSldqZVRhUXJaQ3BzQ3pCT0gtTWdDNmc?oc=5",
+     "source": "TradingView",
+     "lang": "zh",
+     "date": "2026-11-19T15:31:23Z"
     },
     {
      "title": "Londoner and MGM Cotai capture fifth of gaming revenue",
@@ -965,18 +992,11 @@
      "date": "2026-11-17T03:03:06Z"
     },
     {
-     "title": "澳門賭場酒店2026丨娛樂場10間人氣最旺 免費穿梭巴時間酒店房價一覽",
-     "url": "https://news.google.com/rss/articles/CBMihgNBVV95cUxOODJ2eEFSRGlKZ2FzQjdJS2E4elNHdkNqV0VrcWhoT242enNaM3VCS3JfVzMzeFM3VHFGbVN1UDJKaHF1ZERWTkJEUWdZTFBDSVpHb0dyWnV5QlNZdnhyMnRqYktYVG9xTTFDZkNHOXN6N1JYaVBHZWo1LVVSdURkendxTGt0RWpwcXBteHF2OGx5di1LR2tPd3RabDdyaElzbTdOUFZpZ3ZzamtjaVBWZFhwU1ZJNWd3X1hGeWRFSXBST2JmTzU5bW1EcFRrT3E0R1JoTzZzTjVTUzNySU56a0RDemhIRXFFNEVPY0VaMlZsUUktNXhqRllkNUhNY1pkUmZ1MFY0UXQ5RXdrdjZmVVhUdk9XcHBuTDhibzhFcUNVa3MtTEV5WDhTbVZMelZfUUxXRElzTnkwc1lEdC1RZ0JSTDVmZXZGdGRzQ0MxdkhST2hjTGxHYmhHeURibG1tX2pScVp0Tk1jNEN1OVBPVElpelNEOGc5U1dHdE9VLTJjNmVMSmc?oc=5",
-     "source": "U Travel",
+     "title": "大行評級｜瑞銀：澳門博彩收入過去七天放緩，列金沙中國及美高梅為首選",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLWnMybG5YTGRsREZSN3lqc2lxOW5ndC1teF9FaFllYWoxc0pYb0NkdWpFeDJtR3k0TEFaR3RTUExEUFJQeDBRQ0U1N2wyTW5VMlRUb1ZvSDJJQlBnUkM3V0NZS3A1STUtZnc?oc=5",
+     "source": "TradingView",
      "lang": "zh",
-     "date": "2026-11-16T08:00:00Z"
-    },
-    {
-     "title": "美高梅中国第3季收入89亿港元",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWjBSejVnbVptY2VhSGljS0doM1dhamFXUGNFM3pqM1dXcHpzbTZwc2J0SHlfcHZ2c1QyYURXZXpnbmtYc2EyRGxDcktpUWM2WnJrVHBGRFZsNEFYZWxNaUp4Tm9mUVhWNmNmbHlXRFQxZDZZY29PVGU3d2V1OTdmbXVnWHZCY2hiSG5BLWlDYWNxZzk2TDJ5MUV5RWhWNnMt?oc=5",
-     "source": "TDM",
-     "lang": "zh",
-     "date": "2026-11-16T01:38:15Z"
+     "date": "2026-11-17T03:03:00Z"
     }
    ]
   },
@@ -1052,6 +1072,10 @@
     ],
     [
      "2026-11-20",
+     0
+    ],
+    [
+     "2026-11-21",
      0
     ]
    ],

@@ -6,11 +6,11 @@
    "hotels": 116
   },
   "last_error": "RuntimeError: 所有 Overpass 鏡像失敗: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=120)",
-  "last_attempt": "2026-11-20T20:19:35+00:00"
+  "last_attempt": "2026-11-21T07:07:45+00:00"
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-20T20:19:46+00:00",
+  "updated": "2026-11-21T07:07:55+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -22,7 +22,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-20T20:19:49+00:00",
+  "updated": "2026-11-21T07:07:57+00:00",
   "info": {
    "tickers": 6
   }
@@ -75,12 +75,12 @@
     "sands"
    ]
   },
-  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'galaxy': 'RuntimeError: 請求失敗：ReadTimeout', 'sands': '連續 3 次連線失敗（ReadTimeout）'}",
-  "last_attempt": "2026-11-20T20:20:59+00:00"
+  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'galaxy': 'RuntimeError: 請求失敗：被限流', 'sands': 'RuntimeError: 請求失敗：被限流', 'mgm': 'RuntimeError: 請求失敗：ReadTimeout'}",
+  "last_attempt": "2026-11-21T07:10:34+00:00"
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-20T20:19:57+00:00",
+  "updated": "2026-11-21T07:08:05+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -88,10 +88,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-20T20:20:18+00:00",
+  "updated": "2026-11-21T07:08:26+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 5,
+   "new_articles": 8,
    "errors": []
   }
  }
