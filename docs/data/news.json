@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-21T19:17:22+00:00",
+ "updated": "2026-11-22T06:48:03+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
- "until": "2026-11-21",
- "days": 19,
+ "until": "2026-11-22",
+ "days": 20,
  "groups": {
   "galaxy": {
    "volume": [
@@ -81,25 +81,29 @@
     ],
     [
      "2026-11-21",
+     1
+    ],
+    [
+     "2026-11-22",
      0
     ]
    ],
-   "total": 124,
+   "total": 125,
    "by_lang": {
-    "en": 69,
-    "zh": 55
+    "zh": 56,
+    "en": 69
    },
    "publishers": [
+    [
+     "TradingView",
+     10
+    ],
     [
      "澳門力報",
      10
     ],
     [
      "macau daily times 澳門每日時報",
-     9
-    ],
-    [
-     "TradingView",
      9
     ],
     [
@@ -132,6 +136,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "大行評級丨小摩：澳門6月賭收數據挫傷市場情緒，行業首選銀河娛樂",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTdW9NMlIzcW54Z2lTS1VnTENlQndXVzNJSlI2VlJxTXNzY0F4aExGX1ZvQmprOVNrU0EzZTZKMWRkc3JPTGtSU3NSemo1QW9SWmV3Z21CcEJyYkhNLUZNRWJ5YXBxcDlOd1E?oc=5",
+     "source": "TradingView",
+     "lang": "zh",
+     "date": "2026-11-21T05:50:12Z"
+    },
     {
      "title": "MGM COTAI and The Londoner double Macau GGR share to 20.1%, JP Morgan reports",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSDQyaVV2Zjd6WHU3V1RDdndoVWNhaUZfTGtvZGtOMXlOVVRBMFBkY3FILWFPdlRtWDhzWi1nbnFYZ25La1NuTXYxUUFZZEJXTk5IQTRfZWlNYktCTWkxU3V2MXZoRFhaVEhzZFphcU10cUkwMkV6RWxva2VhUGJubTZ4TnlpeTBWYXFDd2JpRFVMdDRPdV93MFM0VjVlc0lfYXdXZnM5RzhBT1hM?oc=5",
@@ -194,13 +205,6 @@
      "source": "Riau Green.com",
      "lang": "en",
      "date": "2026-11-18T03:35:00Z"
-    },
-    {
-     "title": "J.P. Morgan: MGM COTAI and Sands China’s Londoner now account for combined 20% share of Macau-wide GGR",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTDJuWENxZVJkUHRlUUoxZGFBUUZ4N2hWMDRDZWhFcy1hM2lMbUFOZjI0elNUMDhoOGVSTzV4NENRNFAtMDlPSEdxQ3drX09XUDMtZ2dnWnNsM3RTRjc3Z2NIS2xrZm1mWW9fWGNuRVU3cnBUSGVsTU9Ja3R1NDlOTEw0SEJkU3BEVFJLY3ZmeWxYSGlNOU5IdVN6Y2tTYlh2SHoweDhXQWMxUlJxWWFzS0NNeHZFeHRyR05qRGt5OFRYSml6d2dz?oc=5",
-     "source": "IAG – Inside Asian Gaming",
-     "lang": "en",
-     "date": "2026-11-17T20:42:25Z"
     }
    ]
   },
@@ -280,6 +284,10 @@
     ],
     [
      "2026-11-21",
+     0
+    ],
+    [
+     "2026-11-22",
      0
     ]
    ],
@@ -480,11 +488,15 @@
     [
      "2026-11-21",
      1
+    ],
+    [
+     "2026-11-22",
+     1
     ]
    ],
-   "total": 133,
+   "total": 134,
    "by_lang": {
-    "zh": 53,
+    "zh": 54,
     "en": 80
    },
    "publishers": [
@@ -505,6 +517,10 @@
      6
     ],
     [
+     "澳門力報",
+     5
+    ],
+    [
      "GGRAsia",
      5
     ],
@@ -521,15 +537,18 @@
      4
     ],
     [
-     "澳門力報",
-     4
-    ],
-    [
      "信報網站",
      4
     ]
    ],
    "articles": [
+    {
+     "title": "新濠博亞回購預託股 涉資3,524萬美元",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9oU3pjTEEyRFM4SnMwNDdlMTBlMDdCMFJaWUVDdjJaclZlS2NCVFRhbWRHcl9BY09tQXJwalRRRVprRi1kN0hiYjZzZnJzZmtMWVZr?oc=5",
+     "source": "澳門力報",
+     "lang": "zh",
+     "date": "2026-11-22T06:19:46Z"
+    },
     {
      "title": "新濠影滙×可口可樂攜手打造“冰FUN嘉年華”",
      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51bmZTR00wakp1b2w2M0xORFdzOG9nMV9jUnR6NjFrZHIyX3kwcmNhbC1LZ09fYmNEbDE3UjJBZmp3Z2VqR1ppMVBwXzA3Z1ZPXzdiMEYzd1BvS0x1?oc=5",
@@ -592,13 +611,6 @@
      "source": "stylemaster",
      "lang": "zh",
      "date": "2026-11-18T18:35:54Z"
-    },
-    {
-     "title": "Melco Resorts Repurchased 8.36 Million ADSs Under $500 Million Program",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOGxPWkwwZTlVbVQxQTB4S3FPMjB6cjJvZnMweU4tX2Z1Z0lSZ0V3a21HeFNLYjZRZDVIajJrVUg0enF4UFNxdm56MzZxMjg3QWR1eGhJRzhXYWlPeFlYUGQ5QnJaU1h3NmtFTEhUTGxuaGpJQlBmbFYxdU05WWZoRFBYdWtod0tNZUd1cGVxa0hTaE0zSG1HMHY3d0x5M05UeVIzMFI1c3VweHA3ZWFlZ25sbE9fU3dYcm9DSU5B?oc=5",
-     "source": "TipRanks",
-     "lang": "en",
-     "date": "2026-11-18T12:28:26Z"
     }
    ]
   },
@@ -679,12 +691,16 @@
     [
      "2026-11-21",
      0
+    ],
+    [
+     "2026-11-22",
+     1
     ]
    ],
-   "total": 84,
+   "total": 85,
    "by_lang": {
-    "en": 51,
-    "zh": 33
+    "zh": 34,
+    "en": 51
    },
    "publishers": [
     [
@@ -696,12 +712,12 @@
      8
     ],
     [
-     "macau daily times 澳門每日時報",
+     "澳門力報",
      7
     ],
     [
-     "澳門力報",
-     6
+     "macau daily times 澳門每日時報",
+     7
     ],
     [
      "TradingView",
@@ -729,6 +745,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "大阪美高梅增信貸風險 穆迪稱流動資金可抵銷",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFByQXVJTk1oaEJka3lZZ2g0S0IxVUEzTndNczhzV0llc0VmN09xaE9iR0RLVEpEcEpyWHBqVjIzbUVYa1JZQUZtd0pvdkk2aFJ2eTRZ?oc=5",
+     "source": "澳門力報",
+     "lang": "zh",
+     "date": "2026-11-22T06:19:46Z"
+    },
     {
      "title": "MGM COTAI and The Londoner double Macau GGR share to 20.1%, JP Morgan reports",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSDQyaVV2Zjd6WHU3V1RDdndoVWNhaUZfTGtvZGtOMXlOVVRBMFBkY3FILWFPdlRtWDhzWi1nbnFYZ25La1NuTXYxUUFZZEJXTk5IQTRfZWlNYktCTWkxU3V2MXZoRFhaVEhzZFphcU10cUkwMkV6RWxva2VhUGJubTZ4TnlpeTBWYXFDd2JpRFVMdDRPdV93MFM0VjVlc0lfYXdXZnM5RzhBT1hM?oc=5",
@@ -791,13 +814,6 @@
      "source": "GGRAsia",
      "lang": "en",
      "date": "2026-11-19T04:54:45Z"
-    },
-    {
-     "title": "Telecom news: CTM, Huawei, NuRAN Wireless, Quebecor’s C$60.6 Billion offer for Telus",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWVlZcnBEYXJUNVV0Q1owVE8xRWczb1Q2Q19sT3NfZ01sUDdaaGtZczFXZVVGeGJTZ0NrZTJJbGp4U1FCN2RsWm9ucVVjY2QyYUdib2t3UEt5V1U1ajF4YTAzZUZvZHRmMnlrVGwwZHpkeXRlRVdVSDBKbFFNdnlTeXNJbVJ1SVkxRnFHT0JXcHdvVGp3XzZGQ2ZwQy1la3diSFYtNmNCU2FSSzY0OXV1cS1DTW7SAbwBQVVfeXFMTlRmRkRmenFVeEFiNVE3UnJKUTgwYnJkcG1SNVpTdVVqVm9nV0xibDhad2l1bEQzTmxsVmxNSmpxY0lfYlhINWdjYjJlRW1uNEM3SFdsTTZXRWM4MkFsaTdaaTEyMXdOVmtuQi1XTGlHMmFfSDFXVldYaFV1YmVxVGNTd0c1VWlhTHJmNTBDS240NU1RY0lmT2dSQzFZLXpnMDNsdjJQbW5Cam83Mk9QV0dhYlZRakpiUjI0a0Q?oc=5",
-     "source": "TelecomLead",
-     "lang": "en",
-     "date": "2026-11-19T03:33:07Z"
     }
    ]
   },
@@ -865,7 +881,7 @@
     ],
     [
      "2026-11-18",
-     3
+     4
     ],
     [
      "2026-11-19",
@@ -878,12 +894,16 @@
     [
      "2026-11-21",
      1
+    ],
+    [
+     "2026-11-22",
+     0
     ]
    ],
-   "total": 113,
+   "total": 114,
    "by_lang": {
     "zh": 47,
-    "en": 66
+    "en": 67
    },
    "publishers": [
     [
@@ -978,6 +998,13 @@
      "date": "2026-11-18T08:00:00Z"
     },
     {
+     "title": "Chef Tam’s Seasons",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1UZFBwMmE2SjZmSGlrcEZKRkdfZk5uNVdsSXNmLWp0ajlUamNyQ2NaaktHaU9ybHZGeGpJVm16bGx6Q19ZM2czOWkwUWZ5eFNMTXI4cllsQzlPV3VLbkFvMERUSDRuX3RZ?oc=5",
+     "source": "Tatler Asia",
+     "lang": "en",
+     "date": "2026-11-18T08:00:00Z"
+    },
+    {
      "title": "J.P. Morgan: MGM COTAI and Sands China’s Londoner now account for combined 20% share of Macau-wide GGR",
      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTDJuWENxZVJkUHRlUUoxZGFBUUZ4N2hWMDRDZWhFcy1hM2lMbUFOZjI0elNUMDhoOGVSTzV4NENRNFAtMDlPSEdxQ3drX09XUDMtZ2dnWnNsM3RTRjc3Z2NIS2xrZm1mWW9fWGNuRVU3cnBUSGVsTU9Ja3R1NDlOTEw0SEJkU3BEVFJLY3ZmeWxYSGlNOU5IdVN6Y2tTYlh2SHoweDhXQWMxUlJxWWFzS0NNeHZFeHRyR05qRGt5OFRYSml6d2dz?oc=5",
      "source": "IAG – Inside Asian Gaming",
@@ -990,13 +1017,6 @@
      "source": "Global Banking & Finance Review",
      "lang": "en",
      "date": "2026-11-17T13:31:56Z"
-    },
-    {
-     "title": "M Stanley Says Weak Macau Gaming Demand Difficult to Resolve, Expects Continued Earnings Forecast Cuts",
-     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNN2M4OTljalh5NWVDS2lseU5SR3RvdUhyd2FVbXZWS1JCU0lTMk9XQ3V5b1ZpX1RYY2xNYkdFR25NaWFPZV93SXNoX3JETTVGdVU1bTgtWWNFWjJQQ25MVHpGdVZqR3lCQXBLUEZsdHREakxxbVNSZTFFYWZUZjJDVWk2Ukl1cExtaHpTVjBxZ05ZUkF0VjhuakNRVDFkdktpZ3E0bHJXSmJiR0UxYVpNbEFXNl80VTlNZDhaX2xFNFNFOHBfSW12dWNmR3lqdnUzbENBUVhFU0Iyb3NHN1dpaDZSV1Q5U2NkMFFnektjTQ?oc=5",
-     "source": "TradingView",
-     "lang": "en",
-     "date": "2026-11-17T09:39:56Z"
     }
    ]
   },
@@ -1076,6 +1096,10 @@
     ],
     [
      "2026-11-21",
+     0
+    ],
+    [
+     "2026-11-22",
      0
     ]
    ],
