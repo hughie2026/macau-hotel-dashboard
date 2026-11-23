@@ -1,14 +1,16 @@
 {
  "osm": {
-  "ok": true,
+  "ok": false,
   "updated": "2026-11-23T07:37:21+00:00",
   "info": {
    "hotels": 115
-  }
+  },
+  "last_error": "RuntimeError: 所有 Overpass 鏡像失敗: 504 Server Error: Gateway Timeout for url: https://overpass.kumi.systems/api/interpreter",
+  "last_attempt": "2026-11-23T23:54:19+00:00"
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-23T07:37:33+00:00",
+  "updated": "2026-11-23T23:54:26+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -20,7 +22,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-23T07:37:35+00:00",
+  "updated": "2026-11-23T23:54:28+00:00",
   "info": {
    "tickers": 6
   }
@@ -73,12 +75,12 @@
     "wynn"
    ]
   },
-  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'galaxy': 'RuntimeError: 請求失敗：被限流', 'melco': 'RuntimeError: 請求失敗：被限流', 'wynn': 'RuntimeError: 請求失敗：ReadTimeout'}",
-  "last_attempt": "2026-11-23T07:40:21+00:00"
+  "last_error": "RuntimeError: GDELT 本次沒有更新任何集團。錯誤: {'galaxy': 'RuntimeError: 請求失敗：被限流', 'melco': 'RuntimeError: 請求失敗：被限流', 'wynn': 'RuntimeError: 請求失敗：被限流'}",
+  "last_attempt": "2026-11-23T23:57:05+00:00"
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-23T07:37:44+00:00",
+  "updated": "2026-11-23T23:54:36+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -86,10 +88,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-23T07:38:05+00:00",
+  "updated": "2026-11-23T23:54:57+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 14,
+   "new_articles": 39,
    "errors": []
   }
  }
