@@ -1,16 +1,14 @@
 {
  "osm": {
-  "ok": false,
-  "updated": "2026-11-23T07:37:21+00:00",
+  "ok": true,
+  "updated": "2026-11-24T22:26:31+00:00",
   "info": {
    "hotels": 115
-  },
-  "last_error": "RuntimeError: 所有 Overpass 鏡像失敗: HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=120)",
-  "last_attempt": "2026-11-24T09:55:24+00:00"
+  }
  },
  "pageviews": {
   "ok": true,
-  "updated": "2026-11-24T09:55:31+00:00",
+  "updated": "2026-11-24T22:26:39+00:00",
   "info": {
    "articles": 12,
    "missing": [
@@ -22,7 +20,7 @@
  },
  "stocks": {
   "ok": true,
-  "updated": "2026-11-24T09:55:32+00:00",
+  "updated": "2026-11-24T22:26:41+00:00",
   "info": {
    "tickers": 6
   }
@@ -60,25 +58,25 @@
  },
  "gdelt": {
   "ok": true,
-  "updated": "2026-11-24T09:58:19+00:00",
+  "updated": "2026-11-24T22:29:16+00:00",
   "info": {
    "refreshed": [
+    "mgm",
+    "wynn"
+   ],
+   "skipped": [
+    "sjm",
     "galaxy",
     "melco"
    ],
-   "skipped": [
-    "sands",
-    "mgm"
-   ],
    "errors": [
-    "wynn",
-    "sjm"
+    "sands"
    ]
   }
  },
  "financials": {
   "ok": true,
-  "updated": "2026-11-24T09:55:41+00:00",
+  "updated": "2026-11-24T22:26:51+00:00",
   "info": {
    "companies": 6,
    "errors": []
@@ -86,10 +84,10 @@
  },
  "news": {
   "ok": true,
-  "updated": "2026-11-24T09:56:02+00:00",
+  "updated": "2026-11-24T22:27:12+00:00",
   "info": {
    "requests_ok": 12,
-   "new_articles": 24,
+   "new_articles": 68,
    "errors": []
   }
  }
