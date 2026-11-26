@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:16:31+00:00",
+ "updated": "2026-11-26T21:32:03+00:00",
  "source": "Google News RSS",
  "since": "2026-11-03",
  "until": "2026-11-26",
@@ -89,7 +89,7 @@
     ],
     [
      "2026-11-23",
-     8
+     9
     ],
     [
      "2026-11-24",
@@ -97,17 +97,17 @@
     ],
     [
      "2026-11-25",
-     10
+     12
     ],
     [
      "2026-11-26",
-     1
+     3
     ]
    ],
-   "total": 159,
+   "total": 164,
    "by_lang": {
-    "zh": 76,
-    "en": 83
+    "zh": 79,
+    "en": 85
    },
    "publishers": [
     [
@@ -132,7 +132,7 @@
     ],
     [
      "香港經濟日報HKET",
-     5
+     7
     ],
     [
      "Yahoo! Finance Canada",
@@ -153,11 +153,25 @@
    ],
    "articles": [
     {
+     "title": "銀娛守升軌 上試35.4元|香港經濟日報",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZXJCQTAzM1dubW5VMkJ4MUN2dU0xQlA5TzVGQkFsVVd2YUQ5N1EzbGZXNHJSSWxqMDU5RG1XSE43VVVHeE1FdHB4b1FkNy1jckxwTkR6OVVKenVHWS11YU9fampUTkd6R2toaDNWVEFDbnU2U3BFTVlFOGdoT1gtRVRmM2pHdnp0MXd4azlrcTIxZmhxLTBxQVlyYktaTkdkMWgtWEdZRENSUnZpb0NQREJmaGFHX19Zenlz?oc=5",
+     "source": "香港經濟日報HKET",
+     "lang": "zh",
+     "date": "2026-11-26T16:14:00Z"
+    },
+    {
      "title": "銀河娛樂集團呈獻：“ 國家金牌運動員訪澳系列活動",
      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5XTWRqbTNYU0txeWdHSzFuSUFiMkJqR0lrX1FyTDBzbzlzc2RXaUZTRXBNYVp1cGY4aDEzNlVlcWZZYU4xM01reTloUXBSQ3NSdUhUd3lWeDN6YXNF?oc=5",
      "source": "澳門會展經濟報",
      "lang": "zh",
      "date": "2026-11-26T07:41:26Z"
+    },
+    {
+     "title": "板塊出擊｜美高梅派特別息 濠賭高息排行洗牌|香港經濟日報",
+     "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQX0duanUzckk0S2p2VU9EQ3N5dEx4Qk1OTFhQVVRUakJXbmdZbHhYeWdDUFU4dnBJNHpCbGxuN015MU93OTZqeDhRdE5pOVdBcmxNemkwR1piNE9GRi1mRzl6eVhkMWlCUUdmUzZ0Vk9KTnJWQzZzaUtsSG5OUGVVZnVpQzNJcDFLZnFKd2szVU5JbGZPYmthWjBpeXNSM0gtcVQzQnhnRUdZMF9YUjg1S2U4U1JmNDVZU0lOZzBnOGRTRTBvTHV6cjZkWU9GYzNXNms3Y1FYeXdTVFJZWHBvTDhkdjQ3VVlDUEZneWQwbnI0M0pnSkpKUXJFUGpwMnlZRzJXa3BXb1AyaUlTdDhiNWNwb0tpdGxReTBKeEJnTE54Vi1oLUZtc2pISy1RMFUwVGxfOEo3dXhBRmxFbERWMWpGNGEtUQ?oc=5",
+     "source": "香港經濟日報HKET",
+     "lang": "zh",
+     "date": "2026-11-26T02:03:20Z"
     },
     {
      "title": "House of Origin: Macau's intimate Cantonese dining destination",
@@ -172,6 +186,13 @@
      "source": "Niusnews 妞新聞",
      "lang": "zh",
      "date": "2026-11-25T14:10:00Z"
+    },
+    {
+     "title": "Correcting & Replacing: 'Galaxy Stars of Gastronomy 2026' Celebrated a Stellar Weekend of Creativity, Entertainment and Indulgence with 15 Global Culinary Masters and Mixologists at the Cutting-Edge of their Craft",
+     "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxQU1dwNWpSSVhfc2ZOYzNLal8tVTd2cUNlZnVOcHg5VzJJcldwTHRlcXBwTEdIUklqOFRYTDFoVnhubnZJdEw3aEFlQ2VIWWs2cUlIc3dmanZ0eGZ4SkhVbWxtXzVZek9xVGJvVEIwMl80Rno1NlBFb2w4aEdicm56RW11NU5qNUx2UTJ6VFdzXzZPbVZCenRlX2tINE9rZFE2ZTQxRG5SLWhnaGh6eHJFMTh6QXFqSjhjZ29UQ1VFSXF1SV96OWZrbnRvNmo1LTBWdDZjUVJ2Q2V6c1hMMHBrYWhoUTgzUWlFSnloY0puQ0xZMlRZMzFpX2RDaWpFV2FZb28zWFdTamFjbVRpV1BxZU10V2tiQ3JBR3E5LWRuTHZYMDRjaGllbG9oUnIxcjlYNW5BN1REVjJyeURVc21FYk03RnpVenJ2Q2xoamJMZl9sbVFlTFJCMWxYZFlRM1JXTjI2RzAxLVdRZEpGb0JYU3pQLS1JSVYyQXR1TGJzcnd5dTB5cmxpNkV0LUtuazd4b1J5NGZUVldScnZsZXlKQ0hNSUd0d9IBpgNBVV95cUxQU1dwNWpSSVhfc2ZOYzNLal8tVTd2cUNlZnVOcHg5VzJJcldwTHRlcXBwTEdIUklqOFRYTDFoVnhubnZJdEw3aEFlQ2VIWWs2cUlIc3dmanZ0eGZ4SkhVbWxtXzVZek9xVGJvVEIwMl80Rno1NlBFb2w4aEdicm56RW11NU5qNUx2UTJ6VFdzXzZPbVZCenRlX2tINE9rZFE2ZTQxRG5SLWhnaGh6eHJFMTh6QXFqSjhjZ29UQ1VFSXF1SV96OWZrbnRvNmo1LTBWdDZjUVJ2Q2V6c1hMMHBrYWhoUTgzUWlFSnloY0puQ0xZMlRZMzFpX2RDaWpFV2FZb28zWFdTamFjbVRpV1BxZU10V2tiQ3JBR3E5LWRuTHZYMDRjaGllbG9oUnIxcjlYNW5BN1REVjJyeURVc21FYk03RnpVenJ2Q2xoamJMZl9sbVFlTFJCMWxYZFlRM1JXTjI2RzAxLVdRZEpGb0JYU3pQLS1JSVYyQXR1TGJzcnd5dTB5cmxpNkV0LUtuazd4b1J5NGZUVldScnZsZXlKQ0hNSUd0dw?oc=5",
+     "source": "The Manila Times",
+     "lang": "en",
+     "date": "2026-11-25T10:58:52Z"
     },
     {
      "title": "Galaxy Macau pairs luxury brand activations with dining, local bazaar for winter campaign",
@@ -200,27 +221,6 @@
      "source": "DagangNews",
      "lang": "en",
      "date": "2026-11-25T07:33:43Z"
-    },
-    {
-     "title": "\"Galaxy Stars of Gastronomy 2026\" Celebrated a Stellar Weekend of Creativity, Entertainment and Indulgence with 15 Global Culinary Masters and Mixologists at the Cutting-Edge of their Craft",
-     "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPc0pmbnhPWFpPU2pxYkR3RGFDR18zeUlRaklUekZnNGhoMFRqUjV5bFV3Rlc5M0F2dElGZW9jdmdXQW5PT01XR0JvNDJsd2VtR1ZGYUZXVkVMeXVVN3k4VDU5dmpFcUVZdEJLaTVzVjd4UFNHWEp3UE5aLTVkRU5qVENtQmF2bzc0NzZSWHpBZDNNV2gyUmlMNDY2TGY0ZXRHUURUN2V1T2d3RlYwbnVuTUdyc3lFYjJLVWU0ZHpwVEhhRkp4aGVPUG43QjdGSEV4WU4zN2tRZm5OTFYwNERFOXA4dEU5VUhsRE1kQ2lDM3pZcXZuOVhnemRxekZ2dXV5NzlUQl9iUzdZaHNvdlpZcWFOWGJuS1U2bDZjMDJPeDRjR1JwNFlrbg?oc=5",
-     "source": "News-Press NOW",
-     "lang": "en",
-     "date": "2026-11-25T05:48:19Z"
-    },
-    {
-     "title": "大行評級｜傑富瑞：澳門11月賭收料同比跌6%至8%，看好銀河娛樂及永利澳門",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5uY1ZaYTk3Mlh3NzRmMmFkZUMzbWphalZWX2tieXFRWnVuaVdWNVVmNFlaajE0eDJ6TWptSHk4UGx1ZnRlejk3OWUxZ3J4bllLQmxzQmNoRGdfa1Q1ZkR6OXFSM0VLLVdoVC04?oc=5",
-     "source": "TradingView",
-     "lang": "zh",
-     "date": "2026-11-25T02:47:55Z"
-    },
-    {
-     "title": "大行評級｜傑富瑞：澳門11月賭收料同比跌6%至8%，看好銀河娛樂及永利澳門",
-     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE80VDNQMGtOTnI2eU5tWHA3Zkk5VDlFbjZnX2doSmdpY3JWTHhIRmlJWDJSQV90Z0Z2T3VMRm10b2hJVUtiN0JBcFhqdmZQSTlHeHJ2ZE9zYXJtZWVaY1BHQzRmYTFYYkxQZHc?oc=5",
-     "source": "TradingView",
-     "lang": "zh",
-     "date": "2026-11-25T02:47:00Z"
     }
    ]
   },
@@ -296,7 +296,7 @@
     ],
     [
      "2026-11-20",
-     4
+     5
     ],
     [
      "2026-11-21",
@@ -308,7 +308,7 @@
     ],
     [
      "2026-11-23",
-     9
+     11
     ],
     [
      "2026-11-24",
@@ -320,21 +320,21 @@
     ],
     [
      "2026-11-26",
-     2
+     4
     ]
    ],
-   "total": 164,
+   "total": 169,
    "by_lang": {
-    "en": 64,
-    "zh": 100
+    "en": 65,
+    "zh": 104
    },
    "publishers": [
     [
-     "澳門力報",
-     16
+     "澳門會展經濟報",
+     17
     ],
     [
-     "澳門會展經濟報",
+     "澳門力報",
      16
     ],
     [
@@ -350,12 +350,12 @@
      8
     ],
     [
-     "IAG – Inside Asian Gaming",
+     "香港經濟日報HKET",
      7
     ],
     [
-     "香港經濟日報HKET",
-     6
+     "IAG – Inside Asian Gaming",
+     7
     ],
     [
      "GGRAsia",
@@ -371,6 +371,20 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Sands China honours outstanding staff at annual awards ceremony",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxNFlWWnFoSURJbHZuQXI1bERoZE8xUzl2THdwVEFFTlh0My1BajJyU2IzWDctX0ZWeVEwTHFKLWFtZ2x2U2Z4dVY2ZTQ1a0JBTHNN?oc=5",
+     "source": "The Macau Post Daily",
+     "lang": "en",
+     "date": "2026-11-26T18:22:10Z"
+    },
+    {
+     "title": "2026金沙中國員工年度大獎頒獎盛典圓滿舉行",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjaXk3ZmpHdFNmVVVaUmdGNW5BRHVYQnJoVVNHeUxGdDFXTUp5STFaaVROWHk1MWZqMzNsUEZMdG1xYkNYR3VwSWR1X1NXQkNDb09zdV9PUHdzeDVh?oc=5",
+     "source": "澳門會展經濟報",
+     "lang": "zh",
+     "date": "2026-11-26T14:00:04Z"
+    },
     {
      "title": "Sands China and Macao Orchestra Jointly Presenting ‘Starry Symphony at the Lawn’",
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZkgzRFFlaDNnZW9yRjNGR2hWQm1DY2UwT1pHd3g4XzkxeE43QU5iUDE0bXJ0NWtmX2t4R3pKR0tjeG1FcGd3d1hjXzNZRkFSMDJSV3oxLVdkbTlIT3Rlc1ludUJkejUyY1BkS0htcmt3elJZb1VsOTZuSXpVUElSai15WV90RVJFckpMWU1tZUtjVlpPd0JOc3lNQnphdDFKT1JhVzNld3VnbHUtM3lOX2Q4SGU1by1iSkVGVkJjYVRpbjQzelRrajY4VW1CNXM?oc=5",
@@ -426,20 +440,6 @@
      "source": "華僑報",
      "lang": "zh",
      "date": "2026-11-24T19:28:51Z"
-    },
-    {
-     "title": "大行評級｜瑞銀：澳門過去7日賭收回升，看好金沙中國及美高梅中國",
-     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1MTzJFZnlFcF95c2dKTTlORTNYYl9PWC1QbENObFhldjZ1REU5c2wza1hwdEFmb0pSSHdpVTRRV00yM2E3Y0JKLTVORDQ2ZHdOTUUtZlFwTHFLYjVyVFRpRHF2Q3FUYXA4QVE?oc=5",
-     "source": "TradingView",
-     "lang": "zh",
-     "date": "2026-11-24T07:39:05Z"
-    },
-    {
-     "title": "大行評級｜瑞銀：澳門過去7日賭收回升，看好金沙中國及美高梅中國",
-     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9pdS1DYjBfY3VINnRkam9JcVRuOUJvWWR3azdSLWh1TlN4RTJzSkprUVFWVXZHWkxoNllRMGdrbnV1cTFGMkdJQ3Y2X3Q3LUlFa2ZzV2tTeWJMUUZpUzZTUnJ2M0RLa1JpYlE?oc=5",
-     "source": "TradingView",
-     "lang": "zh",
-     "date": "2026-11-24T07:23:00Z"
     }
    ]
   },
@@ -523,11 +523,11 @@
     ],
     [
      "2026-11-22",
-     5
+     6
     ],
     [
      "2026-11-23",
-     28
+     29
     ],
     [
      "2026-11-24",
@@ -539,13 +539,13 @@
     ],
     [
      "2026-11-26",
-     2
+     4
     ]
    ],
-   "total": 200,
+   "total": 204,
    "by_lang": {
-    "en": 103,
-    "zh": 97
+    "en": 105,
+    "zh": 99
    },
    "publishers": [
     [
@@ -561,15 +561,15 @@
      8
     ],
     [
+     "MarketBeat",
+     7
+    ],
+    [
      "GGRAsia",
      6
     ],
     [
      "stylemaster",
-     6
-    ],
-    [
-     "MarketBeat",
      6
     ],
     [
@@ -590,6 +590,20 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Melco Resorts & Entertainment Limited (NASDAQ:MLCO) Stock Has Consensus Target Price of $5.47",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNSVhDdzVoUm9KclZyQ1ZlV3ZGcUpuMmhndXlleDRxem9mNlJjWHQ0MDlkenZGeU1YREJJdWtXa3htTE1HT09OT1V3M2IwQkM2SnJZb25oNFhrSzQ0SU94WTVNZFBMSFRDSjdrUzV6dVZ5RjJfa2tfOGdVRlVBUXl5bGRmMFU4c2E0anB1WDFYbDhkdXJkQkRUNlIwY0tyeEtzeHdUdGppeTBMV25RdE1uWmhiYXZSRnEyMzFndldqRDJ6eUNsVUdoNnhDWWphQ2xnUmdqbmIxMUlnMmhQTzFXaUJRRzlzUQ?oc=5",
+     "source": "MarketBeat",
+     "lang": "en",
+     "date": "2026-11-26T09:35:45Z"
+    },
+    {
+     "title": "標普降新濠博亞(澳門)及新濠影滙評級展望至「負面」 賭收受壓拖慢EBITDA復甦及減債進展",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbE1kazdHSnBkd0Fqb19rNFpGcXRtVUhDZjJvbWlvUkdMblNIeHhIOGtEbkxYT2FQaUFhMm1oZnBVOFV1UGtFSHVnN3Z3OV9KRGdxelIwSHFhZXlpN2FBQ0FLOEZHQkQzUkxKcUFzZFV5ZFpMUGdSUzd0aDV0NUxTZ2oxWGZSSk9kNTZF?oc=5",
+     "source": "AA Stock",
+     "lang": "zh",
+     "date": "2026-11-26T05:06:00Z"
+    },
     {
      "title": "Century Entertainment Reports 1H27 Revenue Surge",
      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQXJUeGdkd1I0TkJDc1p4ODhodG51Xy0wc2t4aHlNZkU2YjRTR1ZvTHhsVGJLVDc0VzVfdWxBcS1NQUZfUVRFdjllRENUZUhOM1JxX0pyeWdkM3oyeXM1OTlaYXRORXdVaG10WXdETnlBQmZKalduQlZXczQtT1ZJRmtfbFM5a3RTM3BfZE9UUlo?oc=5",
@@ -645,20 +659,6 @@
      "source": "udn",
      "lang": "zh",
      "date": "2026-11-25T07:00:00Z"
-    },
-    {
-     "title": "“捕狼2026”聯合演練明上午9時舉行",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaDhGWFBKNV9ueE1RdWV3N0pVamo3ejRmZTBkMHI3YlluMDVVQ2drUEcxRXhiZFV3VWlWT2NqYXRSdzNXb1pUcEhJT3VBWGE5LXlQajRPWHp4YnZKY0YzSTJBYzJZXzBMVExMb2lIdklTVG8yeUpETUdKRlg2aFR1VmhJb1pVQ1hxQXh3UWJGWHlsVHozaFR1T1BfRVFkWjVTU0Qw?oc=5",
-     "source": "TDM",
-     "lang": "zh",
-     "date": "2026-11-25T06:58:38Z"
-    },
-    {
-     "title": "澳門新濠天地《水舞間》後台導覽體驗｜登上18米高空、直擊1,700萬升巨型水池幕後奧秘",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUllZeDNOR3RPY09ibzRlUGFUd2x0Q3NsakFRRUNsMVhKZEVLZEt5U0pkQ2JEUWFBQzRSZW0xLUM0UE8zMlh6M2hSMng3UFB4bFNvbEVLYlFXVUdnUXg0WjNKaDRFOExCVVd5SWNaZklFX0FrSDE2U0lsdXl6Vkh1YXU2azMwUExrd1ZLaEdHSmg1ZDJ4Y1E?oc=5",
-     "source": "Esquire Hong Kong",
-     "lang": "zh",
-     "date": "2026-11-25T06:16:44Z"
     }
    ]
   },
@@ -754,17 +754,17 @@
     ],
     [
      "2026-11-25",
-     35
+     39
     ],
     [
      "2026-11-26",
-     5
+     8
     ]
    ],
-   "total": 152,
+   "total": 159,
    "by_lang": {
-    "zh": 60,
-    "en": 92
+    "en": 96,
+    "zh": 63
    },
    "publishers": [
     [
@@ -785,7 +785,7 @@
     ],
     [
      "macau daily times 澳門每日時報",
-     8
+     9
     ],
     [
      "TDM",
@@ -809,6 +809,20 @@
     ]
    ],
    "articles": [
+    {
+     "title": "MGM Resorts to receive $200m from MGM China",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNWdQQUc3b3dySWRpeVhTa3RiQXYyNDBmbTJCQ2FzUnYtX0xZLUhqang0Nl9NM2RyS19wSmVfVUlCMi1JbEtNUlFIem9Za1JRYjhhaERZdDY5RUVfU0NwSkVyWk8wUlpKT21sOW5vX3cwU183dlE4cXhHcE9HcmxUZzJva3FneGIyeFVuTzVoUUNmTGloS3BiX25rUGhmZw?oc=5",
+     "source": "InterGame Online",
+     "lang": "en",
+     "date": "2026-11-26T14:02:08Z"
+    },
+    {
+     "title": "UNU Macau AI Conference 2026 Advances a Human-Centred Approach to AI and Education",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVklQY2czVm90SU9rMFlHY3VNS3F4OTRERTllOHd1Wlo5ZzlfQi04c0hRSWhNNi1EUF9ZQ05laXdrd0Q2WmtYc1JwUFdYUU0tVmF2Rm5DN0VZb2lDVFpoNlduZUVWVV83cEE4WEdKSmgxNGlHQndmTFdBMU16b3lhV2FMZTJHNGtwTm5lSnRZVFZ2NmlVQU5wYzE1dVdXckJPZ25rVjZNOA?oc=5",
+     "source": "UNU | United Nations University",
+     "lang": "en",
+     "date": "2026-11-26T09:59:45Z"
+    },
     {
      "title": "里昂：美高梅中國(02282)特別股息規模龐大 料全年每股派息增長78% 作者 智通財經",
      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RTHBJb1VGdUhhVEN0Wk52SnNsaGFfd3BqQ2gyaGxUejl2YjdVUUx6VTN6S3BOX2NraVhVNmRKbkRpWXptcmh1X19xYzBWR1NtWG4wdi02c09jeFRRR3JaTTNqM3RvcUxqcnRfSDFXdWs?oc=5",
@@ -845,6 +859,13 @@
      "date": "2026-11-26T00:35:56Z"
     },
     {
+     "title": "Thursday, November 26, 2026 – edition no. 5083",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTFpCOG1DMzZBaE4zd19QR1N5cXlET19ZOWpyR2VWVzRIQjZTRFYzYmlfS0o3M1l6aWNGQnlOZFl5aWFxYkYwUy0yQlFwNVpKbDNkMm8waGhOQ3dwOGphRHViRTVYei16OENOOW8wZGk3VmNmdm5PUDl4RW8yQ0NVT002dw?oc=5",
+     "source": "macau daily times 澳門每日時報",
+     "lang": "en",
+     "date": "2026-11-26T00:05:39Z"
+    },
+    {
      "title": "美高梅中國派特別息 涉27.4億港元12月付",
      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB0NXZoWWJFTkNyT1NnWWFhdGUxR2d2dlVGTFIwdkpMaHpFU1VheVM3aV9JTDJudmRnbmxzNnNzaU15N1RSX3RQYXV3M2MzZjBVXzVB?oc=5",
      "source": "澳門力報",
@@ -857,27 +878,6 @@
      "source": "Casino.org",
      "lang": "en",
      "date": "2026-11-25T20:15:17Z"
-    },
-    {
-     "title": "MGM Resorts hails MGM China’s “outstanding performance” on US$200 million dividend boost",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQN2dMUEV0WXN2SnNzWG5VUEktbXNoS1h4bW9nWXlQN1VlNkl3Mk95S2tSMkpfSlpRUHVBWnEzLTNWQUNHUTljaEFjc3k3Y1YzT3FMYlpJSEpoaTFhOWxZbGh0eG1oRnlTSl94TktqbDVXR193T1ZpcW9ndmxHa1NJOVV3X1g2ZWFCb2lwZHZkZUxhVlRNOG5fc0NfNTVMYU8tak1VY21VYTZEVy1QemhMTE4yN2I?oc=5",
-     "source": "IAG – Inside Asian Gaming",
-     "lang": "en",
-     "date": "2026-11-25T19:20:40Z"
-    },
-    {
-     "title": "UNU Macau explores AI, education in 2-day conference",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MNTM0TnBFQWhqeGhrLXNzS3ZaRUhfYjU2Q3MwNWV3czZxbDdZTU53UjAwVmZVRHIyZ29NRk0yMldmV1M0ajItVWkxNEVlamFfTzAw?oc=5",
-     "source": "The Macau Post Daily",
-     "lang": "en",
-     "date": "2026-11-25T19:00:11Z"
-    },
-    {
-     "title": "JPM: MGM CHINA Special Div. Announcement Modestly Positive Signal",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY0N4eG5QNTVjR0F3UGY4MHFpT3lWaEpiVHlwRXJBeEs4eGN0blI3RGtPWl9rSlY0STNsdXU3Y3VXaTl2RnhjcUxHdDFzQWdmbTdwZFRVVWgzTzF3SGNVTzJFOW5lbl94QV9pN1ZSYWwzU0M0aVc1cDA1UnZkZUprdkN6YlpUUERSNG9EUTZXY0l6U1BYcmdKX3ltemtKM0ZmbnhqaDdubC1BbTZ3WmJqelNKMmNWekkzSVZNQw?oc=5",
-     "source": "TradingView",
-     "lang": "en",
-     "date": "2026-11-25T16:36:03Z"
     }
    ]
   },
@@ -969,7 +969,7 @@
     ],
     [
      "2026-11-24",
-     15
+     16
     ],
     [
      "2026-11-25",
@@ -977,13 +977,13 @@
     ],
     [
      "2026-11-26",
-     4
+     6
     ]
    ],
-   "total": 156,
+   "total": 159,
    "by_lang": {
-    "zh": 78,
-    "en": 78
+    "en": 79,
+    "zh": 80
    },
    "publishers": [
     [
@@ -1029,11 +1029,25 @@
    ],
    "articles": [
     {
+     "title": "CLSA Cuts 2027 Macau GGR Forecast 8% on Weak China Data",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdjVNZGVtTWdMLS1GZWRRS0pDV0NEVVk3bEVPMmRjM0E5V3BKbGVXVWpCX3VaMWRwUUs5czBwbG9Bejlrc1RfVk82a0Rtb0JRSlJ5WE1vTk01NVNsdm41cUtzb3dWcUJEZnpEY254allPWXZadGpPYlloTUlJNEw3Unh5dlMwV0dic0FDSXU5TWNVZjFaVlNwbQ?oc=5",
+     "source": "Casino.com",
+     "lang": "en",
+     "date": "2026-11-26T16:12:42Z"
+    },
+    {
      "title": "“Wing Lei Bar & Friends” 第四篇章壓軸登場環球節慶風味齊聚永利吧",
      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5XWEVQUWJ3bHM5T1RBengtRmFsbEYtSUFtZ1M5b2hoWEV1Z3hueUoxcVNGVmt1aE5OcHMtR21ORW9WeUVCd2luUERDeGgxZlRNbFZJemJaMGdBdmIw?oc=5",
      "source": "澳門會展經濟報",
      "lang": "zh",
      "date": "2026-11-26T07:41:26Z"
+    },
+    {
+     "title": "「Wing Lei Bar & Friends」第四篇章壓軸登場 環球節慶風味齊聚永利吧",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNWi1JaHBmRWp6enM0ZjlJWE85SUhSWGI3d2JOREtIYUUxbWw3b2FWSjFMQW95TW1RaXN3YVZRV0piMnlnYm1VZkdKYlpsY2E2NkZWRTRGZlp2LVd5ZVpuTmRKTWNPUHBrMHRYZTZQV2VSY1FxX0NyTnRJenN1NGI5WXhzeElkbXhnaGUwY190MzVsYzB6dHlEWk85aTZqS2JrZEIzbWlkSVVvWElEalM0YjkzaDVYV0NOdWVGeEZVU1UxQ09KTTRMOHNRZ3lrQlRrN1VNVjVBWS1FZWkzbjAtVTZhQjdTTWN2d1pUSUFGTERfdF9JbmdUSzM5NXB2YVFoelJvZzZDNVhacWloTjJOeUFB?oc=5",
+     "source": "Wynn Newsroom",
+     "lang": "zh",
+     "date": "2026-11-26T07:31:45Z"
     },
     {
      "title": "​陳志玲獲金紫荊卓越企業家獎 凝聚企業力量推動灣區資源互補",
@@ -1083,20 +1097,6 @@
      "source": "澳門日報",
      "lang": "zh",
      "date": "2026-11-25T04:32:16Z"
-    },
-    {
-     "title": "吳：轉變“稅務減免”固有思路",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1TVRLZENUU3hSOFI5UEh4V2F3TV8yQTJhSy1ZMXpTMkpYalBXdWlmeTA4Y1hNeWNPYzVQX1JXZUhJSC1VTHMzWFFMbDh6MmhOdVRtTi1zLTdPdTBlc3NoLThTd1FwYWdW?oc=5",
-     "source": "澳門日報",
-     "lang": "zh",
-     "date": "2026-11-25T03:54:29Z"
-    },
-    {
-     "title": "大行評級｜傑富瑞：澳門11月賭收料同比跌6%至8%，看好銀河娛樂及永利澳門",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5uY1ZaYTk3Mlh3NzRmMmFkZUMzbWphalZWX2tieXFRWnVuaVdWNVVmNFlaajE0eDJ6TWptSHk4UGx1ZnRlejk3OWUxZ3J4bllLQmxzQmNoRGdfa1Q1ZkR6OXFSM0VLLVdoVC04?oc=5",
-     "source": "TradingView",
-     "lang": "zh",
-     "date": "2026-11-25T02:47:55Z"
     }
    ]
   },
@@ -1184,7 +1184,7 @@
     ],
     [
      "2026-11-23",
-     4
+     5
     ],
     [
      "2026-11-24",
@@ -1196,13 +1196,13 @@
     ],
     [
      "2026-11-26",
-     0
+     4
     ]
    ],
-   "total": 113,
+   "total": 118,
    "by_lang": {
-    "zh": 68,
-    "en": 45
+    "en": 47,
+    "zh": 71
    },
    "publishers": [
     [
@@ -1211,15 +1211,15 @@
     ],
     [
      "TradingView",
-     11
+     12
+    ],
+    [
+     "澳門會展經濟報",
+     6
     ],
     [
      "Investing.com 香港 - 股市報價& 財經新聞",
      6
-    ],
-    [
-     "澳門會展經濟報",
-     5
     ],
     [
      "GGRAsia",
@@ -1247,6 +1247,34 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Masterchef winner Chef Khanh Ong to present dishes at GLP",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1PN0x0VXR3bjFOZXFtdVlLYjMxTEYzQnJRUnQxellsSDIyQ1pmTmZFSVNXQkQzeWNUTlpwRW5vTUVqM1lWQ2JLVVJqYVM0SUVhR0dz?oc=5",
+     "source": "The Macau Post Daily",
+     "lang": "en",
+     "date": "2026-11-26T18:22:10Z"
+    },
+    {
+     "title": "澳門新葡京娛樂城評測：PTT玩家指南與實測解析",
+     "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOWDRYYUJkeGwycmVqMVFJWXFDN3llbEZKeHVyOE8ybDlmVG9ncmlaemc2UXR0bTN1bzVCcHF1VDlybklsTWhZOTJaX1pNZGV2TXpzMFkzVzE4SFFFeExDNWMwQUk1V2hJSFlQaDcxQkRYek1zZmVJNXhucE1kaUpyQzJEeE9RYmFpaTJuOGFnaWV6NFJmb2p0aUdSbTNISkpxSFMtdTd4QmZsZE1Md3BzR2RLczFGa05KcVVHblZfdENfdG9pM1BCdEFSVjUyRG44dG1Pb2NELTRYWGFQS0hTdlkyV2d4a0xSeHA1SUhvTS1senVXVjlXSURWZ3ZUakdlQVFpUE11WUMxRDE0cDdZdWQzelF1UThj?oc=5",
+     "source": "Fifa世界杯.tw",
+     "lang": "zh",
+     "date": "2026-11-26T16:24:56Z"
+    },
+    {
+     "title": "CLSA Cuts 2027 Macau GGR Forecast 8% on Weak China Data",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdjVNZGVtTWdMLS1GZWRRS0pDV0NEVVk3bEVPMmRjM0E5V3BKbGVXVWpCX3VaMWRwUUs5czBwbG9Bejlrc1RfVk82a0Rtb0JRSlJ5WE1vTk01NVNsdm41cUtzb3dWcUJEZnpEY254allPWXZadGpPYlloTUlJNEw3Unh5dlMwV0dic0FDSXU5TWNVZjFaVlNwbQ?oc=5",
+     "source": "Casino.com",
+     "lang": "en",
+     "date": "2026-11-26T16:12:42Z"
+    },
+    {
+     "title": "澳娛綜合邀MasterChef Asia冠軍Khanh Ong亮相“竹味居”",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1kVHdXXzZiOHk5XzluaXlRMUdhN2daMmtTUGVvVUxnLXQ3SWJtSEFmSkl6TzZMS2I1TmRnbm9RVlU0OE1EUFFySzZQLXVla3pjNGQxQTVXRXY5TkRm?oc=5",
+     "source": "澳門會展經濟報",
+     "lang": "zh",
+     "date": "2026-11-26T14:52:47Z"
+    },
     {
      "title": "港股異動丨濠賭股集體反彈，新濠國際發展升4.8%止步十連跌",
      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9KcVkyaG1teUozSnRIUXZuODFoQTdpeWp1Ykk5YjFZMU56Z0JxaGV4eUhPSUdXRWFneUZ6UFZyTG9NcVppY1dtX1VGM3ppaW9QR2RWS0s4N0UydDZRY1kxb0plU0lhRWEzNnc?oc=5",
@@ -1288,34 +1316,6 @@
      "source": "澳門會展經濟報",
      "lang": "zh",
      "date": "2026-11-24T14:35:44Z"
-    },
-    {
-     "title": "澳門新葡京娛樂城廣告評測：玩家必讀要點",
-     "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPUVVSS1hJSXVKdHcwNnJsU3dQd0JSUEhGbmhlYXdNdElHV3BNeU1PcVVUY25tN25xUENybHkyUXZFN1RwU0ZRZGp2NGtPU0VoV1VWdlgzZWVHZVVhbkZxal9ERWNMV1J2XzlxYlk5cE5TSUhvNXRHbWwyOXV3WFVXTGpOV0pDNTNMa1NoWG5ZSjQ0WUs5SHYzaktLblZlZUVXZDg0RkhnRFpPRU10a3RtNXpDVF9XQ1JZWGNPSEgxWEF3OG9qa2ZBX1pibm11WTRGU3hVaHJ2ZkIta0N2czVEbm4zSU84Q1RBcUNnUjdOZ3ZMNVlqYTgzSFpJMzE2cmh5OGZpTlNSVUEwNkJnaGxOQ3QxUlpTMERid01ZTWo5X1RvRTRPU0QzRzA3T1o?oc=5",
-     "source": "Fifa世界杯.tw",
-     "lang": "zh",
-     "date": "2026-11-24T14:04:52Z"
-    },
-    {
-     "title": "Melco Resorts & Entertainment (MLCO) was downgraded to a Hold Rating at CLSA",
-     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTE9hV2szSnNzMTlrcmpTYU9NOWM4cm02LXloTFN5VHI1V0JGVUp5SVBJbkpMdC1YSDNKV2RnNnlYWlBPVDYxUWhPSFpjREwyRktVRkYwbl8ySmFOeG5aNEpEQXJPbjNWNnd3Q3Jlb2w3SndVdUtwd0FaaGQyYzN6Z3NkZm1TQ1BFaFZJaWp5bjV4Qk9scWZpaTJaZ0FHR2RfT3JDdnBKRDBWMmlST01vd2hZWnM3SG1GQkpWSmpsUEFXelc3SkNldkdVVHV2Qy1uMGl4TjJLLTktQVRKNW0wdktwdm96Qmpx?oc=5",
-     "source": "The Globe and Mail",
-     "lang": "en",
-     "date": "2026-11-24T10:49:37Z"
-    },
-    {
-     "title": "CITIC CLSA Cuts Macau 2027 Gaming Revenue Forecast by 8%, Downgrades SJM Holdings to \"Underperform\" with Target Price Halved",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56cW9CaWFKYW1lZGFQeXJEbW83ZGZQTl9JcEdkTzYyR3czNjh0cUo1Z1dNLVpiM3MtejZTSTB5V3RhSlpuN0tTbDdXVjRZbGpUZkt6WndySlZBQnF1Yng1WG9LSzJab3JZb2hQQVAzN3pYZmNSR1E?oc=5",
-     "source": "BigGo Finance",
-     "lang": "en",
-     "date": "2026-11-24T08:15:00Z"
-    },
-    {
-     "title": "SJM donates US$87k to support ‘Walk for a Million’ event in Macau",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQamV5VXpqblIyajBoaENsQmszV3RtS1dVUG1lSzFCaTZkNnR0UWtudDA4a1ROcGdxMjhKMWFiYWM5cXV6cmpsc0NodUpTcWRmc3pmMHgyV1F4TXZuQkFaZ3lIcTVzZVhWdHlMamJRVVlRR3FQdlhITF9ITG4tX0dWUktKYUJUbDhLa3lGbFZPdw?oc=5",
-     "source": "GGRAsia",
-     "lang": "en",
-     "date": "2026-11-24T06:51:36Z"
     }
    ]
   }
