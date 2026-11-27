@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-25T08:36:15+00:00",
+ "updated": "2026-11-27T21:20:22+00:00",
  "source": "The GDELT Project, DOC 2.0 API",
  "timespan": "3months",
  "groups": {
-  "melco": {
+  "mgm": {
    "tone": [],
    "avg_tone": null,
-   "updated": "2026-11-25T08:36:15+00:00"
+   "updated": "2026-11-27T21:19:40+00:00"
   }
  },
  "errors": {
   "galaxy": "RuntimeError: 請求失敗：被限流",
-  "sands": "RuntimeError: 請求失敗：ReadTimeout"
+  "sands": "RuntimeError: 請求失敗：被限流",
+  "wynn": "RuntimeError: 請求失敗：ReadTimeout"
  },
  "skipped": [
   "sjm",
-  "mgm",
-  "wynn"
+  "melco"
  ]
 }
